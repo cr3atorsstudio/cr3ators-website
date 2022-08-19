@@ -15,7 +15,7 @@ const Layout = ({ children }: Props) => {
         <main>{children}</main>
       </div>
 
-      <div className='min-h-1/2'>
+      <div className='min-h-1/2 w-full'>
         <Section
           isFading={true}
           title={"Creators Studioとは"}
