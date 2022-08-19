@@ -72,7 +72,7 @@ const SectionTeam = ({ bgColor, isFading, title, contents }: Props) => {
               <div className='flex flex-col mt-10 justify-center items-center'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
-                  class='h-20 w-20'
+                  className='h-20 w-20'
                   fill='none'
                   viewBox='0 0 24 24'
                   stroke='currentColor'
