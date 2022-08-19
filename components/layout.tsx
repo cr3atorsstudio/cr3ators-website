@@ -1,6 +1,7 @@
 import Footer from "./footer";
 import Section from "./section";
 import SectionSeparator from "./section-separator";
+import SectionTeam from "./section-team";
 import Meta from "./meta";
 
 type Props = {
@@ -26,6 +27,7 @@ const Layout = ({ children }: Props) => {
       </div>
 
       <SectionSeparator />
+
       <Section
         isFading={true}
         title={"Solution for the gender gap"}
@@ -33,6 +35,17 @@ const Layout = ({ children }: Props) => {
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugiat porro dicta sapiente voluptatibus aliquid ea velit, molestias officia, odio quibusdam quas quia, dolorem totam aliquam doloribus inventore qui deserunt!"
         }
       />
+
+      <SectionSeparator />
+
+      <SectionTeam
+        isFading={true}
+        title={"Core Team Members"}
+        contents={"This is our team"}
+      />
+
+      <SectionSeparator />
+
       <Footer />
     </>
   );
