@@ -3,7 +3,7 @@ type Props = {
 };
 
 const FooterContainer = ({ children }: Props) => {
-  return <div className='container md:px-5 w-full px-1'>{children}</div>;
+  return <div className='container w-full'>{children}</div>;
 };
 
 export default FooterContainer;

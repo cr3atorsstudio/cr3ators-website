@@ -3,7 +3,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        title: ["Work Sans"],
+        workSans: ["Work Sans"],
+        roboto: ["Roboto"],
+        oswald: ["Oswald"],
+        openSans: ["Open Sans"],
+        italic: ["Libre Baskerville"],
       },
       colors: {
         "accent-1": "#FAFAFA",
@@ -17,6 +21,7 @@ module.exports = {
       },
       minHeight: {
         screen: "90vh",
+        section: "70vh",
       },
       letterSpacing: {
         tighter: "-.04em",

@@ -16,10 +16,23 @@ const Layout = ({ children }: Props) => {
         <main>{children}</main>
       </div>
 
-      <div className='min-h-1/2 w-full'>
+      <div className='min-h-section flex justify-start'>
         <Section
           isFading={true}
-          title={"Creators Studioとは"}
+          title={"What is Creators Studio ?"}
+          contents={
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugiat porro dicta sapiente voluptatibus aliquid ea velit, molestias officia, odio quibusdam quas quia, dolorem totam aliquam doloribus inventore qui deserunt!"
+          }
+          type={"introduction"}
+        />
+      </div>
+
+      <SectionSeparator />
+
+      <div className='min-h-section flex justify-end'>
+        <Section
+          isFading={true}
+          title={"Solution for the gender gap"}
           contents={
             "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugiat porro dicta sapiente voluptatibus aliquid ea velit, molestias officia, odio quibusdam quas quia, dolorem totam aliquam doloribus inventore qui deserunt!"
           }
@@ -28,22 +41,13 @@ const Layout = ({ children }: Props) => {
 
       <SectionSeparator />
 
-      <Section
-        isFading={true}
-        title={"Solution for the gender gap"}
-        contents={
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugiat porro dicta sapiente voluptatibus aliquid ea velit, molestias officia, odio quibusdam quas quia, dolorem totam aliquam doloribus inventore qui deserunt!"
-        }
-      />
-
-      <SectionSeparator />
-
-      <SectionTeam
-        isFading={true}
-        title={"Core Team Members"}
-        contents={"This is our team"}
-      />
-
+      <div className='min-h-section flex justify-start'>
+        <SectionTeam
+          isFading={true}
+          title={"Core Team Members"}
+          contents={"This is our team"}
+        />
+      </div>
       <SectionSeparator />
 
       <Footer />
