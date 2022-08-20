@@ -7,7 +7,7 @@ type Props = {
   isFading: boolean;
   title: string;
   contents: string;
-  type: string;
+  type?: string;
 };
 
 const Section = ({ bgColor, isFading, title, contents, type }: Props) => {
