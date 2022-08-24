@@ -34,9 +34,9 @@ const Meta = () => {
       <link rel='alternate' type='application/rss+xml' href='/feed.xml' />
       <meta
         name='description'
-        content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
+        content={`Welcome to Creators Studio! We are the web3 community for womxn `}
       />
-      <meta property='og:image' content={HOME_OG_IMAGE_URL} />
+      <meta property='og:image' content='/favicon/creatorsstudio.jpegg' />
     </Head>
   );
 };
