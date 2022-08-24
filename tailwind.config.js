@@ -2,6 +2,7 @@ module.exports = {
   content: ["./components/**/*.tsx", "./pages/**/*.tsx"],
   theme: {
     extend: {
+      screens: {},
       fontFamily: {
         workSans: ["Work Sans"],
         roboto: ["Roboto"],

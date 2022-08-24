@@ -1,14 +1,12 @@
-import { CMS_NAME } from "../lib/constants";
-
 const Intro = () => {
   return (
     <div>
-      <section className='flex-col md:flex-row flex items-center md:justify-between mt-32'>
-        <div className='w-full flex-col items-center justify-center md:ml-32'>
-          <h1 className='text-5xl md:text-8xl text-white leading-tight md:pr-8 font-openSans font-black tracking-wide'>
-            Empowering <br /> woman in Web3
+      <section className='mt-32 flex flex-col items-center md:flex-row md:justify-between'>
+        <div className='ml-10 w-full flex-col items-center justify-center xl:ml-32'>
+          <h1 className='ml-3 font-openSans text-5xl font-black leading-tight tracking-wide text-white md:pr-8 md:text-8xl'>
+            Empowering <br /> womxn in Web3
           </h1>
-          <p className='font-openSans font-normal text-4xl text-yellow-300 ml-5 mt-5'>
+          <p className='ml-5 mt-5 font-openSans text-2xl font-normal text-yellow-300 md:text-4xl'>
             A community closing the gender gap in Web3.
           </p>
         </div>

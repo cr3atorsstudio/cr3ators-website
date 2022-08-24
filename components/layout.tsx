@@ -1,8 +1,10 @@
 import Footer from "./footer";
-import Section from "./section";
-import SectionSeparator from "./section-separator";
+import SectionCommunity from "./section-community";
+import SectionVision from "./section-vision";
 import SectionTeam from "./section-team";
-import Meta from "./meta";
+import SectionSeparator from "./section-separator";
+
+import Meta from "./utils/meta";
 
 type Props = {
   children: React.ReactNode;
@@ -17,22 +19,15 @@ const Layout = ({ children }: Props) => {
       </div>
 
       <div className='min-h-section flex justify-start'>
-        <Section
-          isFading={true}
-          title={"What is Creators Studio ?"}
-          contents={
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugiat porro dicta sapiente voluptatibus aliquid ea velit, molestias officia, odio quibusdam quas quia, dolorem totam aliquam doloribus inventore qui deserunt!"
-          }
-          type={"introduction"}
-        />
+        <SectionCommunity isFading={true} title={"What is Creators Studio ?"} />
       </div>
 
       <SectionSeparator />
 
       <div className='min-h-section flex justify-end'>
-        <Section
+        <SectionVision
           isFading={true}
-          title={"Solution for the gender gap"}
+          title={"Our Vision"}
           contents={
             "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugiat porro dicta sapiente voluptatibus aliquid ea velit, molestias officia, odio quibusdam quas quia, dolorem totam aliquam doloribus inventore qui deserunt!"
           }

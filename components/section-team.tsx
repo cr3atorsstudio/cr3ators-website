@@ -1,8 +1,8 @@
 import SectionContainer from "./section-container";
+import SectionFadeIn from "./section-fade-in";
+
 import { useEffect } from "react";
-import { scrollFadeIn } from "./scrollFadeIn";
-import placeholder from "../public/assets/blog/authors/jj.jpeg";
-import { StaticImageData } from "next/image";
+import { scrollFadeIn } from "./utils/scroll-fadeIn";
 
 type Profile = {
   name: string;
@@ -57,21 +57,17 @@ const SectionTeam = ({ bgColor, isFading, title, contents }: Props) => {
   }, []);
 
   return (
-    <div
-      className={`${bgColor ? bgColor : "bg-neutral-50"} ${
-        isFading &&
-        "js-show-on-scroll flex justify-center rounded-lg w-3/4 overflow-hidden shadow-lg"
-      }`}
-    >
+    <SectionFadeIn bgColor={bgColor} isFading={isFading}>
       <SectionContainer>
         <div className='pt-10 pb-28'>
-          <h3 className='text-5xl lg:text-[2.5rem] font-black text-center mb-10 text-gray-400'>
+          <h3 className='mb-10 text-center text-5xl font-black text-gray-400 lg:text-[2.5rem]'>
             {title}
           </h3>
-          <div className='pt-10 pb-28 flex flex-col items-center justify-center w-full'>
-            <div className='flex flex-col lg:flex-row justify-between items-center lg:pl-4 w-full'>
+
+          <div className='flex w-full flex-col items-center justify-center pt-10 pb-28'>
+            <div className='flex w-full flex-col flex-wrap items-center justify-between lg:flex-row lg:pl-4'>
               {members.map((member) => (
-                <div className='flex flex-col mt-10 justify-center items-center'>
+                <div className='mx-5 mt-10 flex flex-col  items-center justify-center'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     className='h-20 w-20'
@@ -94,7 +90,7 @@ const SectionTeam = ({ bgColor, isFading, title, contents }: Props) => {
           </div>
         </div>
       </SectionContainer>
-    </div>
+    </SectionFadeIn>
   );
 };
 

@@ -5,6 +5,8 @@
 
 body {
   background-color: #ff99fc;
+  background-repeat: no-repeat;
+
   background-image: radial-gradient(
       at 18% 13%,
       hsla(263, 97%, 66%, 1) 0px,
