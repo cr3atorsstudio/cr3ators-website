@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
         <div className='flex w-full justify-center lg:justify-end'>
           <div className='lg:mr-20'>
-            <a href='https://twitter.com/cr3atorsstudio' target='_blank'>
+            <a href='https://forms.gle/6PhCHWSbhVNZ18mGA' target='_blank'>
               <Image
                 src='/twitter.png'
                 width={50}
