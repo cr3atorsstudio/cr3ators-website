@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='md: mt-8 mb-10 flex flex-col items-center justify-center lg:mt-10 lg:flex-row'>
           <a
             href='https://nextjs.org/docs/basic-features/pages'
-            className='mx-3 mb-6 h-12 w-48 rounded-md border bg-pink-600 py-3 px-12 text-center font-bold text-white transition-colors duration-200 hover:bg-white hover:text-black md:mb-0 md:px-8'
+            className='h-18 mx-3 mb-6 w-48 rounded-md border bg-pink-600 py-3 px-12 text-center font-bold text-white transition-colors duration-200 hover:bg-white hover:text-black md:mb-0 md:h-12 md:px-8'
           >
             Supporter Form
           </a>
