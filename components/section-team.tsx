@@ -41,8 +41,8 @@ const members: Profile[] = [
   {
     name: "Eri",
     job: "Software Engineer",
-    pic: "placeholder",
-    twitter: "@",
+    pic: "/eri2490.jpg",
+    twitter: "eri2490",
   },
   {
     name: "Manami",
