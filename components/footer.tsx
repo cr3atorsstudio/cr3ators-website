@@ -16,7 +16,7 @@ const Footer = () => {
           </a>
         </div>
         <div className='flex w-full justify-center lg:justify-end'>
-          <div className='lg:mr-10'>
+          <div className='mr-5'>
             <a href='https://twitter.com/cr3atorsstudio' target='_blank'>
               <Image
                 src='/twitter.png'
