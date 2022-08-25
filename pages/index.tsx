@@ -6,14 +6,12 @@ import Navbar from "../components/navbar";
 
 export default function Index() {
   return (
-    <>
-      <Layout>
-        <Head>
-          <title>Creators Studio</title>
-        </Head>
-        <Navbar />
-        <Intro />
-      </Layout>
-    </>
+    <Layout>
+      <Head>
+        <title>Creators Studio</title>
+      </Head>
+      <Navbar />
+      <Intro />
+    </Layout>
   );
 }

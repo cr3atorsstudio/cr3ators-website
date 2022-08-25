@@ -48,9 +48,12 @@ const SectionCommunity = ({ bgColor, isFading, title }: Props) => {
           {title}
         </h3>
         <div className='flex flex-col items-center justify-between text-lg xl:flex-row xl:pl-4'>
-          {contents.map((content) => {
+          {contents.map((content, index) => {
             return (
-              <div className='mt-14 flex flex-col items-center justify-center px-5 md:self-start lg:px-10 xl:w-2/5'>
+              <div
+                key={index}
+                className='mt-14 flex flex-col items-center justify-center px-5 md:self-start lg:px-10 xl:w-2/5'
+              >
                 <p className='mb-5 text-5xl'>{content.emoji}</p>
                 <h2 className='text-2xl font-bold text-gray-600 lg:text-3xl'>
                   {content.title}

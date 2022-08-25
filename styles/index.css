@@ -4,8 +4,11 @@
 @tailwind utilities;
 
 body {
+  min-width: 375px;
   background-color: #ff99fc;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   background-image: radial-gradient(
       at 18% 13%,

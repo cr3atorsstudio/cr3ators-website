@@ -18,13 +18,13 @@ const Layout = ({ children }: Props) => {
         <main>{children}</main>
       </div>
 
-      <div className='min-h-section flex justify-start'>
+      <div className='flex min-h-section justify-start'>
         <SectionCommunity isFading={true} title={"What is Creators Studio ?"} />
       </div>
 
       <SectionSeparator />
 
-      <div className='min-h-section flex justify-end'>
+      <div className='flex min-h-section justify-end'>
         <SectionVision
           isFading={true}
           title={"Our Vision"}
@@ -36,7 +36,7 @@ const Layout = ({ children }: Props) => {
 
       <SectionSeparator />
 
-      <div className='min-h-section flex justify-start'>
+      <div className='flex min-h-section justify-start'>
         <SectionTeam
           isFading={true}
           title={"Core Team Members"}
