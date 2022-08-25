@@ -62,7 +62,7 @@ const SectionTeam = ({ bgColor, isFading, title, contents }: Props) => {
     <SectionFadeIn bgColor={bgColor} isFading={isFading}>
       <SectionContainer>
         <div className='pt-10 pb-28'>
-          <h3 className='mb-10 text-center text-5xl font-black text-gray-400 lg:text-[2.5rem]'>
+          <h3 className='mb-10 text-center text-5xl font-black text-gray-600 lg:text-[2.5rem]'>
             {t.TEAMTITLE}
           </h3>
 
