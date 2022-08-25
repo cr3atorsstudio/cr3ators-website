@@ -33,9 +33,7 @@ const Layout = ({ children }: Props) => {
           }
         />
       </div>
-
       <SectionSeparator />
-
       <div className='flex min-h-section justify-start'>
         <SectionTeam
           isFading={true}
@@ -44,7 +42,6 @@ const Layout = ({ children }: Props) => {
         />
       </div>
       <SectionSeparator />
-
       <Footer />
     </>
   );

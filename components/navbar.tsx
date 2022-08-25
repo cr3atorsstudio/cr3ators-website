@@ -1,12 +1,20 @@
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { useLocale } from "../hooks/useLocale";
+import { useWindowSize } from "../hooks/useWindowSite";
+import Link from "next/link";
 
 const Navabr = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [isMenuOpen, setOpenMenu] = useState(false);
 
-  const menuFunction = () => {
-    console.log("clicked!");
-    setOpenMenu(!openMenu);
-  };
+  useEffect(() => {
+    setOpenMenu(false);
+  }, [useWindowSize()]);
+
+  const menuFunction = useCallback(() => {
+    setOpenMenu(!isMenuOpen);
+  }, [isMenuOpen]);
+
+  const locale = useLocale().locale;
 
   return (
     <div>
@@ -18,10 +26,11 @@ const Navabr = () => {
               className='mr-3 h-6 rounded-lg sm:h-9'
               alt='CS Logo'
             />
-            <span className='cursor-pointer self-center whitespace-nowrap text-xl font-semibold dark:text-white'>
+            <span className='cursor-pointer self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>
               Creators Studio
             </span>
           </a>
+
           <button
             data-collapse-toggle='navbar-default'
             type='button'
@@ -69,10 +78,24 @@ const Navabr = () => {
                   Apply Form
                 </a>
               </li>
+              <div className=' cursor-pointer'>
+                <Link href='/' locale={locale === "ja" ? "en" : "ja"} passHref>
+                  <p
+                    className={`rounded-full ${
+                      locale === "ja" ? "bg-blue-500" : "bg-red-400"
+                    }  py-2 px-4 font-bold text-white`}
+                  >
+                    {locale === "ja" ? "EN" : "JA"}
+                  </p>
+                </Link>
+              </div>
             </ul>
           </div>
-          {openMenu ? (
-            <div className='absolute top-0 right-0 z-10 flex min-h-fit min-w-full flex-row justify-end md:hidden'>
+          {isMenuOpen ? (
+            <div
+              id='menu'
+              className={`absolute top-0 right-0 z-10 flex min-h-fit min-w-full flex-row justify-end md:hidden`}
+            >
               <div className='w-full rounded-md bg-white'>
                 <div className='flex flex-row items-center justify-evenly align-middle font-bold'>
                   <div className='flex h-20 cursor-pointer items-center'>
