@@ -35,8 +35,8 @@ const members: Profile[] = [
   {
     name: "Miho",
     job: "Software Engineer",
-    pic: "placeholder",
-    twitter: "@",
+    pic: "/miho.png",
+    twitter: "pluto_04",
   },
   {
     name: "Eri",
@@ -47,8 +47,8 @@ const members: Profile[] = [
   {
     name: "Manami",
     job: "Entrepreneur",
-    pic: "placeholder",
-    twitter: "@",
+    pic: "/placeholder.png",
+    twitter: "manaminoreal",
   },
 ];
 
@@ -66,23 +66,30 @@ const SectionTeam = ({ bgColor, isFading, title, contents }: Props) => {
             {t.TEAMTITLE}
           </h3>
 
-          <div className='justify-center8 flex w-full flex-col items-center'>
-            <div className='flex w-full flex-col flex-wrap items-center justify-between lg:flex-row lg:pl-4'>
+          <div className='justify-center8 flex w-full flex-col items-center font-mono'>
+            <div className='flex w-full flex-col flex-wrap items-center justify-between md:mt-16 lg:flex-row lg:pl-4'>
               {members.map((member, index) => (
-
                 <div
                   className='mx-5 mb-10 flex flex-col  items-center justify-center'
                   key={index}
                 >
-                <img
-                  src={member.pic}
-                  width="100px"
-                  height="100px"
-                  alt={`${member.name}'s image`}
-                />
-                <p className='text-sm'>{member.name}</p>
-                <p className='text-sm'>{member.job}</p>
-                <p className="text-sm hover:underline"><a href={`https://twitter.com/${member.twitter}`} target="_blank">@{member.twitter}</a></p>
+                  <img
+                    src={member.pic}
+                    width='150px'
+                    height='150px'
+                    alt={`${member.name}'s image`}
+                    className='rounded-lg'
+                  />
+                  <p className='mt-2 font-bold'>{member.name}</p>
+                  <p>{member.job}</p>
+                  <p className='hover:underline'>
+                    <a
+                      href={`https://twitter.com/${member.twitter}`}
+                      target='_blank'
+                    >
+                      @{member.twitter}
+                    </a>
+                  </p>
                 </div>
               ))}
             </div>
