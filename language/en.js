@@ -4,7 +4,7 @@ export default {
   SUBTITLE_2: "Help 'Creators' to build their ideas come to life",
   SUBTITLE_3: "Support women who don't have time",
   DESCRIPTION_1:
-    "Provide web3 information through Twitter, News Letters, and Twitter Spaces (AMA) Get women and gender minorities into the world of Web3",
+    "Provide web3 information through Twitter, News Letters, and Twitter Spaces (AMA) Get women and gender minorities into the world of Web3.",
   DESCRIPTION_2:
     "90% of the core members have experience in general web and web3 development. We all support beginners.",
   DESCRIPTION_3:

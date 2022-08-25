@@ -27,7 +27,7 @@ const SectionVision = ({ bgColor, isFading, title, contents, type }: Props) => {
           {t.VISIONTITLE}
         </h3>
         <div className='flex w-2/3 justify-center text-2xl lg:text-3xl'>
-          <ol className='list-decimal divide-y-2 divide-gray-100'>
+          <ol className='list-decimal divide-y-2 divide-gray-100 text-center'>
             <li className='p-5 '>{t.VISION_1}</li>
             <li className='p-5 '>{t.VISION_2}</li>
             <li className='p-5 '>{t.VISION_3}</li>
