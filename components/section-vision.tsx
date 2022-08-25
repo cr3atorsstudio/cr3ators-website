@@ -30,7 +30,7 @@ const SectionVision = ({ bgColor, isFading, title, contents, type }: Props) => {
           <ol className='list-decimal divide-y-2 divide-gray-100'>
             <li className='p-5 '>{t.VISION_1}</li>
             <li className='p-5 '>{t.VISION_2}</li>
-            <li className='p-5 '>{t.VISION_5}</li>
+            <li className='p-5 '>{t.VISION_3}</li>
             <li className='p-5 '>{t.VISION_4}</li>
             <li className='p-5 '>{t.VISION_5}</li>
           </ol>
