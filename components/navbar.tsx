@@ -130,7 +130,11 @@ const Navabr = () => {
 
                     <p className=' hover:text-gray-300'>
                       <a
-                        href='https://mirror.xyz/rlho.eth/rsmOBM9CheJ-yhuNqB1y9KdzDiyHDWIN4D22mydSVAM'
+                        href={
+                          locale === "ja"
+                            ? "https://mirror.xyz/rlho.eth/aZbQatqRWiQnF_ZHRLAMWJXNAYSYocCruDRalA2u0wg"
+                            : "https://mirror.xyz/rlho.eth/rsmOBM9CheJ-yhuNqB1y9KdzDiyHDWIN4D22mydSVAM"
+                        }
                         aria-current='page'
                         target='_blank'
                       >
