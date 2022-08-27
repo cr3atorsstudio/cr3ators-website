@@ -16,10 +16,20 @@ const Footer = () => {
           </a>
         </div>
         <div className='flex w-full justify-center lg:justify-end'>
-          <div className='lg:mr-20'>
+          <div className='mr-5'>
             <a href='https://twitter.com/cr3atorsstudio' target='_blank'>
               <Image
                 src='/twitter.png'
+                width={50}
+                height={50}
+                className='cursor-pointer'
+              />
+            </a>
+          </div>
+          <div className='lg:mr-20'>
+            <a href='https://www.instagram.com/cr3atorsstudio' target='_blank'>
+              <Image
+                src='/instagram.png'
                 width={50}
                 height={50}
                 className='cursor-pointer'

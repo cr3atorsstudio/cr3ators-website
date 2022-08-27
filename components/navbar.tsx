@@ -70,7 +70,11 @@ const Navabr = () => {
             <ul className='mt-4 flex flex-col rounded-lg border border-gray-100 p-4 dark:border-gray-700 md:mt-0 md:flex-row md:space-x-10 md:border-0 md:font-medium lg:space-x-20 lg:text-2xl '>
               <li>
                 <a
-                  href='https://mirror.xyz/rlho.eth/rsmOBM9CheJ-yhuNqB1y9KdzDiyHDWIN4D22mydSVAM'
+                  href={
+                    locale === "ja"
+                      ? "https://mirror.xyz/rlho.eth/aZbQatqRWiQnF_ZHRLAMWJXNAYSYocCruDRalA2u0wg"
+                      : "https://mirror.xyz/rlho.eth/rsmOBM9CheJ-yhuNqB1y9KdzDiyHDWIN4D22mydSVAM"
+                  }
                   className='block py-2 pr-4 pl-3 text-white hover:text-gray-300 dark:text-white md:bg-transparent md:p-0'
                   aria-current='page'
                   target='_blank'
@@ -126,7 +130,11 @@ const Navabr = () => {
 
                     <p className=' hover:text-gray-300'>
                       <a
-                        href='https://mirror.xyz/rlho.eth/rsmOBM9CheJ-yhuNqB1y9KdzDiyHDWIN4D22mydSVAM'
+                        href={
+                          locale === "ja"
+                            ? "https://mirror.xyz/rlho.eth/aZbQatqRWiQnF_ZHRLAMWJXNAYSYocCruDRalA2u0wg"
+                            : "https://mirror.xyz/rlho.eth/rsmOBM9CheJ-yhuNqB1y9KdzDiyHDWIN4D22mydSVAM"
+                        }
                         aria-current='page'
                         target='_blank'
                       >
