@@ -5,7 +5,7 @@ module.exports = {
       screens: {},
       fontFamily: {
         workSans: ["Work Sans"],
-        roboto: ["Roboto"],
+        roboto: ["Roboto", 'Noto Sans JP', '游ゴシック体', '游ゴシック', 'Yu Gothic', 'メイリオ'],
         oswald: ["Oswald"],
         openSans: ["Open Sans"],
         italic: ["Libre Baskerville"],

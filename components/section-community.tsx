@@ -55,10 +55,10 @@ const SectionCommunity = ({ bgColor, isFading }: Props) => {
                 className='mt-14 flex flex-col items-center justify-center px-5 md:self-start lg:px-10 xl:w-2/5'
               >
                 <p className='mb-5 text-5xl'>{content.emoji}</p>
-                <h2 className='text-center text-2xl font-bold text-gray-600 lg:text-3xl'>
+                <h2 className='text-center text-2xl font-bold text-gray-600 lg:text-lf'>
                   {content.title}
                 </h2>
-                <p className='mt-5 text-center text-xl lg:text-2xl'>
+                <p className='mt-5 text-center text-xl lg:text-base lg:text-left'>
                   {content.description}
                 </p>
               </div>
