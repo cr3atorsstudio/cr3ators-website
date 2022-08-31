@@ -4,6 +4,7 @@ import SectionFadeIn from "./section-fade-in";
 import { useEffect } from "react";
 import { scrollFadeIn } from "./utils/scroll-fadeIn";
 import { useLocale } from "../hooks/useLocale";
+import { SecttionTitle } from "./section-title";
 
 type Profile = {
   name: string;
@@ -62,9 +63,7 @@ const SectionTeam = ({ bgColor, isFading, title, contents }: Props) => {
     <SectionFadeIn bgColor={bgColor} isFading={isFading}>
       <SectionContainer>
         <div className='pt-10 pb-28'>
-          <h3 className='mb-10 text-center text-5xl font-black text-gray-600 lg:text-[2.5rem]'>
-            {t.TEAMTITLE}
-          </h3>
+          <SecttionTitle>{t.TEAMTITLE}</SecttionTitle>
 
           <div className='justify-center8 flex w-full flex-col items-center font-mono'>
             <div className='flex w-full flex-col flex-wrap items-center justify-between md:mt-16 lg:flex-row lg:pl-4'>
