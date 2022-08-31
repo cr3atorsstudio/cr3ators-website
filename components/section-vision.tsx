@@ -4,6 +4,7 @@ import SectionFadeIn from "./section-fade-in";
 import { useEffect } from "react";
 import { scrollFadeIn } from "./utils/scroll-fadeIn";
 import { useLocale } from "../hooks/useLocale";
+import { SecttionTitle } from "./section-title";
 
 type Props = {
   bgColor?: string;
@@ -23,9 +24,7 @@ const SectionVision = ({ bgColor, isFading, title, contents, type }: Props) => {
   return (
     <SectionFadeIn bgColor={bgColor} isFading={isFading}>
       <SectionContainer>
-        <h3 className='mb-10 text-center text-4xl font-black text-gray-600 lg:text-5xl'>
-          {t.VISIONTITLE}
-        </h3>
+        <SecttionTitle>{t.VISIONTITLE}</SecttionTitle>
         <div className='flex w-2/3 justify-center text-2xl lg:text-3xl'>
           <ol className='list-decimal divide-y-2 divide-gray-100 text-center'>
             <li className='p-5 '>{t.VISION_1}</li>
