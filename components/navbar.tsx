@@ -82,6 +82,7 @@ const Navabr = () => {
                   About Us
                 </a>
               </li>
+
               <li>
                 <a
                   href='https://forms.gle/6PhCHWSbhVNZ18mGA'
@@ -90,6 +91,17 @@ const Navabr = () => {
                   target='_blank'
                 >
                   Apply Form
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href='https://creatorsstudio.substack.com/?utm_source=substack&utm_medium=web&utm_campaign=substack_profile&utm_source=%2Fprofile%2F98414099-creators-studio&utm_medium=reader2'
+                  className='block py-2 pr-4 pl-3 text-white hover:text-gray-300 dark:text-white md:bg-transparent md:p-0'
+                  aria-current='page'
+                  target='_blank'
+                >
+                  Newsletter
                 </a>
               </li>
               <div className='cursor-pointer'>
@@ -163,6 +175,30 @@ const Navabr = () => {
                       target='_blank'
                     >
                       <p className=' hover:text-gray-300'>Apply From</p>
+                    </a>
+                  </div>
+                  <div className='flex h-20 cursor-pointer items-center'>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      stroke-width='1.5'
+                      stroke='gray'
+                      className='mr-1 h-6 w-6'
+                    >
+                      <path
+                        stroke-linecap='round'
+                        stroke-linejoin='round'
+                        d='M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3'
+                      />
+                    </svg>
+
+                    <a
+                      href='https://creatorsstudio.substack.com/?utm_source=substack&utm_medium=web&utm_campaign=substack_profile&utm_source=%2Fprofile%2F98414099-creators-studio&utm_medium=reader2'
+                      aria-current='page'
+                      target='_blank'
+                    >
+                      <p className=' hover:text-gray-300'>Newsletter</p>
                     </a>
                   </div>
                 </div>
