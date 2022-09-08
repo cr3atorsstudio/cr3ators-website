@@ -9,12 +9,9 @@ import { SecttionTitle } from "./section-title";
 type Props = {
   bgColor?: string;
   isFading: boolean;
-  title: string;
-  contents: string;
-  type?: string;
 };
 
-const SectionVision = ({ bgColor, isFading, title, contents, type }: Props) => {
+const SectionVision = ({ bgColor, isFading }: Props) => {
   useEffect(() => {
     scrollFadeIn();
   }, []);

@@ -17,5 +17,11 @@ export default {
   VISION_4:
     "Provide a learning environment for womxn who didn't pick 'Web3' for the day",
   VISION_5: "Close the gender gap in 'Web3'",
-  TEAMTITLE: "Core Team Members"
+  TEAMTITLE: "Core Team Members",
+  HIRINGTITLE: "We are seeking new members!",
+  HIRINGCONTENTS_1:
+    "We are looking for new members who share our goal of closing the gender gap in Web3 and creating an inclusive community and are willing to work with us to build the future of Web3!",
+  HIRINGCONTENTS_2:
+    "If you want to create something related to Web3, please join us! We welcome people from all walks of life, such as engineers, designers, marketers and project managers, etc. Let's learn and enjoy together!",
+  APLLY_BUTTON: "Apply Today!",
 };
