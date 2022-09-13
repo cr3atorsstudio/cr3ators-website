@@ -6,7 +6,7 @@ const Intro = () => {
           Empowering <br /> womxn in Web3
         </h1>
         <p className='ml-5 mt-5 font-openSans text-2xl font-normal text-yellow-300 sm:ml-5 md:text-4xl'>
-          A community closing the gender gap in Web3.
+          Close the gender gap before Web3 becomes male-dominated.
         </p>
       </section>
     </div>
