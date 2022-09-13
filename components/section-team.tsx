@@ -16,8 +16,6 @@ type Profile = {
 type Props = {
   bgColor?: string;
   isFading: boolean;
-  title: string;
-  contents: string;
 };
 
 const members: Profile[] = [
@@ -53,7 +51,7 @@ const members: Profile[] = [
   },
 ];
 
-const SectionTeam = ({ bgColor, isFading, title, contents }: Props) => {
+const SectionTeam = ({ bgColor, isFading }: Props) => {
   useEffect(() => {
     scrollFadeIn();
   }, []);

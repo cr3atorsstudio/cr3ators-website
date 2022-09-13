@@ -7,7 +7,6 @@ import { useLocale } from "../hooks/useLocale";
 type Props = {
   bgColor?: string;
   isFading: boolean;
-  title: string;
 };
 
 type Content = {
@@ -44,21 +43,21 @@ const SectionCommunity = ({ bgColor, isFading }: Props) => {
   return (
     <SectionFadeIn bgColor={bgColor} isFading={isFading}>
       <SectionContainer>
-        <h3 className='mb-10 text-center text-4xl font-black text-gray-600 xl:text-[2.5rem]'>
+        <h3 className='mb-10 text-center text-4xl font-black text-gray-600 lg:text-[2.5rem]'>
           {t.COMMUNITYTITLE}
         </h3>
-        <div className='flex flex-col items-center justify-between text-lg xl:flex-row xl:pl-4'>
+        <div className='flex flex-col items-center justify-between text-lg lg:flex-row lg:pl-4'>
           {contents.map((content, index) => {
             return (
               <div
                 key={index}
-                className='mt-14 flex flex-col items-center justify-center px-5 md:self-start lg:px-10 xl:w-2/5'
+                className='mt-14 flex flex-col items-center justify-center px-5 md:self-start lg:w-2/5 lg:px-10'
               >
                 <p className='mb-5 text-5xl'>{content.emoji}</p>
-                <h2 className='text-center text-2xl font-bold text-gray-600 lg:text-lf'>
+                <h2 className='lg:text-lf text-center text-2xl font-bold text-gray-600'>
                   {content.title}
                 </h2>
-                <p className='mt-5 text-center text-xl lg:text-base lg:text-left'>
+                <p className='mt-5 text-justify text-xl lg:text-xl'>
                   {content.description}
                 </p>
               </div>
