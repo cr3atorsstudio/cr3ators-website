@@ -20,16 +20,16 @@ const Navabr = () => {
     <div>
       <nav className='px-2 py-2.5 sm:px-4'>
         <div className='container mx-auto flex flex-wrap items-center justify-between'>
-          <a href='https://www.cr3ators.studio/' className='flex items-center'>
-            <img
-              src={"/logo.jpeg"}
-              className='mr-3 h-6 rounded-lg sm:h-9'
-              alt='CS Logo'
-            />
-            <span className='cursor-pointer self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>
+          <Link href='/' className='flex items-center'>
+            <div className='flex cursor-pointer self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>
+              <img
+                src={"/logo.jpeg"}
+                className='mr-3 h-6 rounded-lg sm:h-9'
+                alt='CS Logo'
+              />
               Creators Studio
-            </span>
-          </a>
+            </div>
+          </Link>
           <div className='cursor-pointer md:hidden'>
             <Link href='/' locale={locale === "ja" ? "en" : "ja"} passHref>
               <p

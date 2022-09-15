@@ -5,6 +5,7 @@ import { useLocale } from "../hooks/useLocale";
 
 const AboutUs = () => {
   const t = useLocale().t;
+  const locale = useLocale().locale;
 
   return (
     <div className='border-1 flex flex-col justify-center rounded-lg border-white bg-white pt-10'>
@@ -55,37 +56,64 @@ const AboutUs = () => {
         </div>
         <div className='mb-10'>
           <p> {t.REFERENCE}</p>
+
           <ul className='ml-10 cursor-pointer list-disc text-blue-500'>
-            <li>
-              <a
-                target='_blank'
-                href='https://www.tokyo-np.co.jp/article/178603'
-              >
-                男女の賃金格差、開示を義務化へ　主要国でも格差大きい日本、女性の働きにくさ要因
-              </a>
-            </li>
-            <li>
-              <a
-                target='_blank'
-                href='https://www2.deloitte.com/content/dam/Deloitte/jp/Documents/technology-media-telecommunications/et/jp-tmt-predictions-2022-07-women-in-tech-jp.pdf'
-              >
-                日本の視点： 日本のテクノロジー業界における
-                女性活躍推進に向けた課題
-              </a>
-            </li>
-            <li>
-              <a
-                target='_blank'
-                href='https://www.eurekalert.org/news-releases/923069'
-              >
-                Who's a CEO? Google image results can shift gender biases
-              </a>
-            </li>
-            <li>
-              <a target='_blank' href='https://www.gemini.com/state-of-crypto'>
-                2022 Global State of Crypto
-              </a>
-            </li>
+            {locale === "ja" ? (
+              <>
+                <li>
+                  <a
+                    target='_blank'
+                    href='https://www.tokyo-np.co.jp/article/178603'
+                  >
+                    男女の賃金格差、開示を義務化へ　主要国でも格差大きい日本、女性の働きにくさ要因
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target='_blank'
+                    href='https://www2.deloitte.com/content/dam/Deloitte/jp/Documents/technology-media-telecommunications/et/jp-tmt-predictions-2022-07-women-in-tech-jp.pdf'
+                  >
+                    日本の視点： 日本のテクノロジー業界における
+                    女性活躍推進に向けた課題
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target='_blank'
+                    href='https://www.eurekalert.org/news-releases/923069'
+                  >
+                    Who's a CEO? Google image results can shift gender biases
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target='_blank'
+                    href='https://www.gemini.com/state-of-crypto'
+                  >
+                    2022 Global State of Crypto
+                  </a>
+                </li>
+              </>
+            ) : (
+              <>
+                <li>
+                  <a
+                    target='_blank'
+                    href='https://www.eurekalert.org/news-releases/923069'
+                  >
+                    Who's a CEO? Google image results can shift gender biases
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target='_blank'
+                    href='https://www.gemini.com/state-of-crypto'
+                  >
+                    2022 Global State of Crypto
+                  </a>
+                </li>
+              </>
+            )}
           </ul>
         </div>
         {/* Hiring Section */}
