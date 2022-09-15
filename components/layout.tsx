@@ -1,9 +1,9 @@
 import Footer from "./footer";
-import SectionCommunity from "./section-community";
-import SectionVision from "./section-vision";
-import SectionTeam from "./section-team";
-import SectionSeparator from "./section-separator";
-import SectionGeneral from "./section-hiring";
+import SectionCommunity from "./sections/section-community";
+import SectionVision from "./sections/section-vision";
+import SectionTeam from "./sections/section-team";
+import SectionSeparator from "./sections/section-separator";
+import SectionGeneral from "./sections/section-hiring";
 
 import Meta from "./utils/meta";
 

@@ -1,8 +1,8 @@
 import SectionContainer from "./section-container";
 import SectionFadeIn from "./section-fade-in";
 import { useEffect } from "react";
-import { scrollFadeIn } from "./utils/scroll-fadeIn";
-import { useLocale } from "../hooks/useLocale";
+import { scrollFadeIn } from "../utils/scroll-fadeIn";
+import { useLocale } from "../../hooks/useLocale";
 
 type Props = {
   bgColor?: string;
