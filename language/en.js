@@ -26,7 +26,7 @@ export default {
     "If you want to create something related to Web3, please join us! We welcome people from all walks of life, such as engineers, designers, marketers and project managers, etc. Let's learn and enjoy together!",
   APLLY_BUTTON: "Apply",
   APLLY_BUTTON_SUPPORTER: "Apply for supporter",
-  ABOUT_US: "Creators Studio has began!",
+  ABOUT_US: "Creators Studio has begun!",
   ABOUT_US_HEADLINE:
     "We have started a Web3 community for woman and gender minorities!",
   WHAT_IS_CS: `Creators Studio is a community for women and gender-minority creators to unlock the next wave in Web3.
