@@ -28,7 +28,7 @@ export default {
   APLLY_BUTTON_SUPPORTER: "Apply for supporter",
   ABOUT_US: "Creators Studio has begun!",
   ABOUT_US_HEADLINE:
-    "We have started a Web3 community for woman and gender minorities!",
+    "We have started a Web3 community for women and gender minorities!",
   WHAT_IS_CS: `Creators Studio is a community for women and gender-minority creators to unlock the next wave in Web3.
   We increase the number of creators who continue to create new value with spirit of innovation.`,
   WHY_SUBTITLE:
