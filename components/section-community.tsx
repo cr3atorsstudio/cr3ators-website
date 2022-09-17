@@ -46,7 +46,7 @@ const SectionCommunity = ({ bgColor, isFading }: Props) => {
         <h3 className='mb-10 text-center text-4xl font-black text-gray-600 lg:text-[2.5rem]'>
           {t.COMMUNITYTITLE}
         </h3>
-        <div className='flex flex-col items-center justify-between text-lg lg:flex-row lg:pl-4'>
+        <div className='mb-20 flex flex-col items-center justify-between text-lg lg:flex-row lg:pl-4'>
           {contents.map((content, index) => {
             return (
               <div
