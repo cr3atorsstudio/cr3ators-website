@@ -1,5 +1,4 @@
 import { AppProps } from "next/app";
-import { Helmet, HelmetProvider } from "react-helmet-async";
 import "../styles/index.css";
 import { usePageView } from "../hooks/usePageView";
 
