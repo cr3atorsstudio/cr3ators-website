@@ -6,6 +6,10 @@ export default class MyDocument extends Document {
       <Html lang='ja'>
         <Head>
           <link
+            href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap'
+            rel='stylesheet'
+          />
+          <link
             href='https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap'
             rel='stylesheet'
           />
