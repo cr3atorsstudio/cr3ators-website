@@ -23,5 +23,5 @@ export default {
     "We are looking for new members who share our goal of closing the gender gap in Web3 and creating an inclusive community and are willing to work with us to build the future of Web3!",
   HIRINGCONTENTS_2:
     "If you want to create something related to Web3, please join us! We welcome people from all walks of life, such as engineers, designers, marketers and project managers, etc. Let's learn and enjoy together!",
-  APLLY_BUTTON: "Apply Today!",
+  APLLY_BUTTON: "Apply",
 };
