@@ -9,7 +9,7 @@ const SectionFadeIn = ({ children, bgColor, isFading }: Props) => {
     <div
       className={`${bgColor ? bgColor : "bg-neutral-50"} ${
         isFading &&
-        "js-show-on-scroll flex w-full justify-center overflow-hidden rounded-lg shadow-lg xl:w-4/5"
+        "js-show-on-scroll flex h-4/5 w-full justify-center overflow-hidden rounded-lg shadow-lg xl:w-4/5"
       }`}
     >
       {children}

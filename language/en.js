@@ -1,5 +1,5 @@
 export default {
-  COMMUNITYTITLE: "What is Creators Studio ?",
+  COMMUNITYTITLE: "What is Creators Studio?",
   SUBTITLE_1: "Get women and gender minorities into Web3",
   SUBTITLE_2: "Help 'Creators' to build their ideas come to life",
   SUBTITLE_3: "Support women who don't have time",
@@ -22,6 +22,6 @@ export default {
   HIRINGCONTENTS_1:
     "We are looking for new members who share our goal of closing the gender gap in Web3 and creating an inclusive community and are willing to work with us to build the future of Web3!",
   HIRINGCONTENTS_2:
-    "If you want to create something related to Web3, please join us! We welcome people from all walks of life, such as engineers, designers, marketers and project managers, etc. Let's learn and enjoy together!",
-  APLLY_BUTTON: "Apply Today!",
+    "If you want to know or create something related to Web3, please join us! We welcome people from all walks of life, such as engineers, designers, marketers and project managers, etc. Let's learn and enjoy together!",
+  APLLY_BUTTON: "Apply",
 };
