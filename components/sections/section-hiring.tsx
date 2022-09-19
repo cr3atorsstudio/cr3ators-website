@@ -1,8 +1,8 @@
 import SectionContainer from "./section-container";
 import SectionFadeIn from "./section-fade-in";
 import { useEffect } from "react";
-import { scrollFadeIn } from "./utils/scroll-fadeIn";
-import { useLocale } from "../hooks/useLocale";
+import { scrollFadeIn } from "../utils/scroll-fadeIn";
+import { useLocale } from "../../hooks/useLocale";
 
 type Props = {
   bgColor?: string;
@@ -20,11 +20,11 @@ const SectionGeneral = ({ bgColor, isFading }: Props) => {
     <SectionFadeIn bgColor={bgColor} isFading={isFading}>
       <SectionContainer>
         <h3 className='mb-10 text-center text-3xl font-black text-gray-600 lg:text-4xl'>
-          {t.HIRINGTITLE}
+          {t.HIRING_TITLE}
         </h3>
-        <div className='flex w-3/4 flex-col items-center justify-between text-xl leading-relaxed lg:flex-row lg:pl-4 lg:text-3xl	'>
-          {t.HIRINGCONTENTS_1} <br /> <br />
-          {t.HIRINGCONTENTS_2}
+        <div className='flex w-3/4 flex-col items-center justify-between text-xl leading-relaxed lg:flex-row lg:pl-4 lg:text-2xl	'>
+          {t.HIRING_CONTENTS_1} <br /> <br />
+          {t.HIRING_CONTENTS_2}
         </div>
         <div className='md: mt-15 mb-10 flex flex-col items-center justify-center lg:mt-28 lg:flex-row'>
           <a

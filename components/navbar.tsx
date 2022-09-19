@@ -20,16 +20,16 @@ const Navabr = () => {
     <div>
       <nav className='px-2 py-2.5 sm:px-4'>
         <div className='container mx-auto flex flex-wrap items-center justify-between'>
-          <a href='https://www.cr3ators.studio/' className='flex items-center'>
-            <img
-              src={"/logo.jpeg"}
-              className='mr-3 h-6 rounded-lg sm:h-9'
-              alt='CS Logo'
-            />
-            <span className='cursor-pointer self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>
+          <Link href='/' className='flex items-center'>
+            <div className='flex cursor-pointer self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>
+              <img
+                src={"/logo.jpeg"}
+                className='mr-3 h-6 rounded-lg sm:h-9'
+                alt='CS Logo'
+              />
               Creators Studio
-            </span>
-          </a>
+            </div>
+          </Link>
           <div className='cursor-pointer md:hidden'>
             <Link href='/' locale={locale === "ja" ? "en" : "ja"} passHref>
               <p
@@ -69,18 +69,11 @@ const Navabr = () => {
           >
             <ul className='mt-4 flex flex-col rounded-lg border border-gray-100 p-4 dark:border-gray-700 md:mt-0 md:flex-row md:space-x-10 md:border-0 md:font-medium lg:space-x-20 lg:text-2xl '>
               <li>
-                <a
-                  href={
-                    locale === "ja"
-                      ? "https://mirror.xyz/rlho.eth/aZbQatqRWiQnF_ZHRLAMWJXNAYSYocCruDRalA2u0wg"
-                      : "https://mirror.xyz/rlho.eth/rsmOBM9CheJ-yhuNqB1y9KdzDiyHDWIN4D22mydSVAM"
-                  }
-                  className='block py-2 pr-4 pl-3 text-white hover:text-gray-300 dark:text-white md:bg-transparent md:p-0'
-                  aria-current='page'
-                  target='_blank'
-                >
-                  About
-                </a>
+                <Link href='/about_us'>
+                  <p className='block cursor-pointer py-2 pr-4 pl-3 text-white hover:text-gray-300 dark:text-white md:bg-transparent md:p-0'>
+                    About
+                  </p>
+                </Link>
               </li>
 
               <li>
@@ -139,20 +132,9 @@ const Navabr = () => {
                         d='M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5'
                       />
                     </svg>
-
-                    <p className=' hover:text-gray-300'>
-                      <a
-                        href={
-                          locale === "ja"
-                            ? "https://mirror.xyz/rlho.eth/aZbQatqRWiQnF_ZHRLAMWJXNAYSYocCruDRalA2u0wg"
-                            : "https://mirror.xyz/rlho.eth/rsmOBM9CheJ-yhuNqB1y9KdzDiyHDWIN4D22mydSVAM"
-                        }
-                        aria-current='page'
-                        target='_blank'
-                      >
-                        About
-                      </a>
-                    </p>
+                    <Link href='/about_us'>
+                      <p className=' hover:text-gray-300'>About</p>
+                    </Link>
                   </div>
                   <div className='flex h-20 cursor-pointer items-center'>
                     <svg

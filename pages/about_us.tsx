@@ -1,19 +1,19 @@
 import { NextPage } from "next";
-import { CodeOfConduct } from "../components/code-of-conduct";
+import AboutUs from "../components/about-us";
 import Navabr from "../components/navbar";
 import SectionContainer from "../components/sections/section-container";
 
-const CodeOfConductPage: NextPage = () => {
+const AboutUsPage: NextPage = () => {
   return (
     <div>
       <Navabr />
       <div className='flex min-h-section justify-center'>
         <SectionContainer>
-          <CodeOfConduct />
+          <AboutUs />
         </SectionContainer>
       </div>
     </div>
   );
 };
 
-export default CodeOfConductPage;
+export default AboutUsPage;
