@@ -78,7 +78,7 @@ const Navabr = () => {
 
               <li>
                 <a
-                  href='https://forms.gle/6PhCHWSbhVNZ18mGA'
+                  href='https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform'
                   className='block py-2 pr-4 pl-3 text-white hover:text-gray-300 dark:text-white md:bg-transparent md:p-0'
                   aria-current='page'
                   target='_blank'
@@ -152,7 +152,7 @@ const Navabr = () => {
                       />
                     </svg>
                     <a
-                      href='https://forms.gle/6PhCHWSbhVNZ18mGA'
+                      href='https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform'
                       aria-current='page'
                       target='_blank'
                     >

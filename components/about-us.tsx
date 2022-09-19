@@ -118,7 +118,6 @@ const AboutUs = () => {
         </div>
         {/* Hiring Section */}
         <Subtitle>🔴 {t.HIRING_TITLE}</Subtitle>
-        <SecttionH3>{t.HIRING_SUBTITLE}</SecttionH3>
         <div className='mb-8'>
           {t.HIRING_CONTENTS_1}
           <br />
@@ -132,20 +131,6 @@ const AboutUs = () => {
               className=' h-15 mx-3 mb-6 w-60 rounded-md border bg-pink-600 py-3 px-12 text-center font-bold text-white transition-colors duration-200 hover:bg-white hover:text-black md:mb-0 md:h-12 md:px-8'
             >
               {t.APLLY_BUTTON}
-            </a>
-          </div>
-        </div>
-        <SecttionH3>{t.SUPPORTER_TITLE}</SecttionH3>
-        <div className='mb-8'>
-          {t.SUPPORTER_TEXT}
-          <br /> <br />
-          <div className='flex flex-col items-center justify-center md:mb-10 lg:flex-row'>
-            <a
-              href='https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform'
-              target='_blank'
-              className=' h-15 mx-3 mb-6 w-60 rounded-md border bg-pink-600 py-3 px-12 text-center font-bold text-white transition-colors duration-200 hover:bg-white hover:text-black md:mb-0 md:h-12 md:px-8'
-            >
-              {t.APLLY_BUTTON_SUPPORTER}
             </a>
           </div>
         </div>
