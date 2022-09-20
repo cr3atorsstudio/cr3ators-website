@@ -77,14 +77,16 @@ const Navabr = () => {
               </li>
 
               <li>
-                <a
-                  href='https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform'
+                <Link
+                  href='/apply_form'
                   className='block py-2 pr-4 pl-3 text-white hover:text-gray-300 dark:text-white md:bg-transparent md:p-0'
                   aria-current='page'
                   target='_blank'
                 >
-                  Apply Form
-                </a>
+                  <p className='block cursor-pointer py-2 pr-4 pl-3 text-white hover:text-gray-300 dark:text-white md:bg-transparent md:p-0'>
+                    Apply Form
+                  </p>
+                </Link>
               </li>
 
               <li>
@@ -151,13 +153,14 @@ const Navabr = () => {
                         d='M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5'
                       />
                     </svg>
-                    <a
-                      href='https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform'
+                    <Link
+                      href='/apply_form'
+                      className='block py-2 pr-4 pl-3 text-white hover:text-gray-300 dark:text-white md:bg-transparent md:p-0'
                       aria-current='page'
                       target='_blank'
                     >
                       <p className=' hover:text-gray-300'>Apply From</p>
-                    </a>
+                    </Link>
                   </div>
                   <div className='flex h-20 cursor-pointer items-center'>
                     <svg
