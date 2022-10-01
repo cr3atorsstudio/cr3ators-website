@@ -3,6 +3,7 @@ import SectionFadeIn from "./section-fade-in";
 import { useEffect } from "react";
 import { scrollFadeIn } from "../utils/scroll-fadeIn";
 import { useLocale } from "../../hooks/useLocale";
+import Link from "next/link";
 
 type Props = {
   bgColor?: string;
@@ -27,13 +28,16 @@ const SectionGeneral = ({ bgColor, isFading }: Props) => {
           {t.HIRING_CONTENTS_2}
         </div>
         <div className='md: mt-15 mb-10 flex flex-col items-center justify-center lg:mt-28 lg:flex-row'>
-          <a
-            href='https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform'
-            target='_blank'
+          <Link
+            href='/apply_form'
             className=' h-15 mx-3 mb-6 mt-20 w-60 rounded-md border bg-pink-600 py-3 px-12 text-center font-bold text-white transition-colors duration-200 hover:bg-white hover:text-black md:mb-0 md:h-12 md:px-8 lg:mt-2'
+            aria-current='page'
+            target='_blank'
           >
-            {t.APLLY_BUTTON}
-          </a>
+            <p className=' h-15 mx-3 mb-6 w-60 rounded-md border bg-pink-600 py-3 px-12 text-center font-bold text-white transition-colors duration-200 hover:bg-white hover:text-black md:mb-0 md:h-12 md:px-8'>
+              {t.APLLY_BUTTON}
+            </p>
+          </Link>
         </div>
       </SectionContainer>
     </SectionFadeIn>

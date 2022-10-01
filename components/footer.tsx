@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useLocale } from "../hooks/useLocale";
+import Link from "next/link";
 
 const Footer = () => {
   const t = useLocale().t;
@@ -12,13 +13,16 @@ const Footer = () => {
             Want to join us? <br /> Join Today!
           </div>
           <div className='md: mt-8 mb-10 flex flex-col items-center lg:mt-10 lg:flex-row'>
-            <a
-              href='https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform'
+            <Link
+              href='/apply_form'
               className='h-18 mb-6 w-48 rounded-md border bg-pink-600 py-3 px-12 text-center font-bold text-white transition-colors duration-200 hover:bg-white hover:text-black md:mb-0 md:h-12 md:px-8'
+              aria-current='page'
               target='_blank'
             >
-              {t.APLLY_BUTTON}
-            </a>
+              <p className=' h-15 mx-3 mb-6 w-60 rounded-md border bg-pink-600 py-3 px-12 text-center font-bold text-white transition-colors duration-200 hover:bg-white hover:text-black md:mb-0 md:h-12 md:px-8'>
+                {t.APLLY_BUTTON}
+              </p>
+            </Link>
           </div>
         </div>
 

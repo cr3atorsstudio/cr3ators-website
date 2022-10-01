@@ -2,6 +2,7 @@ import { SecttionTitle } from "./sections/section-title";
 import { Subtitle } from "./typography/subtitle";
 import { SecttionH3 } from "./typography/section-h3";
 import { useLocale } from "../hooks/useLocale";
+import Link from "next/link";
 
 const AboutUs = () => {
   const t = useLocale().t;
@@ -125,13 +126,16 @@ const AboutUs = () => {
           <br />
           <br />
           <div className='flex flex-col items-center justify-center md:mb-10 lg:flex-row'>
-            <a
-              href='https://t.co/8oPQLYmjRV'
+            <Link
+              href='/apply_form'
+              className='block py-2 pr-4 pl-3 text-white hover:text-gray-300 dark:text-white md:bg-transparent md:p-0'
+              aria-current='page'
               target='_blank'
-              className=' h-15 mx-3 mb-6 w-60 rounded-md border bg-pink-600 py-3 px-12 text-center font-bold text-white transition-colors duration-200 hover:bg-white hover:text-black md:mb-0 md:h-12 md:px-8'
             >
-              {t.APLLY_BUTTON}
-            </a>
+              <p className=' h-15 mx-3 mb-6 w-60 rounded-md border bg-pink-600 py-3 px-12 text-center font-bold text-white transition-colors duration-200 hover:bg-white hover:text-black md:mb-0 md:h-12 md:px-8'>
+                {t.APLLY_BUTTON}
+              </p>
+            </Link>
           </div>
         </div>
         {/* What we do Section */}
