@@ -1,8 +1,8 @@
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export const useWindowSize = (): number[] => {
   const [size, setSize] = useState([0, 0]);
-  useLayoutEffect(() => {
+  useEffect(() => {
     const updateSize = (): void => {
       setSize([window.innerWidth, window.innerHeight]);
     };
