@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { useLocale } from "../hooks/useLocale";
 import { useWindowSize } from "../hooks/useWindowSite";
 import Link from "next/link";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 const Navabr = () => {
   const [isMenuOpen, setOpenMenu] = useState(false);
@@ -114,6 +115,9 @@ const Navabr = () => {
                     {locale === "ja" ? "EN" : "JA"}
                   </p>
                 </Link>
+              </div>
+              <div>
+                <ConnectButton></ConnectButton>
               </div>
             </ul>
           </div>
