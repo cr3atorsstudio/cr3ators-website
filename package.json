@@ -11,6 +11,7 @@
     "@types/react-helmet": "^6.1.5",
     "classnames": "^2.3.1",
     "date-fns": "^2.28.0",
+    "dotenv": "^16.0.3",
     "gray-matter": "^4.0.3",
     "intl": "^1.2.5",
     "next": "latest",
