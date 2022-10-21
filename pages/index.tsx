@@ -6,7 +6,8 @@ import Navbar from "../components/navbar";
 import '@rainbow-me/rainbowkit/styles.css';
 import {
   getDefaultWallets,
-  RainbowKitProvider,
+  lightTheme,
+  RainbowKitProvider
 } from '@rainbow-me/rainbowkit';
 import {
   chain,
@@ -39,7 +40,10 @@ export default function Index() {
 
   return (
     <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains}>
+      <RainbowKitProvider chains={chains} theme={lightTheme({
+        accentColor: 'rgb(219 39 119)', // bg-pink-600 in tailwind
+        borderRadius: 'large'
+      })}>
         <Layout>
           <Head>
             <title>Creators Studio</title>

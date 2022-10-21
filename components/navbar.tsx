@@ -103,8 +103,9 @@ const Navabr = () => {
               <div className='cursor-pointer'>
                 <Link href='/' locale={locale === "ja" ? "en" : "ja"} passHref>
                   <p
-                    className={`rounded-full ${locale === "ja" ? "bg-blue-500" : "bg-red-400"
+                    className={` ${locale === "ja" ? "bg-blue-500" : "bg-red-400"
                       }  py-2 px-4 font-bold text-white`}
+                    style={{ borderRadius: `var(--rk-radii-connectButton)` }}
                   >
                     {locale === "ja" ? "EN" : "JA"}
                   </p>
