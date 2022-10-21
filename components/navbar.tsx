@@ -42,6 +42,10 @@ const Navabr = () => {
               </p>
             </Link>
           </div>
+          <div className='cursor-pointer md:hidden'>
+            <ConnectButton />
+          </div>
+
           <button
             data-collapse-toggle='navbar-default'
             type='button'
@@ -112,7 +116,7 @@ const Navabr = () => {
                 </Link>
               </div>
               <div>
-                <ConnectButton></ConnectButton>
+                <ConnectButton />
               </div>
             </ul>
           </div>
