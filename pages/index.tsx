@@ -41,7 +41,7 @@ export default function Index() {
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains} theme={lightTheme({
-        accentColor: 'rgb(219 39 119)', // bg-pink-600 in tailwind
+        accentColor: `var(--bg-connect-wallet-btn)`,
         borderRadius: 'large'
       })}>
         <Layout>
