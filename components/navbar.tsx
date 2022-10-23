@@ -104,7 +104,7 @@ const Navabr = () => {
                 <Link href='/' locale={locale === "ja" ? "en" : "ja"} passHref>
                   <p
                     className={` ${locale === "ja" ? "bg-blue-500" : "bg-red-400"
-                      }  py-2 px-4 font-bold text-white`}
+                      }  lg:py-1 md:py-2 px-4 font-bold text-white`}
                     style={{ borderRadius: `var(--rk-radii-connectButton)` }}
                   >
                     {locale === "ja" ? "EN" : "JA"}
