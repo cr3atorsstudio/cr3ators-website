@@ -7,3 +7,18 @@ Creators StudioはWeb3女性及びジェンダーマイノリティクリエイ�
 
 Creators Studio is a community for women and gender-minority creators to unlock the next wave in Web3.
 We increase the number of creators who continue to create new value with spirit of innovation.
+
+## Installation
+```bash
+npm install
+```
+
+## Usage
+### Set environments
+1. Copy .env.example and rename to .env
+2. Overwrite each environment variables in the .env file
+
+### Development
+```bash
+npm run dev
+```
