@@ -7,14 +7,15 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@rainbow-me/rainbowkit": "^0.7.1",
+    "@rainbow-me/rainbowkit": "^0.7.4",
     "@types/react-helmet": "^6.1.5",
     "classnames": "^2.3.1",
     "date-fns": "^2.28.0",
     "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
     "gray-matter": "^4.0.3",
     "intl": "^1.2.5",
-    "next": "latest",
+    "next": "^12.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intl": "^6.0.8",

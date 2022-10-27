@@ -1,5 +1,5 @@
 export const scrollFadeIn = () => {
-  const callback = (entries) => {
+  const callback = (entries: any[]) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("animate-slideIn");

@@ -60,7 +60,7 @@ export default {
   SUPPORTER_TEXT:
     "まずはWeb3はなんぞや？から学びたい方、プロジェクトの参加は難しそう方はサポーターとしても参加いただけます！",
   WHAT_WE_DO_TITLE: "具体的な活動内容",
-  WHAT_WE_DO_SUBTITLE: "作りながら学ぶ機会の提供",
+  WHAT_WE_DO_1_SUBTITLE: "作りながら学ぶ機会の提供",
   WHAT_WE_DO_1_TEXT: "様々な学ぶ機会を提供します。",
   WHAT_WE_DO_1_LIST_1: "Twitter Spaceでの交流",
   WHAT_WE_DO_1_LIST_2: "他コミュニティとの交流",
