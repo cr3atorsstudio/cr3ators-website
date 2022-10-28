@@ -3,6 +3,7 @@ import Navabr from "../components/navbar";
 
 const ApplyForm: NextPage = () => {
   const redirect = () => {
+    // @ts-ignore
     document.getElementById("my-google-form").onload = function () {
       window.document.location = "https://discord.gg/23sCnA3Edt";
     };

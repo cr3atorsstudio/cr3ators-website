@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
+    "strict": true,
     "target": "es5",
     "module": "esnext",
     "jsx": "preserve",
-    "strict": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
