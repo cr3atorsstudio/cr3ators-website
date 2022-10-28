@@ -6,7 +6,6 @@ import SectionContainer from "../components/sections/section-container";
 const CodeOfConductPage: NextPage = () => {
   return (
     <div>
-      <Navabr />
       <div className='flex min-h-section justify-center'>
         <SectionContainer>
           <CodeOfConduct />

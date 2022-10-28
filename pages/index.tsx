@@ -1,10 +1,8 @@
 import Intro from "../components/intro";
 import Layout from "../components/layout";
 import Head from "next/head";
-import Navbar from "../components/navbar";
 
 import "@rainbow-me/rainbowkit/styles.css";
-
 
 export default function Index() {
   return (
@@ -18,7 +16,6 @@ export default function Index() {
           rel='stylesheet'
         />
       </Head>
-      <Navbar />
       <Intro />
     </Layout>
   );

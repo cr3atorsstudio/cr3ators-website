@@ -10,7 +10,6 @@ const ApplyForm: NextPage = () => {
   };
   return (
     <div>
-      <Navabr />
       <div className='md:m-20'>
         <iframe
           src='https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform?embedded=true'
