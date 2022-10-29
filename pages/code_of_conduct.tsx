@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import CodeOfConduct from "../components/CodeOfConduct";
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 import SectionContainer from "../components/sections/section-container";
 
 const CodeOfConductPage: NextPage = () => {
