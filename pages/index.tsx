@@ -1,7 +1,7 @@
-import Intro from "../components/intro";
-import Layout from "../components/layout";
+import Intro from "../components/Intro";
+import HomeBody from "../components/HomeBody";
 import Head from "next/head";
-import Navbar from "../components/navbar";
+import Layout from "../components/Layout";
 
 export default function Index() {
   return (
@@ -15,8 +15,8 @@ export default function Index() {
           rel='stylesheet'
         />
       </Head>
-      <Navbar />
       <Intro />
+      <HomeBody />
     </Layout>
   );
 }

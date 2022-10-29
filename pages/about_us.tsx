@@ -1,18 +1,17 @@
 import { NextPage } from "next";
-import AboutUs from "../components/about-us";
-import Navabr from "../components/navbar";
+import AboutUs from "../components/AboutUs";
 import SectionContainer from "../components/sections/section-container";
+import Layout from "../components/Layout";
 
 const AboutUsPage: NextPage = () => {
   return (
-    <div>
-      <Navabr />
+    <Layout>
       <div className='flex min-h-section justify-center'>
         <SectionContainer>
           <AboutUs />
         </SectionContainer>
       </div>
-    </div>
+    </Layout>
   );
 };
 

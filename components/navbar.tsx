@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { useLocale } from "../hooks/useLocale";
 import { useWindowSize } from "../hooks/useWindowSite";
 import Link from "next/link";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 const Navabr = () => {
   const [isMenuOpen, setOpenMenu] = useState(false);
@@ -41,6 +42,7 @@ const Navabr = () => {
               </p>
             </Link>
           </div>
+
           <button
             data-collapse-toggle='navbar-default'
             type='button'
@@ -102,13 +104,17 @@ const Navabr = () => {
               <div className='cursor-pointer'>
                 <Link href='/' locale={locale === "ja" ? "en" : "ja"} passHref>
                   <p
-                    className={`rounded-full ${
+                    className={` ${
                       locale === "ja" ? "bg-blue-500" : "bg-red-400"
-                    }  py-2 px-4 font-bold text-white`}
+                    }  px-4 font-bold text-white md:py-2 lg:py-1`}
+                    style={{ borderRadius: `var(--rk-radii-connectButton)` }}
                   >
                     {locale === "ja" ? "EN" : "JA"}
                   </p>
                 </Link>
+              </div>
+              <div>
+                <ConnectButton />
               </div>
             </ul>
           </div>
@@ -118,8 +124,8 @@ const Navabr = () => {
               className={`absolute top-0 right-0 z-10 flex min-h-fit min-w-full flex-row justify-end md:hidden`}
             >
               <div className='w-full rounded-md bg-white'>
-                <div className='flex flex-row items-center justify-evenly align-middle font-bold'>
-                  <div className='flex h-20 cursor-pointer items-center'>
+                <div className='flex flex-col items-center justify-evenly align-middle font-bold'>
+                  <div className='flex h-16 cursor-pointer items-center'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       fill='none'
@@ -138,7 +144,7 @@ const Navabr = () => {
                       <p className=' hover:text-gray-300'>About</p>
                     </Link>
                   </div>
-                  <div className='flex h-20 cursor-pointer items-center'>
+                  <div className='flex h-16 cursor-pointer items-center'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       fill='none'
@@ -162,7 +168,7 @@ const Navabr = () => {
                       <p className=' hover:text-gray-300'>Apply From</p>
                     </Link>
                   </div>
-                  <div className='flex h-20 cursor-pointer items-center'>
+                  <div className='flex h-16 cursor-pointer items-center'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       fill='none'
@@ -185,6 +191,9 @@ const Navabr = () => {
                     >
                       <p className=' hover:text-gray-300'>Newsletter</p>
                     </a>
+                  </div>
+                  <div className='flex h-16 cursor-pointer items-center'>
+                    <ConnectButton />
                   </div>
                 </div>
               </div>

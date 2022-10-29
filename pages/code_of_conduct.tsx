@@ -1,18 +1,17 @@
 import { NextPage } from "next";
-import { CodeOfConduct } from "../components/code-of-conduct";
-import Navabr from "../components/navbar";
+import CodeOfConduct from "../components/CodeOfConduct";
+import Layout from "../components/Layout";
 import SectionContainer from "../components/sections/section-container";
 
 const CodeOfConductPage: NextPage = () => {
   return (
-    <div>
-      <Navabr />
+    <Layout>
       <div className='flex min-h-section justify-center'>
         <SectionContainer>
           <CodeOfConduct />
         </SectionContainer>
       </div>
-    </div>
+    </Layout>
   );
 };
 
