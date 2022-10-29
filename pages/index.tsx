@@ -1,4 +1,4 @@
-import Intro from "../components/Intro";
+import Intro from "../components/intro";
 import HomeBody from "../components/HomeBody";
 import Head from "next/head";
 import Layout from "../components/layout";
