@@ -34,8 +34,9 @@ const Navabr = () => {
           <div className='cursor-pointer md:hidden'>
             <Link href='/' locale={locale === "ja" ? "en" : "ja"} passHref>
               <p
-                className={`rounded-full ${locale === "ja" ? "bg-blue-500" : "bg-red-400"
-                  }  py-2 px-4 font-bold text-white`}
+                className={`rounded-full ${
+                  locale === "ja" ? "bg-blue-500" : "bg-red-400"
+                }  py-2 px-4 font-bold text-white`}
               >
                 {locale === "ja" ? "EN" : "JA"}
               </p>
@@ -103,8 +104,9 @@ const Navabr = () => {
               <div className='cursor-pointer'>
                 <Link href='/' locale={locale === "ja" ? "en" : "ja"} passHref>
                   <p
-                    className={` ${locale === "ja" ? "bg-blue-500" : "bg-red-400"
-                      }  lg:py-1 md:py-2 px-4 font-bold text-white`}
+                    className={` ${
+                      locale === "ja" ? "bg-blue-500" : "bg-red-400"
+                    }  px-4 font-bold text-white md:py-2 lg:py-1`}
                     style={{ borderRadius: `var(--rk-radii-connectButton)` }}
                   >
                     {locale === "ja" ? "EN" : "JA"}

@@ -9,7 +9,7 @@ import {
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
-import Navbar from "../components/navbar";
+import "@rainbow-me/rainbowkit/styles.css";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   // Google Analytics の PV をカウントするイベント
@@ -41,7 +41,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           borderRadius: "large",
         })}
       >
-        <Navbar />
         <Component {...pageProps} />
       </RainbowKitProvider>
     </WagmiConfig>

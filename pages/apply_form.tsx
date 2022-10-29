@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import Navabr from "../components/navbar";
+import Layout from "../components/Layout";
 
 const ApplyForm: NextPage = () => {
   const redirect = () => {
@@ -9,7 +9,7 @@ const ApplyForm: NextPage = () => {
     };
   };
   return (
-    <div>
+    <Layout>
       <div className='md:m-20'>
         <iframe
           src='https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform?embedded=true'
@@ -20,7 +20,7 @@ const ApplyForm: NextPage = () => {
           Loading…
         </iframe>
       </div>
-    </div>
+    </Layout>
   );
 };
 

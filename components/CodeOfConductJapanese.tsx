@@ -2,7 +2,7 @@ import { useLocale } from "../hooks/useLocale";
 import { SecttionH2 } from "./typography/section-h2";
 import { SecttionTitle } from "./sections/section-title";
 
-export const CodeOfConductJapanese = () => {
+const CodeOfConductJapanese = () => {
   const locale = useLocale().locale;
   return (
     <div className='border-1 flex flex-col justify-center rounded-lg border-white bg-white pt-10'>
@@ -73,3 +73,5 @@ export const CodeOfConductJapanese = () => {
     </div>
   );
 };
+
+export default CodeOfConductJapanese;

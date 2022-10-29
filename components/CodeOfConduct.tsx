@@ -1,9 +1,7 @@
 import { useLocale } from "../hooks/useLocale";
-import { CodeOfConductJapanese } from "./code-of-conduct-japanese";
-import { SecttionH2 } from "./typography/section-h2";
-import { SecttionTitle } from "./sections/section-title";
+import CodeOfConductJapanese from "./CodeOfConductJapanese";
 
-export const CodeOfConduct = () => {
+const CodeOfConduct = () => {
   const locale = useLocale().locale;
   if (locale === "ja") {
     return <CodeOfConductJapanese />;
@@ -15,3 +13,5 @@ export const CodeOfConduct = () => {
 
   return <CodeOfConductJapanese />;
 };
+
+export default CodeOfConduct;
