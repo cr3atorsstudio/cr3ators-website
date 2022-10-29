@@ -1,4 +1,4 @@
-import Footer from "./Footer";
+import Footer from "./footer";
 import SectionCommunity from "./sections/section-community";
 import SectionVision from "./sections/section-vision";
 import SectionTeam from "./sections/section-team";
