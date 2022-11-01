@@ -23,11 +23,6 @@ const Navabr = () => {
         <div className='container mx-auto flex flex-wrap items-center justify-between'>
           <Link href='/' className='flex items-center'>
             <div className='flex cursor-pointer self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>
-              <img
-                src={"/logo.jpeg"}
-                className='mr-3 h-6 rounded-lg sm:h-9'
-                alt='CS Logo'
-              />
               Creators Studio
             </div>
           </Link>

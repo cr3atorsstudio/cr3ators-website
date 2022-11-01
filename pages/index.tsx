@@ -1,11 +1,11 @@
 import Intro from "../components/intro";
 import HomeBody from "../components/HomeBody";
 import Head from "next/head";
-import Layout from "../components/layout";
+import Footer from "../components/footer";
 
 export default function Index() {
   return (
-    <Layout>
+    <>
       <Head>
         <title>Creators Studio</title>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
@@ -17,6 +17,7 @@ export default function Index() {
       </Head>
       <Intro />
       <HomeBody />
-    </Layout>
+      <Footer />
+    </>
   );
 }
