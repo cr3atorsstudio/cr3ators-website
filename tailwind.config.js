@@ -4,18 +4,28 @@ module.exports = {
     extend: {
       screens: {},
       fontFamily: {
-        workSans: ["Work Sans"],
-        roboto: ["Roboto", 'Noto Sans JP', '游ゴシック体', '游ゴシック', 'Yu Gothic', 'メイリオ'],
-        oswald: ["Oswald"],
-        openSans: ["Open Sans"],
-        italic: ["Libre Baskerville"],
+        "sans-serif": ["Poppins"],
+        "hiragino": ["Hiragino Kaku Gothic ProN", "Hiragino Sans"]
       },
       colors: {
-        "accent-1": "#FAFAFA",
-        "accent-2": "#EAEAEA",
-        "accent-7": "#333",
-        success: "#0070f3",
-        cyan: "#79FFE1",
+        transparent: "transparent",
+        current: "currentColor",
+        "white": "#FFFFFF",
+        "gray": {
+          300: "#E8E8E8",
+          700: "#696969",
+          900: "#282828"
+        },
+        "yellow": {
+          50: "#FEF9E5",
+          900: "#FB7C1F"
+        },
+        "blue": {
+          50: "#E5F5FC"
+        },
+        "purple": {
+          50: "#F5F1FF"
+        }
       },
       spacing: {
         28: "7rem",
