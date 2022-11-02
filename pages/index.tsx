@@ -67,7 +67,7 @@ export default function Index() {
         <meta property='og:image' content='/favicon/creatorsstudio.jpeg' />
       </Head>
 
-      <nav className="flex items-center sticky top-0 z-40 w-full flex-none transition-colors lg:z-50 lg:border-b shadow p-4">
+      <nav className="flex items-center sticky top-0 z-40 w-full flex-none transition-colors lg:z-50 lg:border-b shadow p-4 px-8">
         <Link href='/' className="flex-none">
           <span className='text-2xl font-sans-serif font-bold text-gray-900 cursor-pointer'>
             CREATORS STUDIO
