@@ -30,6 +30,39 @@ export default function Index() {
           href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap'
           rel='stylesheet'
         />
+        <link
+          rel='apple-touch-icon'
+          sizes='180x180'
+          href='/favicon/creatorsstudio.jpeg'
+        />
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='32x32'
+          href='/favicon/creatorsstudio.jpeg'
+        />
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='16x16'
+          href='/favicon/creatorsstudio.jpeg'
+        />
+        <link rel='manifest' href='/favicon/site.webmanifest' />
+        <link
+          rel='mask-icon'
+          href='/favicon/creatorsstudio.jpegg'
+          color='#000000'
+        />
+        <link rel='shortcut icon' href='/favicon/creatorsstudio.jpeg' />
+        <meta name='msapplication-TileColor' content='#000000' />
+        <meta name='msapplication-config' content='/favicon/browserconfig.xml' />
+        <meta name='theme-color' content='#000' />
+        <link rel='alternate' type='application/rss+xml' href='/feed.xml' />
+        <meta
+          name='description'
+          content={`Welcome to Creators Studio! We are the web3 community for womxn `}
+        />
+        <meta property='og:image' content='/favicon/creatorsstudio.jpegg' />
       </Head>
       <div>
       <nav className='px-2 py-2.5 sm:px-4'>

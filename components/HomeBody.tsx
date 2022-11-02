@@ -1,9 +1,6 @@
-import Meta from "./utils/meta";
-
 const HomeBody = () => {
   return (
     <>
-      <Meta />
     </>
   );
 };
