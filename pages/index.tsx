@@ -50,7 +50,7 @@ export default function Index() {
         <link rel='manifest' href='/favicon/site.webmanifest' />
         <link
           rel='mask-icon'
-          href='/favicon/creatorsstudio.jpegg'
+          href='/favicon/creatorsstudio.jpeg'
           color='#000000'
         />
         <link rel='shortcut icon' href='/favicon/creatorsstudio.jpeg' />
