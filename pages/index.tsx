@@ -1,12 +1,13 @@
-import Intro from "../components/intro";
-import HomeBody from "../components/HomeBody";
+// import Intro from "../components/intro";
+// import HomeBody from "../components/HomeBody";
 import Head from "next/head";
-import Footer from "../components/footer";
+// import Footer from "../components/footer";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Link from "next/link";
 import { useLocale } from "../hooks/useLocale";
 import { useCallback, useEffect, useState } from "react";
 import { useWindowSize } from "../hooks/useWindowSite";
+import Image from 'next/image'
 
 export default function Index() {
   const [isMenuOpen, setOpenMenu] = useState(false);
@@ -30,6 +31,7 @@ export default function Index() {
           href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap'
           rel='stylesheet'
         />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
         <link
           rel='apple-touch-icon'
           sizes='180x180'
@@ -62,27 +64,45 @@ export default function Index() {
           name='description'
           content={`Welcome to Creators Studio! We are the web3 community for womxn `}
         />
-        <meta property='og:image' content='/favicon/creatorsstudio.jpegg' />
+        <meta property='og:image' content='/favicon/creatorsstudio.jpeg' />
       </Head>
-      <div>
-      <nav className='px-2 py-2.5 sm:px-4'>
-        <div className='container mx-auto flex flex-wrap items-center justify-between'>
-          <Link href='/' className='flex items-center'>
-            <div className='flex cursor-pointer self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>
-              Creators Studio
-            </div>
-          </Link>
-          <div className='cursor-pointer md:hidden'>
+
+      <nav className="flex items-center sticky top-0 z-40 w-full flex-none transition-colors lg:z-50 lg:border-b shadow p-4">
+        <Link href='/' className="flex-none">
+          <span className='text-2xl font-sans-serif font-bold text-gray-900 cursor-pointer'>
+            CREATORS STUDIO
+          </span>
+        </Link>
+
+        <div className="flex items-center ml-auto columns-3 gap-4 place-content-around">
+          <Image src="/twitter.svg" alt="Twitter Logo" width={29.72} height={24.14} />
+          <Image src="/instagram.svg" alt="Instagram Logo" width={28.55} height={28.55} />
+          <Image src="/wallet.svg" alt="Instagram Logo" width={30} height={30} />
+
+          <button className="
+            font-sans-serif text-base font-bold text-gray-900 rounded-full border-black border px-[20px] py-[14px]
+            bg-gradient-to-r from-[#FFADDD] to-[#B6E6FF]
+          ">
+            Join Community
+          </button>
+
+          <div className="gap-0">
             <Link href='/' locale={locale === "ja" ? "en" : "ja"} passHref>
-              <p
-                className={`rounded-full ${
-                  locale === "ja" ? "bg-blue-500" : "bg-red-400"
-                }  py-2 px-4 font-bold text-white`}
-              >
-                {locale === "ja" ? "EN" : "JA"}
-              </p>
+              <span className={locale === "ja" ? "font-sans-serif text-gray-900 select-none" : "font-sans-serif text-gray-500 select-none" }>
+                JP
+              </span>
+            </Link>
+            &nbsp;&#47;&nbsp;
+            <Link href='/' locale={locale === "ja" ? "en" : "ja"} passHref>
+              <span className={locale === "ja" ? "font-sans-serif text-gray-500 select-none" : "font-sans-serif text-gray-900 select-none"}>
+                EN
+              </span>
             </Link>
           </div>
+        </div>
+    </nav>
+
+        <div className='container mx-auto flex flex-wrap items-center justify-between'>
 
           <button
             data-collapse-toggle='navbar-default'
@@ -142,18 +162,6 @@ export default function Index() {
                   Newsletter
                 </a>
               </li>
-              <div className='cursor-pointer'>
-                <Link href='/' locale={locale === "ja" ? "en" : "ja"} passHref>
-                  <p
-                    className={` ${
-                      locale === "ja" ? "bg-blue-500" : "bg-red-400"
-                    }  px-4 font-bold text-white md:py-2 lg:py-1`}
-                    style={{ borderRadius: `var(--rk-radii-connectButton)` }}
-                  >
-                    {locale === "ja" ? "EN" : "JA"}
-                  </p>
-                </Link>
-              </div>
               <div>
                 <ConnectButton />
               </div>
@@ -243,11 +251,9 @@ export default function Index() {
             <></>
           )}
         </div>
-      </nav>
-    </div>
-      <Intro />
+      {/* <Intro />
       <HomeBody />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
