@@ -67,14 +67,14 @@ export default function Index() {
         <meta property='og:image' content='/favicon/creatorsstudio.jpeg' />
       </Head>
 
-      <nav className="flex items-center sticky top-0 z-40 w-full flex-none transition-colors lg:z-50 lg:border-b shadow p-4 px-8">
+      <header className="flex items-center sticky top-0 z-40 w-full flex-none transition-colors lg:z-50 lg:border-b shadow p-4 px-8">
         <Link href='/' className="flex-none">
           <span className='text-2xl font-sans-serif font-bold text-gray-900 cursor-pointer'>
             CREATORS STUDIO
           </span>
         </Link>
 
-        <div className="flex items-center ml-auto columns-3 gap-4 place-content-around">
+        <nav className="flex items-center ml-auto columns-3 gap-4 place-content-around">
           <Image src="/twitter.svg" alt="Twitter Logo" width={29.72} height={24.14} />
           <Image src="/instagram.svg" alt="Instagram Logo" width={28.55} height={28.55} />
           {/* Connect Walletさせる */}
@@ -100,9 +100,8 @@ export default function Index() {
               </span>
             </Link>
           </div>
-        </div>
-    </nav>
-
+        </nav>
+    </header>
       {/* <Intro />
       <HomeBody />
       <Footer /> */}
