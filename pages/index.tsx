@@ -67,7 +67,7 @@ export default function Index() {
         <meta property='og:image' content='/favicon/creatorsstudio.jpeg' />
       </Head>
 
-      <header className="flex items-center sticky top-0 z-40 w-full flex-none transition-colors lg:z-50 lg:border-b shadow p-4 px-8">
+      <header className="flex items-center sticky top-0 z-40 w-full flex-none bg-white shadow p-4 px-8">
         <Link href='/' className="flex-none">
           <span className='text-2xl font-sans-serif font-bold text-gray-900 cursor-pointer'>
             CREATORS STUDIO
@@ -102,8 +102,33 @@ export default function Index() {
           </div>
         </nav>
       </header>
-      <main>
-        <section></section>
+      <main className="mx-auto">
+        <section className="p-10">
+          <div className="flex flex-wrap justify-between content-center">
+            <div className="my-auto">
+            <h1 className="font-sans-serif">
+              <span className="block text-[80px] leading-tight font-semibold">
+                Empowering <br />
+                womxn in Web3
+              </span>
+            </h1>
+            <section className="block w-30 text-2xl my-6">
+              <p>Close the gender gap before Web3 becomes male-dominated.</p>
+            </section>
+            <button className="
+              font-sans-serif text-2xl font-bold text-gray-900 rounded-full border-black border px-[28px] py-[18px]
+              bg-gradient-to-r from-[#FFADDD] to-[#B6E6FF]
+              flex items-center justify-between w-80
+            ">
+              Join Community
+              <Image className="ml-8" src="/arrow-right.svg" alt="right arrow" width={24} height={24} />
+            </button>
+            </div>
+            <div>
+            <img src="https://fakeimg.pl/625x580/" width={625} height={580}/>
+            </div>
+          </div>
+        </section>
         <section>Web3≠男性</section>
         <section>What we do?</section>
         <section>Stay tuned!</section>
