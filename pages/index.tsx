@@ -101,7 +101,7 @@ export default function Index() {
             </Link>
           </div>
         </nav>
-    </header>
+      </header>
       {/* <Intro />
       <HomeBody />
       <Footer /> */}
