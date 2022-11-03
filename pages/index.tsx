@@ -102,6 +102,16 @@ export default function Index() {
           </div>
         </nav>
       </header>
+      <main>
+        <section></section>
+        <section>Web3≠男性</section>
+        <section>What we do?</section>
+        <section>Stay tuned!</section>
+        <section>Roadmap</section>
+        <section>Team</section>
+        <section>Creators Studio News</section>
+      </main>
+      <footer></footer>
       {/* <Intro />
       <HomeBody />
       <Footer /> */}
