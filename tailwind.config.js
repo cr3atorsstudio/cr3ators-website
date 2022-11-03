@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         transparent: "transparent",
         current: "currentColor",
+        brown: "#3E2723",
         "white": "#FFFFFF",
         "gray": {
           300: "#E8E8E8",
@@ -26,7 +27,7 @@ module.exports = {
         },
         "purple": {
           50: "#F5F1FF"
-        }
+        },
       },
       spacing: {
         28: "7rem",

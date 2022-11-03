@@ -129,7 +129,19 @@ export default function Index() {
             </div>
           </div>
         </section>
-        <section>Web3≠男性</section>
+        <section>
+          <div className="flex justify-around bg-yellow-50 px-40 py-32 text-brown">
+            <div className="">
+              <Image src="/20percent.svg" width={290} height={135} />
+            </div>
+            <div className="w-[600px]">
+              <section className="text-xl">
+                <h1 className="text-bold text-4xl mb-3">Web3≠男性</h1>
+                <p>Web3の世界でもジェンダーギャップが発生しています。女性の暗号資産保有率は2割程度にとどまっています。ステレオタイプができるとそのイメージを払拭することは困難です。しかし「Web3＝男性」というステレオタイプが現実のものとなりつつあります。</p>
+              </section>
+            </div>
+          </div>
+        </section>
         <section>What we do?</section>
         <section>Stay tuned!</section>
         <section>Roadmap</section>
