@@ -154,14 +154,14 @@ export default function Index() {
 
             <section>
               <div className="bg-white rounded-lg p-8 mb-10 text-m grid grid grid-flow-col">
-                  <div className="">
-                    <h1 className="font-sans-serif text-4xl font-bold mb-4">Help “Creators” to build their ideas come to life</h1>
-                    <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-                  </div>
-                  <div className="rounded-lg bg-[#FFC2E6] w-[500px] p-[21px]">
-                    <img src="https://fakeimg.pl/458x420/" className="" width={458} height={420} />
-                  </div>
+                <div className="">
+                  <h1 className="font-sans-serif text-4xl font-bold mb-4">Help “Creators” to build their ideas come to life</h1>
+                  <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
                 </div>
+                <div className="rounded-lg bg-[#FFC2E6] w-[500px] p-[21px]">
+                  <img src="https://fakeimg.pl/458x420/" className="" width={458} height={420} />
+                </div>
+              </div>
             </section>
 
             <div className="flex">
