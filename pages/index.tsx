@@ -191,7 +191,30 @@ export default function Index() {
 
           </div>
         </section>
-        <section>Stay tuned!</section>
+        <section>
+          <div className="bg-white text-gray-900 pt-10">
+            <div className="w-5/6 mx-auto p-10 rounded-3xl bg-gradient-to-r from-[#d6f0ff]/75 via-[#ffe0a4]/75 to-[#f5a5d4]/75 grid grid-flow-col">
+              <div>
+                <h1 className="font-sans-serif text-6xl font-bold text-center mb-4">Stay tuned!</h1>
+                <ul className="list-disc ml-4">
+                  <li>Web3はわからないけど、創作活動にNFTをとりいれてみたい</li>
+                  <li>Web3で活躍できる人材になりたい</li>
+                  <li>情報収集を始めたい</li>
+                </ul>
+                <p className="mt-4">こんな方はコミュニティに参加してみよう！</p>
+                <button className="
+                  font-sans-serif text-base font-bold text-gray-900 rounded-full border-black border px-[20px] py-[14px]
+                  bg-white mt-10
+                ">
+                  Join Community
+                </button>
+              </div>
+              <div className="w-[500px] p-lg">
+                <img src="https://fakeimg.pl/410x410/" className="" width={410} height={410} />
+              </div>
+            </div>
+          </div>
+        </section>
         <section>Roadmap</section>
         <section>Team</section>
         <section>Creators Studio News</section>
