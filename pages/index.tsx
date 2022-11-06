@@ -216,7 +216,77 @@ export default function Index() {
             </div>
           </div>
         </section>
-        <section>Roadmap</section>
+        <section>
+          <div className="bg-purple-50 text-black-purple font-sans-serif p-8">
+            <h1 className="text-6xl font-bold text-center mb-4 border-black-purple">Roadmap</h1>
+            <div className="ml-64">
+              <ol className="relative border-l border-black-purple">
+                <li className="mb-10 ml-6">
+                  <span className="
+                    flex absolute -left-5 justify-center items-center w-10 h-10 rounded-full ring-8 ring-[1px] ring-black-purple font-bold
+                    bg-gradient-to-r from-[#d6f0ff] via-[#ffe0a4] to-[#f5a5d4]
+                  ">
+                    Q1
+                  </span>
+                  <div className="m-10 text-base font-normal">
+                    <ul className="list-disc ml-4">
+                      <li>Webサイトリニューアル</li>
+                      <li>NFTリリース</li>
+                      <li>ホワイトペーパー発表</li>
+                      <li>第一弾プロジェクト完成発表</li>
+                    </ul>
+                  </div>
+                </li>
+                <li className="mb-10 ml-6">
+                  <span className="
+                    flex absolute -left-5 justify-center items-center w-10 h-10 rounded-full ring-8 ring-[1px] ring-black-purple font-bold
+                    bg-purple-50
+                  ">
+                    Q2
+                  </span>
+                  <div className="m-10 text-base font-normal">
+                    <ul className="list-disc ml-4">
+                      <li>ハッカソン、カンファレンスに女性50人参加</li>
+                      <li>IDOプラットフォームのフロントエンド開発</li>
+                      <li>クリエイター育成プロジェクト開始</li>
+                    </ul>
+                  </div>
+                </li>
+                <li className="mb-10 ml-6">
+                  <span className="
+                    flex absolute -left-5 justify-center items-center w-10 h-10 rounded-full ring-8 ring-[1px] ring-black-purple font-bold
+                    bg-purple-50
+                  ">
+                    Q3
+                  </span>
+                  <div className="m-10 text-base font-normal">
+                    <ul className="list-disc ml-4">
+                      <li>ベータ版IDOプラットフォームの立ち上げ</li>
+                      <li>テストレビュー</li>
+                      <li>DAOトークンのローンチ/プリセール</li>
+                      <li>プロジェクト募集</li>
+                    </ul>
+                  </div>
+                </li>
+                <li className="ml-6">
+                  <span className="
+                    flex absolute -left-5 justify-center items-center w-10 h-10 rounded-full ring-8 ring-[1px] ring-black-purple font-bold
+                    bg-purple-50
+                  ">
+                    Q4
+                  </span>
+                  <div className="m-10 text-base font-normal">
+                    <ul className="list-disc ml-4">
+                      <li>IDOプラットフォームのフルリリース</li>
+                      <li>DAO Token / Public Sale</li>
+                      <li>5プロジェクト立ち上げ</li>
+                    </ul>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
         <section>Team</section>
         <section>Creators Studio News</section>
       </main>
