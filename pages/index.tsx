@@ -287,7 +287,16 @@ export default function Index() {
             </div>
           </div>
         </section>
-        <section>Team</section>
+        <section>
+          <div className="bg-white text-gray-900 font-sans-serif p-8">
+            <h1 className="text-6xl font-bold text-center mb-4">Team</h1>
+            <div className="flex items-center text-center">
+              <div><Image src="/riho.png" width={480} height={480} /><span className="font-bold text-lg">Riho</span></div>
+              <div><Image src="/risa.png" width={480} height={480} /><span className="font-bold text-lg">Risa</span></div>
+              <div><Image src="/miho.png" width={480} height={480} /><span className="font-bold text-lg">Miho</span></div>
+            </div>
+          </div>
+        </section>
         <section>Creators Studio News</section>
       </main>
       <footer></footer>
