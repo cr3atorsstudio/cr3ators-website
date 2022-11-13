@@ -309,7 +309,22 @@ export default function Index() {
             </div>
           </div>
         </section>
-        <section>Creators Studio News</section>
+        <section>
+          <div className="bg-gray-900 text-white font-sans-serif p-10 gap-4 flex justify-center items-center">
+            <div>
+              <h1 className="font-bold text-6xl">Creators’ Studio News</h1>
+              <span>Want to get updates from Creators Studio?</span>
+            </div>
+            <div>
+              <button className="
+                text-base font-bold text-gray-900 rounded-full border-black border px-[20px] py-[14px]
+                bg-gradient-to-r from-[#FFADDD] to-[#B6E6FF]
+              ">
+                Subscribe to our Newsletter
+              </button>
+            </div>
+          </div>
+        </section>
       </main>
       <footer></footer>
       {/* <Intro />
