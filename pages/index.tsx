@@ -1,7 +1,4 @@
-// import Intro from "../components/intro";
-// import HomeBody from "../components/HomeBody";
 import Head from "next/head";
-// import Footer from "../components/footer";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Link from "next/link";
 import { useLocale } from "../hooks/useLocale";
@@ -335,9 +332,6 @@ export default function Index() {
           </div>
         </div>
       </footer>
-      {/* <Intro />
-      <HomeBody />
-      <Footer /> */}
     </>
   );
 }
