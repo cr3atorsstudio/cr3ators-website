@@ -326,7 +326,15 @@ export default function Index() {
           </div>
         </section>
       </main>
-      <footer></footer>
+      <footer>
+        <div className="text-gray-900 bg-white font-sans-serif py-28 px-8 flex justify-between">
+          <span className="text-2xl font-bold">Creators Studio</span>
+          <div>
+            <span className="mx-4"><Image src="/twitter.svg" alt="Twitter Logo" width={29.72} height={24.14} /></span>
+            <span className="mx-4"><Image src="/instagram.svg" alt="Instagram Logo" width={28.55} height={28.55} /></span>
+          </div>
+        </div>
+      </footer>
       {/* <Intro />
       <HomeBody />
       <Footer /> */}
