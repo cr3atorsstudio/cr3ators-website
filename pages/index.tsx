@@ -291,9 +291,21 @@ export default function Index() {
           <div className="bg-white text-gray-900 font-sans-serif p-8">
             <h1 className="text-6xl font-bold text-center mb-4">Team</h1>
             <div className="flex items-center text-center">
-              <div><Image src="/riho.png" width={480} height={480} /><span className="font-bold text-lg">Riho</span></div>
-              <div><Image src="/risa.png" width={480} height={480} /><span className="font-bold text-lg">Risa</span></div>
-              <div><Image src="/miho.png" width={480} height={480} /><span className="font-bold text-lg">Miho</span></div>
+              <div>
+                <Image src="/riho.png" width={480} height={480} /><span className="font-bold text-lg">Riho</span>
+                <span className="block mb-1">Software Engineer</span>
+                <a href="https://twitter.com/rllllho" target="_blank"><Image src="/twitter.svg" alt="Twitter Logo" width={29.72} height={24.14} /></a>
+              </div>
+              <div>
+                <Image src="/risa.png" width={480} height={480} /><span className="font-bold text-lg">Risa</span>
+                <span className="block  mb-1">Software Developer / wannabe crypto witch</span>
+                <a href="https://twitter.com/risacan_eth" target="_blank"><Image src="/twitter.svg" alt="Twitter Logo" width={29.72} height={24.14} /></a>
+              </div>
+              <div>
+                <Image src="/miho.png" width={480} height={480} /><span className="font-bold text-lg">Miho</span>
+                <span className="block  mb-1">Software Developer</span>
+                <a href="https://twitter.com/pluto_04" target="_blank"><Image src="/twitter.svg" alt="Twitter Logo" width={29.72} height={24.14} /></a>
+              </div>
             </div>
           </div>
         </section>
