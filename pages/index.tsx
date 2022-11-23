@@ -207,7 +207,7 @@ export default function Index() {
             </button>
             </div>
             <div>
-            <img src="https://fakeimg.pl/625x580/" width={625} height={580}/>
+            <img src="teammtg.png" width={580} height={580}/>
             </div>
           </div>
         </section>
@@ -237,20 +237,20 @@ export default function Index() {
             <section>
               <div className="bg-white rounded-lg p-8 mb-10 text-m grid grid grid-flow-col">
                 <div className="">
-                  <h1 className="font-sans-serif text-4xl font-bold mb-4">Help “Creators” to build their ideas come to life</h1>
+                  <h1 className="font-sans-serif text-6xl font-bold mb-4">Help “Creators” to build their ideas come to life</h1>
                   <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
                 </div>
-                <div className="rounded-lg bg-[#FFC2E6] w-[500px] p-[21px]">
-                  <img src="https://fakeimg.pl/458x420/" className="" width={458} height={420} />
+                <div className="rounded-lg bg-[#FFC2E6] p-[21px]">
+                  <img src="socialmedia.gif" className="" width={600} height={600} />
                 </div>
               </div>
             </section>
 
             <div className="flex">
               <section>
-                <div className="bg-white rounded-lg mr-4 border-4 border-white">
-                  <div className="rounded-t-lg bg-blue-50 peer-w-max m-auto">
-                    <img src="https://fakeimg.pl/420x330/" width={420} height={330} />
+                <div className="bg-white rounded-lg mr-4 border-4 border-white  peer-h-max">
+                  <div className="rounded-t-lg bg-blue-50 peer-w-max p-auto">
+                    <img src="boat.png" width={500} height={354}/>
                   </div>
                   <div className="p-8">
                     <h1 className="font-sans-serif text-xl font-bold mb-4">Get women and gender minorities into the world of Web3</h1>
@@ -261,7 +261,7 @@ export default function Index() {
               <section>
                 <div className="bg-white rounded-lg ml-4 border-4 border-white">
                   <div className="rounded-t-lg bg-blue-50 peer-w-max p-auto">
-                    <img src="https://fakeimg.pl/420x330/" width={420} height={330}/>
+                    <img src="documents.png" width={500} height={500}/>
                   </div>
                   <div className="p-8">
                     <h1 className="font-sans-serif text-xl font-bold mb-4">Get women and gender minorities into the world of Web3</h1>
@@ -293,7 +293,7 @@ export default function Index() {
                 </button>
               </div>
               <div className="w-[410px]">
-                <img src="https://fakeimg.pl/410x410/" className="" width={410} height={410} />
+                <img src="crypto.png" className="" width={410} height={410} />
               </div>
             </div>
           </div>
