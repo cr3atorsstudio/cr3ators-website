@@ -72,8 +72,8 @@ export default function Index() {
         </Link>
 
         <nav className="flex items-center ml-auto columns-3 gap-4 place-content-around">
-          <Image src="/twitter.svg" alt="Twitter Logo" width={29.72} height={24.14} />
-          <Image src="/instagram.svg" alt="Instagram Logo" width={28.55} height={28.55} />
+          <a href="https://twitter.com/cr3atorsstudio" target="_blank"><Image src="/twitter.svg" alt="Twitter Logo" width={29.72} height={24.14} /></a>
+          <a href="https://www.instagram.com/cr3atorsstudio" target="_blank"><Image src="/instagram.svg" alt="Instagram Logo" width={28.55} height={28.55} /></a>
           <ConnectButton.Custom>
             {({
               account,
@@ -418,8 +418,8 @@ export default function Index() {
         <div className="text-gray-900 bg-white font-sans-serif py-28 px-8 flex justify-between">
           <span className="text-2xl font-bold">Creators Studio</span>
           <div>
-            <span className="mx-4"><Image src="/twitter.svg" alt="Twitter Logo" width={29.72} height={24.14} /></span>
-            <span className="mx-4"><Image src="/instagram.svg" alt="Instagram Logo" width={28.55} height={28.55} /></span>
+            <span className="mx-4"><a href="https://twitter.com/cr3atorsstudio" target="_blank"><Image src="/twitter.svg" alt="Twitter Logo" width={29.72} height={24.14} /></a></span>
+            <span className="mx-4"><a href="https://www.instagram.com/cr3atorsstudio" target="_blank"><Image src="/instagram.svg" alt="Instagram Logo" width={28.55} height={28.55} /></a></span>
           </div>
         </div>
       </footer>
