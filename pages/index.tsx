@@ -248,8 +248,8 @@ export default function Index() {
 
             <div className="flex">
               <section>
-                <div className="bg-white rounded-lg mr-4 border-4 border-white  peer-h-max">
-                  <div className="rounded-t-lg bg-blue-50 peer-w-max p-auto">
+                <div className="bg-white rounded-lg mr-4 border-4 border-white peer-h-max">
+                  <div className="rounded-t-lg bg-blue-50 peer-w-max p-auto flex justify-center">
                     <img src="boat.png" width={500} height={354}/>
                   </div>
                   <div className="p-8">
@@ -260,7 +260,7 @@ export default function Index() {
               </section>
               <section>
                 <div className="bg-white rounded-lg ml-4 border-4 border-white">
-                  <div className="rounded-t-lg bg-blue-50 peer-w-max p-auto">
+                  <div className="rounded-t-lg bg-blue-50 peer-w-max p-auto flex justify-center">
                     <img src="documents.png" width={500} height={500}/>
                   </div>
                   <div className="p-8">
