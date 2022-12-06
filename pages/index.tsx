@@ -162,12 +162,14 @@ export default function Index() {
             }}
           </ConnectButton.Custom>
 
-          <button className="
+          <a className="
             font-sans-serif text-base font-bold text-gray-900 rounded-full border-black border px-[20px] py-[14px]
-            bg-gradient-to-r from-[#FFADDD] to-[#B6E6FF]
-          ">
+            bg-gradient-to-r from-[#FFADDD] to-[#B6E6FF]"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform"
+            target="_blank"
+          >
             Join Community
-          </button>
+          </a>
 
           <div className="gap-0">
             <Link href='/' locale={locale === "ja" ? "en" : "ja"} passHref>
@@ -197,14 +199,16 @@ export default function Index() {
             <section className="block w-30 text-2xl my-6">
               <p>Close the gender gap before Web3 becomes male-dominated.</p>
             </section>
-            <button className="
+            <a className="
               font-sans-serif text-2xl font-bold text-gray-900 rounded-full border-black border px-[28px] py-[18px]
               bg-gradient-to-r from-[#FFADDD] to-[#B6E6FF]
-              flex items-center justify-between w-80
-            ">
+              flex items-center justify-between w-80"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform"
+              target="_blank"
+            >
               Join Community
               <Image className="ml-8" src="/arrow-right.svg" alt="right arrow" width={24} height={24} />
-            </button>
+            </a>
             </div>
             <div>
             <img src="teammtg.png" width={580} height={580}/>
@@ -284,13 +288,15 @@ export default function Index() {
                   <li>情報収集を始めたい</li>
                 </ul>
                 <p className="mt-4">こんな方はコミュニティに参加してみよう！</p>
-                <button className="
+                <a className="
                   font-sans-serif text-base font-bold text-gray-900 rounded-full border-black border px-[20px] py-[14px]
-                  bg-white mt-10 flex items-center justify-between w-52
-                ">
+                  bg-white mt-10 flex items-center justify-between w-52"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform"
+                  target="_blank"
+                 >
                   Join Community
                   <Image className="ml-8" src="/arrow-right.svg" alt="right arrow" width={20} height={20} />
-                </button>
+                </a>
               </div>
               <div className="w-[410px]">
                 <img src="crypto.png" className="" width={410} height={410} />
