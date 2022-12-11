@@ -37,6 +37,7 @@ const Mint: NextPage = () => {
 
   const onMint = useCallback(async () => {
     if (mintContract && num > 0 && tokenId) {
+      // TODO: Token IDを選ばせるがUIどうする？
       await mintNFT(mintContract, num, tokenId);
     }
   }, []);
