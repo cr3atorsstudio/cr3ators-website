@@ -59,16 +59,16 @@ const Mint: NextPage = () => {
 
           <div className="mx-auto mt-16 w-4/5 rounded-3xl bg-white p-6 drop-shadow-card">
             <h2 className="mt-5 mb-10 ml-10 font-sans-serif text-4xl font-bold text-mint-subtitle">
-              xxxx uniquely generated XXXXX!
+              500 uniquely generated Creators Community NFT!
             </h2>
             <div className="flex items-center justify-between">
               <p className="ml-10 w-1/2 font-sans-serif text-2xl leading-relaxed">
-                The Whalies Club is a collection of 4444 unique ERC-721 tokens
-                stored on the Ethereum Blockchain. Non-sequentially minted and
-                provably unique, each NFT comes with a full membership including
-                functioning utility and an ever-growing community. There is a
-                maximum of 10 Whalies per transaction; 30% of revenue goes to
-                the DAO treasury.
+                Creators Community NFT is a unique initiative that uses
+                blockchain technology to raise awareness about gender inequality
+                in web3 and increase the number of women and gender minorities
+                to close the gender gap in web3. By minting the NFTs, we hope to
+                generate funds that can be used to support gender equality
+                initiatives.
               </p>
               <img
                 className="mr-20 w-1/3"
