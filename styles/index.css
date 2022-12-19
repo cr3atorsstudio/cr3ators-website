@@ -25,3 +25,9 @@ body {
 :root {
   --bg-connect-wallet-btn: rgb(219 39 119);
 }
+
+#number-input:-webkit-outer-spin-button,
+#number-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

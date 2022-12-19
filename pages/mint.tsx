@@ -61,7 +61,7 @@ const Mint: NextPage = () => {
   }, []);
 
   const decrement = useCallback(() => {
-    setNum((num) => num - 1);
+    setNum((num) => (num > 0 ? num - 1 : 0));
     setError("");
   }, []);
 
@@ -101,6 +101,7 @@ const Mint: NextPage = () => {
           </h2>
           <div className="mx-auto flex w-4/5 justify-center ">
             <div className="mx-4 flex flex-col items-center">
+              <p>Creator</p>
               <input
                 id="creator"
                 type="radio"
@@ -121,6 +122,7 @@ const Mint: NextPage = () => {
             </div>
 
             <div className="mx-4 flex flex-col items-center">
+              <p>Suporter</p>
               <label htmlFor="supporter" className="mb-1">
                 <img
                   src="shikaku.png"
@@ -137,6 +139,7 @@ const Mint: NextPage = () => {
                 value=""
                 name="default-radio"
                 className="hidden"
+                min={0}
                 onClick={onSupporterClick}
               />
             </div>
@@ -154,9 +157,11 @@ const Mint: NextPage = () => {
               />
               <input
                 type="number"
-                className="mx-3 h-16 w-32 rounded-md border border-black-purple p-1 text-center text-2xl font-bold"
+                id="number-input"
+                className="mx-3 h-16 w-32 appearance-none rounded-md border border-black-purple p-1 text-center text-2xl font-bold"
                 value={num}
                 onChange={(e) => setNum(Number(e.currentTarget.value))}
+                min={0}
               />
               <img
                 src="plus-button.png"
