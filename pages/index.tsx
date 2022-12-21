@@ -189,28 +189,28 @@ export default function Index() {
       </header>
       <main className="mx-auto">
         <section className="p-10">
-          <div className="flex flex-wrap justify-between content-center">
-            <div className="my-auto">
-            <h1 className="font-sans-serif">
-              <span className="block text-[80px] leading-tight font-semibold">
-                {text.HERO_TITLE}
-              </span>
-            </h1>
-            <section className="block w-30 text-2xl my-6">
-              <p>{text.HERO_DESCRIPTION}</p>
-            </section>
-            <a className="
-              font-sans-serif text-2xl font-bold text-gray-900 rounded-full border-black border px-[28px] py-[18px]
-              bg-gradient-to-r from-[#FFADDD] to-[#B6E6FF]
-              flex items-center justify-between w-80"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform"
-              target="_blank"
-            >
-              Join Community
-              <Image className="ml-8" src="/arrow-right.svg" alt="right arrow" width={24} height={24} />
-            </a>
+          <div className="flex justify-between content-center">
+            <div className="">
+              <h1 className="font-sans-serif">
+                <span className="block text-8xl leading-tight font-semibold">
+                  {text.HERO_TITLE}
+                </span>
+              </h1>
+              <section className="block w-30 text-2xl my-6">
+                <p>{text.HERO_DESCRIPTION}</p>
+              </section>
+              <a className="
+                font-sans-serif text-2xl font-bold text-gray-900 rounded-full border-black border px-[28px] py-[18px]
+                bg-gradient-to-r from-[#FFADDD] to-[#B6E6FF]
+                flex items-center justify-between w-80"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform"
+                target="_blank"
+              >
+                Join Community
+                <Image className="ml-8" src="/arrow-right.svg" alt="right arrow" width={24} height={24} />
+              </a>
             </div>
-            <div>
+            <div className="">
             <img src="teammtg.png" width={580} height={580}/>
             </div>
           </div>
@@ -241,12 +241,12 @@ export default function Index() {
             </section>
 
             <section>
-              <div className="bg-white rounded-lg p-8 mb-10 text-m grid grid grid-flow-col">
-                <div className="">
-                  <h1 className="font-sans-serif text-6xl font-bold mb-4">{text.SECTION_ACTIVITIES_FIRST_TITLE}</h1>
+              <div className="bg-white rounded-lg p-8 mb-10 text-m flex flex-row">
+                <div className="basis-1/2 pr-8">
+                  <h1 className="font-sans-serif text-6xl font-bold">{text.SECTION_ACTIVITIES_FIRST_TITLE}</h1>
                   <p>{text.SECTION_ACTIVITIES_FIRST_DESCRIPTION}</p>
                 </div>
-                <div className="rounded-lg bg-[#FFC2E6] p-[21px]">
+                <div className="rounded-lg bg-[#FFC2E6] p-[21px] basis-1/2">
                   <img src="socialmedia.gif" className="" width={600} height={600} />
                 </div>
               </div>
@@ -267,7 +267,7 @@ export default function Index() {
                 </div>
               </section>
               <section>
-                <div className="bg-white rounded-lg ml-4 border-4 border-white">
+                <div className="bg-white rounded-lg ml-4 border-4 border-white h-full">
                   <div className="rounded-t-lg bg-blue-50 peer-w-max p-auto flex justify-center">
                     <img src="documents.png" width={500} height={500}/>
                   </div>
