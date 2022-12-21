@@ -4,6 +4,11 @@ import { mintNFT } from "../lib/mint";
 import { CONTRACT_ADDRESS } from "../lib/constants";
 import { ethers } from "ethers";
 import abi from "../lib/CreatorsNFT.json";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+import Head from "next/head";
+import Link from "next/link";
+import Image from 'next/image'
+import { useLocale } from "../hooks/useLocale";
 
 const contractABI = abi.abi;
 
@@ -96,8 +101,176 @@ const Mint: NextPage = () => {
     setError("");
   }, []);
 
+  const locale = useLocale().locale;
+  const text = useLocale().t;
+
   return (
     <>
+      <Head>
+        <title>Creators Studio</title>
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap'
+          rel='stylesheet'
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+        <link
+          rel='apple-touch-icon'
+          sizes='180x180'
+          href='/favicon/creatorsstudio.jpeg'
+        />
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='32x32'
+          href='/favicon/creatorsstudio.jpeg'
+        />
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='16x16'
+          href='/favicon/creatorsstudio.jpeg'
+        />
+        <link rel='manifest' href='/favicon/site.webmanifest' />
+        <link
+          rel='mask-icon'
+          href='/favicon/creatorsstudio.jpeg'
+          color='#000000'
+        />
+        <link rel='shortcut icon' href='/favicon/creatorsstudio.jpeg' />
+        <meta name='msapplication-TileColor' content='#000000' />
+        <meta name='msapplication-config' content='/favicon/browserconfig.xml' />
+        <meta name='theme-color' content='#000' />
+        <link rel='alternate' type='application/rss+xml' href='/feed.xml' />
+        <meta
+          name='description'
+          content={`Welcome to Creators Studio! We are the web3 community for womxn `}
+        />
+        <meta property='og:image' content='/favicon/creatorsstudio.jpeg' />
+      </Head>
+      <header className="flex items-center sticky top-0 z-40 w-full flex-none bg-white shadow p-4 px-8">
+        <Link href='/' className="flex-none">
+          <span className='text-2xl font-sans-serif font-bold text-gray-900 cursor-pointer'>
+            CREATORS STUDIO
+          </span>
+        </Link>
+
+        <nav className="flex items-center ml-auto columns-3 gap-4 place-content-around">
+          <a href="https://twitter.com/cr3atorsstudio" target="_blank"><Image src="/twitter.svg" alt="Twitter Logo" width={29.72} height={24.14} /></a>
+          <a href="https://www.instagram.com/cr3atorsstudio" target="_blank"><Image src="/instagram.svg" alt="Instagram Logo" width={28.55} height={28.55} /></a>
+          <ConnectButton.Custom>
+            {({
+              account,
+              chain,
+              openAccountModal,
+              openChainModal,
+              openConnectModal,
+              authenticationStatus,
+              mounted,
+            }) => {
+              const ready = mounted && authenticationStatus !== 'loading';
+              const connected =
+                ready &&
+                account &&
+                chain &&
+                (!authenticationStatus ||
+                  authenticationStatus === 'authenticated');
+
+              return (
+                <div
+                  {...(!ready && {
+                    'aria-hidden': true,
+                    'style': {
+                      opacity: 0,
+                      pointerEvents: 'none',
+                      userSelect: 'none',
+                    }
+                  })}
+                >
+                  {(() => {
+                    if (!connected) {
+                      return (
+                        <button onClick={openConnectModal} type="button">
+                          <Image src="/wallet.svg" alt="Instagram Logo" width={36} height={36} />
+                        </button>
+                      );
+                    }
+
+                    if (chain.unsupported) {
+                      return (
+                        <button onClick={openChainModal} type="button">
+                          Wrong network
+                        </button>
+                      );
+                    }
+                    return (
+                      <div style={{ display: 'flex', gap: 12 }}>
+                        <button
+                          onClick={openChainModal}
+                          style={{ display: 'flex', alignItems: 'center' }}
+                          type="button"
+                        >
+                          {chain.hasIcon && (
+                            <div
+                              style={{
+                                background: chain.iconBackground,
+                                width: 12,
+                                height: 12,
+                                borderRadius: 999,
+                                overflow: 'hidden',
+                                marginRight: 4,
+                              }}
+                            >
+                              {chain.iconUrl && (
+                                <img
+                                  alt={chain.name ?? 'Chain icon'}
+                                  src={chain.iconUrl}
+                                  style={{ width: 12, height: 12 }}
+                                />
+                              )}
+                            </div>
+                          )}
+                          {chain.name}
+                        </button>
+                        <button onClick={openAccountModal} type="button">
+                          {account.displayName}
+                          {account.displayBalance
+                            ? ` (${account.displayBalance})`
+                            : ''}
+                        </button>
+                      </div>
+                    );
+                  })()}
+                </div>
+              );
+            }}
+          </ConnectButton.Custom>
+
+          <a className="
+            font-sans-serif text-base font-bold text-gray-900 rounded-full border-black border px-[20px] py-[14px]
+            bg-gradient-to-r from-[#FFADDD] to-[#B6E6FF]"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform"
+            target="_blank"
+          >
+            Join Community
+          </a>
+
+          <div className="gap-0">
+            <Link href='/' locale={locale === "ja" ? "en" : "ja"} passHref>
+              <span className={locale === "ja" ? "font-sans-serif text-gray-900 select-none" : "font-sans-serif text-gray-500 select-none" }>
+                JP
+              </span>
+            </Link>
+            &nbsp;&#47;&nbsp;
+            <Link href='/' locale={locale === "ja" ? "en" : "ja"} passHref>
+              <span className={locale === "ja" ? "font-sans-serif text-gray-500 select-none" : "font-sans-serif text-gray-900 select-none"}>
+                EN
+              </span>
+            </Link>
+          </div>
+        </nav>
+      </header>
       <main className="bg-white font-sans-serif ">
         <section className="flex h-screen flex-col">
           <h1 className="mt-16 text-center text-[64px] font-bold text-text-gray-900">
