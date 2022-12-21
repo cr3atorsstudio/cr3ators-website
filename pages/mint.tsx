@@ -1,6 +1,5 @@
 import { NextPage } from "next";
 import { useCallback, useEffect, useState } from "react";
-// import Layout from "../components/layout";
 import { mintNFT } from "../lib/mint";
 import { CONTRACT_ADDRESS } from "../lib/constants";
 import { ethers } from "ethers";
