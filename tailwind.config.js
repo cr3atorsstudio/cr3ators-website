@@ -17,7 +17,7 @@ module.exports = {
         openSans: ["Open Sans"],
         italic: ["Libre Baskerville"],
         "sans-serif": ["Poppins"],
-        "hiragino": ["Hiragino Kaku Gothic ProN", "Hiragino Sans"]
+        hiragino: ["Hiragino Kaku Gothic ProN", "Hiragino Sans"],
       },
       colors: {
         "accent-1": "#FAFAFA",
@@ -35,22 +35,22 @@ module.exports = {
         brown: "#3E2723",
         "black-purple": "#150A6A",
         "regal-blue": "#0C396C",
-        "white": "#FFFFFF",
-        "gray": {
+        white: "#FFFFFF",
+        gray: {
           300: "#E8E8E8",
           500: "#A7A7A7",
           700: "#696969",
-          900: "#282828"
+          900: "#282828",
         },
-        "yellow": {
+        yellow: {
           50: "#FEF9E5",
-          900: "#FB7C1F"
+          900: "#FB7C1F",
         },
-        "blue": {
-          50: "#E5F5FC"
+        blue: {
+          50: "#E5F5FC",
         },
-        "purple": {
-          50: "#F5F1FF"
+        purple: {
+          50: "#F5F1FF",
         },
       },
       spacing: {
