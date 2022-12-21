@@ -1,3 +1,0 @@
-const CONTRACT_ADDRESS = "";
-
-export { CONTRACT_ADDRESS };

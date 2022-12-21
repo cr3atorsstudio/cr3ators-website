@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 import Layout from "../components/layout";
 import { mintNFT } from "../lib/mint";
 import { useAccount, useProvider, useSigner, useContract } from "wagmi";
-import { CONTRACT_ADDRESS } from "../constants/constants";
+import { CONTRACT_ADDRESS } from "../lib/constants";
 import { ethers } from "ethers";
 
 const Mint: NextPage = () => {
@@ -11,6 +11,8 @@ const Mint: NextPage = () => {
   const [num, setNum] = useState(0);
   const [tokenId, setTokenId] = useState(-Infinity);
   const [error, setError] = useState("");
+  const [supporterNftNum, setSupporterNftNum] = useState(0);
+  const [creatorNftNum, setCreatorNftNum] = useState(0);
 
   // useEffect(() => {
   //   const { ethereum } = window;
@@ -21,7 +23,7 @@ const Mint: NextPage = () => {
   //     // TODO: Add contract address and abi
   //     const contract = mintContract
   //       ? mintContract
-  //       : new ethers.Contract(CONTRACT_ADDRESS, "", signer);
+  //       : new ethers.Contract(CONTRACT_ADDRESS, contractABI, signer);
 
   //     setContract(contract);
   //   } else {
@@ -30,11 +32,34 @@ const Mint: NextPage = () => {
   // }, []);
 
   // useEffect(() => {
-  //   const { address } = useAccount();
-
-  //   if (address) {
+  //   if (mintContract) {
+  //      getNftNum()
   //   }
-  // }, []);
+  // }, [mintContract]);
+
+  const getNftNum = useCallback(async () => {
+    try {
+      const { ethereum } = window;
+      if (ethereum) {
+        const provider = new ethers.providers.Web3Provider(ethereum as any);
+        const signer = provider.getSigner();
+        // const contract = mintContract
+        //   ? mintContract
+        //   : new ethers.Contract(CONTRACT_ADDRESS, contractABI, signer);
+
+        // const { supporter, creator } = await contract.個数取ってくる
+
+        // setSupporterNftNum(supporter);
+        // setCreatorNftNum(creatorNftNum);
+      } else {
+        throw new Error("wallet is not connected");
+      }
+    } catch (error) {
+      console.error(
+        "Something went wrong while getting the number of NFT available"
+      );
+    }
+  }, []);
 
   const onMint = useCallback(async (currentNum: number) => {
     setError("");
@@ -102,14 +127,6 @@ const Mint: NextPage = () => {
           <div className="mx-auto flex w-4/5 justify-center ">
             <div className="mx-4 flex flex-col items-center">
               <p>Creator</p>
-              <input
-                id="creator"
-                type="radio"
-                value=""
-                name="default-radio"
-                className="hidden"
-                onClick={onCreatorClick}
-              />
               <label htmlFor="creator" className="mb-1 ">
                 <img
                   src="maru.png"
@@ -119,6 +136,15 @@ const Mint: NextPage = () => {
                   }`}
                 />
               </label>
+              <input
+                id="creator"
+                type="radio"
+                value=""
+                name="default-radio"
+                className="hidden"
+                onClick={onCreatorClick}
+              />
+              <p>{creatorNftNum} available </p>
             </div>
 
             <div className="mx-4 flex flex-col items-center">
@@ -132,7 +158,6 @@ const Mint: NextPage = () => {
                   }`}
                 />
               </label>
-
               <input
                 id="supporter"
                 type="radio"
@@ -142,11 +167,10 @@ const Mint: NextPage = () => {
                 min={0}
                 onClick={onSupporterClick}
               />
+              <p>{supporterNftNum} available </p>
             </div>
           </div>
-          <p className="mt-20 text-center text-3xl font-bold text-text-gray-900">
-            500 / 500
-          </p>
+
           <div className="flex flex-col items-center justify-center">
             <div className="mt-12 flex items-center justify-center">
               <img
