@@ -1,12 +1,11 @@
 import { useLocale } from "../hooks/useLocale";
 import { SecttionH2 } from "./typography/section-h2";
-import { SecttionTitle } from "./sections/section-title";
 
 const CodeOfConductJapanese = () => {
   const locale = useLocale().locale;
   return (
     <div className='border-1 flex flex-col justify-center rounded-lg border-white bg-white pt-10'>
-      <SecttionTitle>Cr3ators Studio Code of Conduct (v1.0.0)</SecttionTitle>
+      <h1>Cr3ators Studio Code of Conduct (v1.0.0)</h1>
       <div className='text-l mx-8 flex flex-col justify-center lg:mx-64'>
         <div className='mb-8'>
           このCode of Conductは、Cr3ators

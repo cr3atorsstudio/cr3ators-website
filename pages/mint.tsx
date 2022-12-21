@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import { useCallback, useEffect, useState } from "react";
-import Layout from "../components/layout";
+// import Layout from "../components/layout";
 import { mintNFT } from "../lib/mint";
 import { CONTRACT_ADDRESS } from "../lib/constants";
 import { ethers } from "ethers";
@@ -98,7 +98,7 @@ const Mint: NextPage = () => {
   }, []);
 
   return (
-    <Layout>
+    <>
       <main className="bg-white font-sans-serif ">
         <section className="flex h-screen flex-col">
           <h1 className="mt-16 text-center text-[64px] font-bold text-text-gray-900">
@@ -212,7 +212,7 @@ const Mint: NextPage = () => {
           </div>
         </section>
       </main>
-    </Layout>
+    </>
   );
 };
 

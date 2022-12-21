@@ -1,5 +1,5 @@
 import { AppProps } from "next/app";
-import "../styles/index.css";
+import "../styles/globals.css";
 import { usePageView } from "../hooks/usePageView";
 import {
   getDefaultWallets,
