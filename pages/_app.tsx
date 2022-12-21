@@ -15,7 +15,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   // Google Analytics の PV をカウントするイベント
   usePageView();
   const { chains, provider } = configureChains(
-    [chain.mainnet],
+    [chain.mainnet, chain.goerli],
     [
       alchemyProvider({ apiKey: process.env.NEXT_PUBLIC_ALCHEMY_ID }),
       publicProvider(),
