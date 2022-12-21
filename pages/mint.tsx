@@ -47,7 +47,8 @@ const Mint: NextPage = () => {
         //   ? mintContract
         //   : new ethers.Contract(CONTRACT_ADDRESS, contractABI, signer);
 
-        // const { supporter, creator } = await contract.個数取ってくる
+        // const { creator } = await contract.balanceOf(CONTRACT_ADDRESS, 0)
+        // const { supporter } = await contract.balanceOf(CONTRACT_ADDRESS, 1)
 
         // setSupporterNftNum(supporter);
         // setCreatorNftNum(creatorNftNum);
