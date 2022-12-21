@@ -9,7 +9,7 @@ import abi from "../lib/CreatorsNFT.json";
 const contractABI = abi.abi;
 
 const Mint: NextPage = () => {
-  const [mintContract, setContract] = useState<ethers.Contract>();
+  const [mintContract, setContract] = useState<ethers.Contract | null>(null);
   const [num, setNum] = useState(0);
   const [tokenId, setTokenId] = useState(0);
   const [error, setError] = useState("");
@@ -49,11 +49,11 @@ const Mint: NextPage = () => {
           ? mintContract
           : new ethers.Contract(CONTRACT_ADDRESS, contractABI, signer);
 
-        const { creator } = await creatorsNft.balanceOf(CONTRACT_ADDRESS, 0);
-        const { supporter } = await creatorsNft.balanceOf(CONTRACT_ADDRESS, 1);
+        const creator = await creatorsNft.balanceOf(CONTRACT_ADDRESS, 0);
+        const supporter = await creatorsNft.balanceOf(CONTRACT_ADDRESS, 1);
 
-        setSupporterNftNum(supporter);
-        setCreatorNftNum(creator);
+        setSupporterNftNum(supporter.toNumber());
+        setCreatorNftNum(creator.toNumber());
       } else {
         throw new Error("wallet is not connected");
       }
@@ -62,19 +62,22 @@ const Mint: NextPage = () => {
         "Something went wrong while getting the number of NFT available"
       );
     }
-  }, []);
+  }, [mintContract]);
 
-  const onMint = useCallback(async (currentNum: number) => {
-    setError("");
+  const onMint = useCallback(
+    async (currentNum: number) => {
+      setError("");
 
-    if (currentNum <= 0) {
-      setError("Please enter a number greater than 0");
-    }
+      if (currentNum <= 0) {
+        setError("Please enter a number greater than 0");
+      }
 
-    if (mintContract && currentNum > 0) {
-      await mintNFT(mintContract, currentNum, tokenId);
-    }
-  }, []);
+      if (currentNum > 0 && mintContract) {
+        await mintNFT(mintContract, currentNum, tokenId);
+      }
+    },
+    [mintContract]
+  );
 
   const onCreatorClick = useCallback(() => {
     setTokenId(0);
