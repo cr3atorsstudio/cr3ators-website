@@ -2,40 +2,42 @@ import { NextPage } from "next";
 import { useCallback, useEffect, useState } from "react";
 import Layout from "../components/layout";
 import { mintNFT } from "../lib/mint";
-import { useAccount, useProvider, useSigner, useContract } from "wagmi";
 import { CONTRACT_ADDRESS } from "../lib/constants";
 import { ethers } from "ethers";
+import abi from "../lib/CreatorsNFT.json";
+
+const contractABI = abi.abi;
 
 const Mint: NextPage = () => {
   const [mintContract, setContract] = useState<ethers.Contract>();
   const [num, setNum] = useState(0);
-  const [tokenId, setTokenId] = useState(-Infinity);
+  const [tokenId, setTokenId] = useState(0);
   const [error, setError] = useState("");
   const [supporterNftNum, setSupporterNftNum] = useState(0);
   const [creatorNftNum, setCreatorNftNum] = useState(0);
 
-  // useEffect(() => {
-  //   const { ethereum } = window;
-  //   if (ethereum) {
-  //     const provider = new ethers.providers.Web3Provider(ethereum as any);
-  //     const signer = provider.getSigner();
+  useEffect(() => {
+    const { ethereum } = window;
 
-  //     // TODO: Add contract address and abi
-  //     const contract = mintContract
-  //       ? mintContract
-  //       : new ethers.Contract(CONTRACT_ADDRESS, contractABI, signer);
+    if (ethereum) {
+      const provider = new ethers.providers.Web3Provider(ethereum as any);
+      const signer = provider.getSigner();
 
-  //     setContract(contract);
-  //   } else {
-  //     console.log("wallet is not connected");
-  //   }
-  // }, []);
+      const creatorsNft = mintContract
+        ? mintContract
+        : new ethers.Contract(CONTRACT_ADDRESS, contractABI, signer);
 
-  // useEffect(() => {
-  //   if (mintContract) {
-  //      getNftNum()
-  //   }
-  // }, [mintContract]);
+      setContract(creatorsNft);
+    } else {
+      console.log("wallet is not connected");
+    }
+  }, []);
+
+  useEffect(() => {
+    if (mintContract) {
+      getNftNum();
+    }
+  }, [mintContract]);
 
   const getNftNum = useCallback(async () => {
     try {
@@ -43,15 +45,15 @@ const Mint: NextPage = () => {
       if (ethereum) {
         const provider = new ethers.providers.Web3Provider(ethereum as any);
         const signer = provider.getSigner();
-        // const contract = mintContract
-        //   ? mintContract
-        //   : new ethers.Contract(CONTRACT_ADDRESS, contractABI, signer);
+        const creatorsNft = mintContract
+          ? mintContract
+          : new ethers.Contract(CONTRACT_ADDRESS, contractABI, signer);
 
-        // const { creator } = await contract.balanceOf(CONTRACT_ADDRESS, 0)
-        // const { supporter } = await contract.balanceOf(CONTRACT_ADDRESS, 1)
+        const { creator } = await creatorsNft.balanceOf(CONTRACT_ADDRESS, 0);
+        const { supporter } = await creatorsNft.balanceOf(CONTRACT_ADDRESS, 1);
 
-        // setSupporterNftNum(supporter);
-        // setCreatorNftNum(creatorNftNum);
+        setSupporterNftNum(supporter);
+        setCreatorNftNum(creator);
       } else {
         throw new Error("wallet is not connected");
       }
@@ -68,7 +70,8 @@ const Mint: NextPage = () => {
     if (currentNum <= 0) {
       setError("Please enter a number greater than 0");
     }
-    if (mintContract && currentNum > 0 && tokenId) {
+
+    if (mintContract && currentNum > 0) {
       await mintNFT(mintContract, currentNum, tokenId);
     }
   }, []);
