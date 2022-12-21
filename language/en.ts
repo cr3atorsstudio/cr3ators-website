@@ -1,87 +1,19 @@
 export default {
-  COMMUNITYTITLE: "What is Creators Studio?",
-  SUBTITLE_1: "Get women and gender minorities into Web3",
-  SUBTITLE_2: "Help 'Creators' to build their ideas come to life",
-  SUBTITLE_3: "Support women who don't have time",
-  DESCRIPTION_1:
-    "Provide Web3 information through Twitter, News Letters, and Twitter Spaces (AMA) Get women and gender minorities into the world of Web3.",
-  DESCRIPTION_2:
-    "90% of the core members have experience in general web and web3 development. We all support beginners.",
-  DESCRIPTION_3:
-    " Women are busy. They don't have time to catch up. We welcome such people in the role of 'Supporter'. We help them by sharing the information / giving chance to feedback / hanging out in the community.",
-  VISIONTITLE: "Our Vision",
-  VISION_1: "Learn by building",
-  VISION_2: "Be creative in 'Web3' field",
-  VISION_3:
-    "Give 'Creators' the first experiece of launching the actual product",
-  VISION_4:
-    "Provide a learning environment for womxn who didn't pick 'Web3' for the day",
-  VISION_5: "Close the gender gap in 'Web3'",
-  TEAMTITLE: "Core Team Members",
-  HIRING_TITLE: "We are seeking new members!",
-  HIRING_SUBTITLE: "Core members & Season 1 members",
-  HIRING_CONTENTS_1:
-    "We are looking for new members who share our goal of closing the gender gap in Web3 and creating an inclusive community and are willing to work with us to build the future of Web3!",
-  HIRING_CONTENTS_2:
-    "If you want to create something related to Web3, please join us! We welcome people from all walks of life, such as engineers, designers, marketers and project managers, etc. Let's learn and enjoy together!",
-  APLLY_BUTTON: "Apply",
-  APLLY_BUTTON_SUPPORTER: "Apply for supporter",
-  ABOUT_US: "Creators Studio has begun!",
-  ABOUT_US_HEADLINE:
-    "We have started a Web3 community for women and gender minorities!",
-  WHAT_IS_CS: `Creators Studio is a community for women and gender-minority creators to unlock the next wave in Web3.
-  We increase the number of creators who continue to create new value with spirit of innovation.`,
-  WHY_SUBTITLE:
-    "At Creators Studio, we're creating a place (Studio) where women and gender minorities can have fun on the Web3!",
-  IMBALANCE_IN_EMPLOYMENT_TITLE: "Percentage imbalance in employment",
-  IMBALANCE_IN_EMPLOYMENT_TEXT:
-    "The percentage of women in Japan's technology industry is about 24.8%. This is a tiny number considering that they account for about 44.5% of all sectors. Furthermore, among the occupations that have seen global employment growth over the past five years, women are underrepresented in the three areas of Data and AI Engineering and Cloud Computing, which require particularly advanced and technologically advanced skills.",
-  IMBALANCE_IN_EMPLOYMENT_EMOJI: "😠 😲 Wrong!!!",
-  WAGE_GAP_TITLE: "Post-employment wage gap",
-  WAGE_GAP_TEXT:
-    "The wage gap between men and women in Japan is the largest among the major national economies (France, the United States, the United Kingdom, Germany, Japan, Italy, and Canada). The OECD average is 88.4, the most significant gap among major countries.",
-  WAGE_GAP_EMOJI: "😠 😱 We have to change!!!",
-  REPRODUCTION_BIAS_TITLE: "Reproduction of bias",
-  REPRODUCTION_BIAS_TEXT_1:
-    "In many cases, women and sexual minorities are not considered in existing science and technology. This is beginning to be studied as 'Gendered Innovation'.",
-  REPRODUCTION_BIAS_TEXT_2:
-    "Gender imbalance in technical specialties can cause AI to make biased decisions. AI built with gender-biased data has reproduced the bias. For example, there is a case where Amazon's hiring AI tool discriminated against men and women. While it is good that we were able to notice this, in this case, we don't want such a happening again, do we?",
-  REPRODUCTION_BIAS_TEXT_3:
-    "We are already starting to see a gender gap in Web3. For example, women own only 1/3 of crypto assets in developed countries.",
-  REPRODUCTION_BIAS_TEXT_4:
-    "We need more gender minority developers and Web3 participants in the future.",
-  REPRODUCTION_BIAS_EMOJI: "✊ 🔥 More women and gender minority creators!!!",
-  INCREASE_NUMBER_TITLE:
-    "Increase the number of women and gender minorities involved in the Web3 ecosystem",
-  INCREASE_NUMBER_TEXT_1:
-    "Increase the number of women and gender minorities involved in the Web3 ecosystem",
-  INCREASE_NUMBER_TEXT_2:
-    "So we create a place where women and gender minorities in Japan can feel safe, gain knowledge, make friends, and create new value! Through our activities, we will create creators who will be the future of Web3.",
-  INCREASE_NUMBER_EMOJI:
-    "✨😄 😊 💖 We want to create something fun together!!!",
-  SUPPORTER_TITLE: "Supporters",
-  SUPPORTER_TEXT:
-    "If you don't have time to participate in projects, yet want to learn about Web3? You can join as a supporter to gather infromation!",
-  WHAT_WE_DO_TITLE: "What we do in the community?",
-  WHAT_WE_DO_1_SUBTITLE: "Provide opportunities to learn while building",
-  WHAT_WE_DO_1_TEXT: "We provide various learning opportunities.",
-  WHAT_WE_DO_1_LIST_1: "Socialize on Twitter Space",
-  WHAT_WE_DO_1_LIST_2: "Interact with other communities",
-  WHAT_WE_DO_1_LIST_3: "Hold hackathon",
-  WHAT_WE_DO_1_LIST_4: "Hold reading sessions",
-  WHAT_WE_DO_1_LIST_5: "Hold conference",
-  WHAT_WE_DO_1_LIST_6: "Provide funding for projects",
-  WHAT_WE_DO_2_SUBTITLE:
-    "Increase the number of creators who can use Web3 as a weapon",
-  WHAT_WE_DO_2_TEXT: "Use knowledge of Web3 and technology.",
-  WHAT_WE_DO_2_LIST_1: "Get the proper knowledge about Web3",
-  WHAT_WE_DO_2_LIST_2: "Work with web3.js, Alchemy, Solidity",
-  WHAT_WE_DO_2_LIST_3: "Have experience in application development",
-  WHAT_WE_DO_2_LIST_4:
-    "Enthusiastic, active rather than passive, leadership skills",
-  WHAT_WE_DO_2_LIST_5: "Able to involve others and create with a team",
-  GOAL_TITLE: "Goal: Inclusive community created by Tech x Idea",
-  GOAL_TEXT:
-    "We will create a community where people from all walks of life, regardless of gender identity or occupation, can share their wisdom and collaborate to develop new and exciting values.",
-  REFERENCE: "References",
-};
+  HERO_TITLE: "Empowering womxn in Web3",
+  HERO_DESCRIPTION: "Close the gender gap before Web3 becomes male-dominated.",
+  SECTION_20_TITLE: "Web3≠MEN",
+  SECTION_20_DESCRIPTION: "A gender gap is also occurring in the Web3 world. The percentage of women owning crypto assets is only about 20%. Once a stereotype is created, it is difficult to dispel that image. However, the stereotype of \"Web3 = male\" is becoming a reality.",
+  SECTION_WHAT_WE_DO_TITLE: "What we do?",
+  SECTION_WHAT_WE_DO_DESCRIPTION: "We support womxn in launching projects by training the essential personnel in the initial setup, including smart contract development, token engineering, Frontend development, NFT development, Ecosystem strategy, and community management.",
+  SECTION_ACTIVITIES_FIRST_TITLE: "Help “Creators” to build their ideas come to life",
+  SECTION_ACTIVITIES_FIRST_DESCRIPTION: "We have launched a community dedicated to bridging the gender gap for Web3 creators. We are working to support women and gender minority creators and to make the Web3 world a more diverse and diverse place for collaboration to happen💚We are working to provide an opportunity for women and gender minorities to hone their technical knowledge and skills and become more confident in We create opportunities for women and gender minorities to come up with creative ideas and collaborate to bring them to life. We also assist with fundraising and project management to bring ideas to fruition. We do not, of course, want to blame men. We want to see a future where people of all genders, languages, races, and backgrounds can work together to create and share ideas! If you can relate to any of this, we'd love to have you join our community!",
+  SECTION_ACTIVITIES_SECOND_TITLE: "Get women and gender minorities into the world of Web3",
+  SECTION_ACTIVITIES_SECOND_DESCRIPTION: "What kind of person do you imagine when you hear the word \"engineer\"? Many of you probably think of a man. If this stereotype of engineers as men exists, it will be difficult to close the gender gap. We do not want to cause such a gender gap in the Web3 world. We love to 'Create'. We love to talk to different people, think of ideas, and make them happen. So we want to make the world of Web3 more and more diverse, beyond gender, language, and race, a world where people can collaborate! \．To achieve this, we are working on bridging the gender gap first. \We will increase the number of participants for women and gender minorities in the Web3 world by having them participate in our Web3 projects and actually experience planning, design, and implementation. \nWe invite creative ideas for creators specializing in Web3 and support the best ideas. \Create opportunities for creators specializing in Web3 to support and communicate with each other, and to support and collaborate with each other.",
+  SECTION_ACTIVITIES_THIRD_TITLE: "Our Vision for the Future",
+  SECTION_ACTIVITIES_THIRD_DESCRIPTION: "In a state where women creators are realizing their creative ideas using Web3 technology, they are free to create ideas and bring them to life. For example, female creators can use Web3 to create a new music platform that leverages blockchain. By utilizing Web3 technology, women creators can bring their unique ideas to life and reach a wider audience. \This is expected to promote the activities of female creators and achieve gender equality. It is also expected that new businesses and services will be created and economic benefits will be generated through the realization of creative ideas that utilize Web3 technology. Furthermore, the realization of creative ideas utilizing Web3 is expected to promote cultural diversity and innovation.",
+  SECTION_JOIN_COMMUNITY_TITLE: "Stay tuned!",
+  SECTION_JOIN_COMMUNITY_TEXT1: "I don't know Web3, but I want to incorporate NFT into my creative work",
+  SECTION_JOIN_COMMUNITY_TEXT2: "I want to be active in Web3",
+  SECTION_JOIN_COMMUNITY_TEXT3: "I have started to gather information about Web3",
+  SECTION_JOIN_COMMUNITY_TEXT4: "Join the community if you are interested!",
+}

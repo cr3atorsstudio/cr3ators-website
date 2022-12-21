@@ -18,6 +18,7 @@ export default function Index() {
   }, [isMenuOpen]);
 
   const locale = useLocale().locale;
+  const text = useLocale().t;
   return (
     <>
       <Head>
@@ -192,12 +193,11 @@ export default function Index() {
             <div className="my-auto">
             <h1 className="font-sans-serif">
               <span className="block text-[80px] leading-tight font-semibold">
-                Empowering <br />
-                womxn in Web3
+                {text.HERO_TITLE}
               </span>
             </h1>
             <section className="block w-30 text-2xl my-6">
-              <p>Close the gender gap before Web3 becomes male-dominated.</p>
+              <p>{text.HERO_DESCRIPTION}</p>
             </section>
             <a className="
               font-sans-serif text-2xl font-bold text-gray-900 rounded-full border-black border px-[28px] py-[18px]
@@ -221,9 +221,11 @@ export default function Index() {
               <Image src="/20percent.svg" width={290} height={135} />
             </div>
             <div className="w-[600px]">
-              <section className="text-xl">
-                <h1 className="text-bold text-4xl mb-3">Web3≠男性</h1>
-                <p>Web3の世界でもジェンダーギャップが発生しています。女性の暗号資産保有率は2割程度にとどまっています。ステレオタイプができるとそのイメージを払拭することは困難です。しかし「Web3＝男性」というステレオタイプが現実のものとなりつつあります。</p>
+              <section>
+                <div className="text-xl">
+                  <h1 className="text-bold text-4xl mb-3">{text.SECTION_20_TITLE}</h1>
+                  <p>{text.SECTION_20_DESCRIPTION}</p>
+                </div>
               </section>
             </div>
           </div>
@@ -232,22 +234,17 @@ export default function Index() {
           <div className="bg-blue-50 text-regal-blue p-10">
 
             <section>
-              <div className="w-3/6 mx-auto pb-10">
-                <h1 className="font-sans-serif text-4xl font-bold text-center mb-4">What we do?</h1>
-                <p>私たちは、smart contract開発、token engineering、Frontend開発、NFT開発、Eco system戦略、コミュニティ管理など、初期設定において必要な人材を育成して、womxnによるプロジェクト立ち上げを支援します。</p>
+              <div className="w-3/6 mx-auto pb-10 text-xl">
+                <h1 className="font-sans-serif text-4xl font-bold text-center mb-4">{text.SECTION_WHAT_WE_DO_TITLE}</h1>
+                <p>{text.SECTION_WHAT_WE_DO_DESCRIPTION}</p>
               </div>
             </section>
 
             <section>
               <div className="bg-white rounded-lg p-8 mb-10 text-m grid grid grid-flow-col">
                 <div className="">
-                  <h1 className="font-sans-serif text-6xl font-bold mb-4">Help “Creators” to build their ideas come to life</h1>
-                  <p>
-                    私たちは、Web3クリエイターのジェンダーギャップを解消することを目的としたコミュニティを立ち上げました。私たちは、女性とジェンダーマイノリティのクリエイターをサポートし、Web3の世界がより多様性に溢れ、様々なコラボレーションが起こる場所にするために活動しています💚
-                    私たちは女性とジェンダーマイノリティ向けに、技術的な知識やスキルを磨き、より自信を持ってクリエイティブなアイデアを思いつき、コラボレーションしながら実現することができる機会を作ります。また、実際にアイデアを実現するための資金調達や、プロジェクトマネージメントなどの支援も行います。
-                    私たちは、男性を責めたいわけではもちろんありません。性別、言語、人種を超えて、多様な人々と一緒にアイデアを出し合い作る未来がみたいんです！
-                    ぜひ少しでも共感してもらえたら私たちのコミュニティに参加してくれると嬉しいです！
-                  </p>
+                  <h1 className="font-sans-serif text-6xl font-bold mb-4">{text.SECTION_ACTIVITIES_FIRST_TITLE}</h1>
+                  <p>{text.SECTION_ACTIVITIES_FIRST_DESCRIPTION}</p>
                 </div>
                 <div className="rounded-lg bg-[#FFC2E6] p-[21px]">
                   <img src="socialmedia.gif" className="" width={600} height={600} />
@@ -262,13 +259,9 @@ export default function Index() {
                     <img src="boat.png" width={500} height={354}/>
                   </div>
                   <div className="p-8">
-                    <h1 className="font-sans-serif text-xl font-bold mb-4">Get women and gender minorities into the world of Web3</h1>
+                    <h1 className="font-sans-serif text-xl font-bold mb-4">{text.SECTION_ACTIVITIES_SECOND_TITLE}</h1>
                     <p>
-                      『エンジニア』という言葉を聞いてどういう人を想像しますか？おそらく男性が思い浮かんだ方は多いのではないでしょうか？このようなエンジニア＝男性というステレオタイプが存在するとジェンダーギャップを解消することは難しくなります。このようなジェンダーギャップをWeb3の世界では起こしたくないのです。私たちは『Create』することが大好きです。さまざまな人と話し、アイディアを考え、実現することが大好きです。なのでもっともっとWeb3の世界が性別、言語、人種を超えて、多様な人々とコラボレーションできる世界にします！
-                      そのために、まずはジェンダーギャップ解消に取り組んでいます。
-                      女性とジェンダーマイノリティ向けの参加者が、私たちのWeb3プロジェクトに参加し実際に企画、デザイン、実装を経験することでWeb3の世界で活躍する人たちを増やします。
-                      Web3に特化したクリエイター向けの創造的なアイデアを募集し、優秀なアイデアを支援します。
-                      Web3に特化したクリエイターを支援しコミュニケーションを取れる場を作り、互いにサポートしコラボレーションできる機会をつくります。
+                      {text. SECTION_ACTIVITIES_SECOND_DESCRIPTION}
                     </p>
                   </div>
                 </div>
@@ -280,11 +273,10 @@ export default function Index() {
                   </div>
                   <div className="p-8">
                     <h1 className="font-sans-serif text-xl font-bold mb-4">
-                      私たちの考える未来
+                      {text.SECTION_ACTIVITIES_THIRD_TITLE}
                     </h1>
                     <p>
-                      女性クリエイターが、Web3の技術を活用したクリエイティブなアイデアを実現している状態では、彼女たちは自由にアイデアを創造し、それを実現することができます。例えば、女性クリエイターがWeb3を使用して、ブロックチェーンを活用した新しい音楽プラットフォームを作成することができます。また、女性クリエイターがWeb3を使用して、分散型Webを活用した新しいSNSを作成することもできます。Web3の技術を活用することで、女性クリエイターは独自のアイデアを実現し、より多くの人々に発信することができます。
-                      これにより、女性クリエイターの活躍が促進され、男女平等が実現することが期待されます。また、Web3の技術を活用したクリエイティブなアイデアが実現することで、新しいビジネスやサービスが生まれ、経済的な利益が生み出されることが期待されます。さらに、Web3を活用したクリエイティブなアイデアが実現することで、文化的な多様性やイノベーションが促進されることが期待されます。
+                      {text.SECTION_ACTIVITIES_THIRD_DESCRIPTION}
                     </p>
                   </div>
                 </div>
@@ -297,13 +289,13 @@ export default function Index() {
           <div className="bg-white text-gray-900 py-10">
             <div className="w-5/6 mx-auto p-10 rounded-3xl bg-gradient-to-r from-[#d6f0ff]/75 via-[#ffe0a4]/75 to-[#f5a5d4]/75 grid grid-flow-col">
               <div className="mr-20">
-                <h1 className="font-sans-serif text-6xl font-bold text-center mb-4">Stay tuned!</h1>
+                <h1 className="font-sans-serif text-6xl font-bold text-center mb-4">{text.SECTION_JOIN_COMMUNITY_TITLE}</h1>
                 <ul className="list-disc ml-4">
-                  <li>Web3はわからないけど、創作活動にNFTをとりいれてみたい</li>
-                  <li>Web3で活躍できる人材になりたい</li>
-                  <li>情報収集を始めたい</li>
+                  <li>{text.SECTION_JOIN_COMMUNITY_TEXT1}</li>
+                  <li>{text.SECTION_JOIN_COMMUNITY_TEXT2}</li>
+                  <li>{text.SECTION_JOIN_COMMUNITY_TEXT3}</li>
                 </ul>
-                <p className="mt-4">こんな方はコミュニティに参加してみよう！</p>
+                <p className="mt-4">{text.SECTION_JOIN_COMMUNITY_TEXT4}</p>
                 <a className="
                   font-sans-serif text-base font-bold text-gray-900 rounded-full border-black border px-[20px] py-[14px]
                   bg-white mt-10 flex items-center justify-between w-52"
