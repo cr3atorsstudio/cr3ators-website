@@ -1,10 +1,11 @@
-import Head from "next/head";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Link from "next/link";
 import { useLocale } from "../hooks/useLocale";
 import { useCallback, useEffect, useState } from "react";
 import { useWindowSize } from "../hooks/useWindowSite";
 import Image from "next/image";
+import Navbar from "../components/Navbar";
+import Head from "next/head";
 
 export default function Index() {
   const [isMenuOpen, setOpenMenu] = useState(false);
@@ -13,9 +14,9 @@ export default function Index() {
     setOpenMenu(false);
   }, [useWindowSize()]);
 
-  const menuFunction = useCallback(() => {
-    setOpenMenu(!isMenuOpen);
-  }, [isMenuOpen]);
+  // const menuFunction = useCallback(() => {
+  //   setOpenMenu(!isMenuOpen);
+  // }, [isMenuOpen]);
 
   const locale = useLocale().locale;
   const text = useLocale().t;
@@ -70,196 +71,38 @@ export default function Index() {
         />
         <meta property="og:image" content="/favicon/creatorsstudio.jpeg" />
       </Head>
-
-      <header className="sticky top-0 z-40 flex w-full flex-none items-center bg-white p-4 px-8 shadow">
-        <Link href="/" className="flex-none">
-          <span className="text-md cursor-pointer font-sans-serif font-bold text-gray-900 md:text-2xl">
-            CREATORS STUDIO
-          </span>
-        </Link>
-
-        <nav className="ml-auto flex columns-3 place-content-around items-center gap-4">
-          <a href="https://twitter.com/cr3atorsstudio" target="_blank">
-            <Image
-              src="/twitter.svg"
-              alt="Twitter Logo"
-              width={29.72}
-              height={24.14}
-            />
-          </a>
-          <a href="https://www.instagram.com/cr3atorsstudio" target="_blank">
-            <Image
-              src="/instagram.svg"
-              alt="Instagram Logo"
-              width={28.55}
-              height={28.55}
-            />
-          </a>
-          <ConnectButton.Custom>
-            {({
-              account,
-              chain,
-              openAccountModal,
-              openChainModal,
-              openConnectModal,
-              authenticationStatus,
-              mounted,
-            }) => {
-              const ready = mounted && authenticationStatus !== "loading";
-              const connected =
-                ready &&
-                account &&
-                chain &&
-                (!authenticationStatus ||
-                  authenticationStatus === "authenticated");
-
-              return (
-                <div
-                  {...(!ready && {
-                    "aria-hidden": true,
-                    style: {
-                      opacity: 0,
-                      pointerEvents: "none",
-                      userSelect: "none",
-                    },
-                  })}
-                >
-                  {(() => {
-                    if (!connected) {
-                      return (
-                        <button onClick={openConnectModal} type="button">
-                          <Image
-                            src="/wallet.svg"
-                            alt="Instagram Logo"
-                            width={36}
-                            height={36}
-                          />
-                        </button>
-                      );
-                    }
-
-                    if (chain.unsupported) {
-                      return (
-                        <button onClick={openChainModal} type="button">
-                          Wrong network
-                        </button>
-                      );
-                    }
-                    return (
-                      <div style={{ display: "flex", gap: 12 }}>
-                        <button
-                          onClick={openChainModal}
-                          style={{ display: "flex", alignItems: "center" }}
-                          type="button"
-                        >
-                          {chain.hasIcon && (
-                            <div
-                              style={{
-                                background: chain.iconBackground,
-                                width: 12,
-                                height: 12,
-                                borderRadius: 999,
-                                overflow: "hidden",
-                                marginRight: 4,
-                              }}
-                            >
-                              {chain.iconUrl && (
-                                <img
-                                  alt={chain.name ?? "Chain icon"}
-                                  src={chain.iconUrl}
-                                  style={{ width: 12, height: 12 }}
-                                />
-                              )}
-                            </div>
-                          )}
-                          {chain.name}
-                        </button>
-                        <button onClick={openAccountModal} type="button">
-                          {account.displayName}
-                          {account.displayBalance
-                            ? ` (${account.displayBalance})`
-                            : ""}
-                        </button>
-                      </div>
-                    );
-                  })()}
-                </div>
-              );
-            }}
-          </ConnectButton.Custom>
-
-          <a
-            className="hidden rounded-full
-            border border-black bg-gradient-to-r from-[#FFADDD] to-[#B6E6FF] px-[20px] py-[14px] font-sans-serif text-base
-            font-bold text-gray-900 md:block"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform"
-            target="_blank"
-          >
-            Join Community
-          </a>
-
-          <div className="gap-0">
-            <Link href="/" locale={locale === "ja" ? "en" : "ja"} passHref>
-              <span
-                className={
-                  locale === "ja"
-                    ? "select-none font-sans-serif text-gray-900"
-                    : "select-none font-sans-serif text-gray-500"
-                }
-              >
-                JP
-              </span>
-            </Link>
-            &nbsp;&#47;&nbsp;
-            <Link href="/" locale={locale === "ja" ? "en" : "ja"} passHref>
-              <span
-                className={
-                  locale === "ja"
-                    ? "select-none font-sans-serif text-gray-500"
-                    : "select-none font-sans-serif text-gray-900"
-                }
-              >
-                EN
-              </span>
-            </Link>
-          </div>
-        </nav>
-      </header>
+      <Navbar />
       <main className="mx-auto">
-        <section className="p-6 md:p-20">
-          <div className="flex flex-col content-center justify-between md:flex-row">
-            <div className="flex flex-col justify-center">
+        <section className="p-10">
+          <div className="flex content-center justify-between">
+            <div className="">
               <h1 className="font-sans-serif">
-                <span className="block text-4xl font-semibold leading-tight sm:tracking-normal md:text-8xl md:tracking-normal">
+                <span className="block text-8xl font-semibold leading-tight">
                   {text.HERO_TITLE}
                 </span>
               </h1>
-              <section className="w-30 my-6 block sm:text-xl md:text-2xl">
+              <section className="w-30 my-6 block text-2xl">
                 <p>{text.HERO_DESCRIPTION}</p>
               </section>
-              <div className="flex justify-center">
-                <a
-                  className="mt-4
-                flex w-2/3 items-center rounded-full border border-black bg-gradient-to-r from-[#FFADDD]
+              <a
+                className="
+                flex w-80 items-center justify-between rounded-full border border-black bg-gradient-to-r from-[#FFADDD]
                 to-[#B6E6FF] px-[28px] py-[18px]
-                font-sans-serif font-bold text-gray-900 md:w-80 md:text-2xl"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform"
-                  target="_blank"
-                >
-                  Join Community
-                  <div className="ml-2 flex items-center md:ml-4">
-                    <Image
-                      className="md:ml-8"
-                      src="/arrow-right.svg"
-                      alt="right arrow"
-                      width={24}
-                      height={24}
-                    />
-                  </div>
-                </a>
-              </div>
+                font-sans-serif text-2xl font-bold text-gray-900"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform"
+                target="_blank"
+              >
+                Join Community
+                <Image
+                  className="ml-8"
+                  src="/arrow-right.svg"
+                  alt="right arrow"
+                  width={24}
+                  height={24}
+                />
+              </a>
             </div>
-            <div className="sm:my-10">
+            <div className="">
               <img src="teammtg.png" width={580} height={580} />
             </div>
           </div>
@@ -295,7 +138,6 @@ export default function Index() {
                 </p>
               </div>
             </section>
-
             <section>
               <div className="text-m mb-10 flex basis-1/2 flex-row flex-col rounded-lg bg-white p-6 md:flex-row md:p-10">
                 <div className="basis-2/3 md:pr-10">
@@ -316,7 +158,6 @@ export default function Index() {
                 </div>
               </div>
             </section>
-
             <div className="flex flex-col md:flex-row">
               <section className="w-full basis-1/2">
                 <div className="peer-h-max rounded-lg border-4 border-white bg-white md:mr-4">
