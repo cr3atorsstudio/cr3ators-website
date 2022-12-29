@@ -117,23 +117,23 @@ const Mint: NextPage = () => {
       <Navbar />
       <main className="bg-white font-sans-serif ">
         <section className="flex h-screen flex-col">
-          <h1 className="mt-16 text-center text-[64px] font-bold text-text-gray-900">
+          <h1 className="mt-16 text-center text-2xl font-bold text-text-gray-900 md:text-[64px]">
             Creators Studio NFT
           </h1>
 
           <div className="mx-auto mt-16 w-4/5 rounded-3xl bg-white p-6 drop-shadow-card">
-            <h2 className="mt-5 mb-10 ml-10 text-4xl font-bold text-mint-subtitle">
+            <h2 className="mt-5 mb-10 font-bold text-mint-subtitle md:ml-10 md:text-4xl">
               500 uniquely generated Creators Community NFT!
             </h2>
-            <div className="flex items-center justify-between">
-              <p className="ml-10 w-1/2 text-2xl leading-relaxed">
+            <div className="flex flex-col items-center justify-between md:flex-row">
+              <p className="leading-relaxed md:ml-10 md:w-1/2 md:text-2xl">
                 The Creators Community NFT is a unique initiative that uses
                 blockchain technology to raise awareness about gender inequality
                 in web3 and increase the number of women and gender minorities
                 to close the gender gap in web3.
               </p>
               <img
-                className="mr-20 w-1/3"
+                className="md:mr-20 md:w-1/3"
                 src="documents.png"
                 alt="woman holding documents"
               />
@@ -145,14 +145,14 @@ const Mint: NextPage = () => {
           <h2 className="mt-10 mb-16 text-center text-5xl font-bold text-mint-subtitle ">
             Collection
           </h2>
-          <div className="mx-auto flex w-4/5 justify-center ">
+          <div className="mx-auto flex justify-center md:w-4/5 ">
             <div className="mx-4 flex flex-col items-center">
               <p>Creator</p>
               <label htmlFor="creator" className="mb-1 ">
                 <img
                   src="maru.png"
                   alt=""
-                  className={`m-1 h-72 w-72 cursor-pointer drop-shadow-collection ${
+                  className={`m-1 cursor-pointer drop-shadow-collection md:h-72 md:w-72 ${
                     tokenId === 0 && "border-4 border-mint-subtitle"
                   }`}
                 />
@@ -174,7 +174,7 @@ const Mint: NextPage = () => {
                 <img
                   src="shikaku.png"
                   alt=""
-                  className={`m-1 h-72 w-72 cursor-pointer drop-shadow-collection ${
+                  className={`m-1 cursor-pointer drop-shadow-collection md:h-72 md:w-72 ${
                     tokenId === 1 && "border-4 border-mint-subtitle"
                   }`}
                 />
