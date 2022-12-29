@@ -9,7 +9,7 @@ const Navbar = () => {
     <>
       <header className="sticky top-0 z-40 flex w-full flex-none items-center bg-white p-4 px-8 shadow">
         <Link href="/" className="flex-none">
-          <span className="cursor-pointer font-sans-serif text-2xl font-bold text-gray-900">
+          <span className="text-l cursor-pointer font-sans-serif font-bold text-gray-900 md:text-2xl">
             CREATORS STUDIO
           </span>
         </Link>
