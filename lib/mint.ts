@@ -2,13 +2,12 @@ import { ethers } from "ethers";
 
 export const mintNFT = async (
   mintContract: ethers.Contract,
-  num: number, // mintする個数
   tokenId: number
 ) => {
   try {
     const { ethereum } = window;
     if (ethereum) {
-      await mintContract.mint(tokenId, num, {
+      await mintContract.mint(tokenId, 1, {
         gasLimit: 300000,
       });
 
