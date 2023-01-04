@@ -63,11 +63,6 @@ const Mint: NextPage = () => {
     }
   }, [mintContract]);
 
-  useEffect(() => {
-    console.log("change tokenId");
-    console.log(tokenId);
-  }, [tokenId]);
-
   const getNftNum = useCallback(async () => {
     try {
       const { ethereum } = window;
@@ -139,7 +134,6 @@ const Mint: NextPage = () => {
         setError("You have minted this NFT before");
         setProcess({ show: true, message: "You have minted this NFT before" });
         setLoading(false);
-
         return;
       }
 
@@ -153,14 +147,11 @@ const Mint: NextPage = () => {
   }, []);
 
   const onCreatorClick = useCallback(() => {
-    console.log("onCreatorClick");
     setTokenId(0);
-  }, [tokenId]);
+  }, []);
 
   const onSupporterClick = useCallback(() => {
     setTokenId(1);
-    console.log("onSupportClick");
-    console.log(tokenId);
   }, []);
 
   const handleOnClickNotification = useCallback(() => {
