@@ -18,6 +18,9 @@ const Mint: NextPage = () => {
   const [creatorNftNum, setCreatorNftNum] = useState(0);
   const [isLoading, setLoading] = useState(false);
   const [process, setProcess] = useState({ show: true, message: "" });
+  const [signerAddress, setSignerAddress] = useState("");
+  const [mintedCreator, setMintedCreator] = useState(false);
+  const [mintedSupporter, setMintedSupporter] = useState(false);
   const { address } = useAccount();
 
   useEffect(() => {
@@ -60,21 +63,34 @@ const Mint: NextPage = () => {
     }
   }, [mintContract]);
 
+  useEffect(() => {
+    console.log("change tokenId");
+    console.log(tokenId);
+  }, [tokenId]);
+
   const getNftNum = useCallback(async () => {
     try {
       const { ethereum } = window;
       if (ethereum) {
         const provider = new ethers.providers.Web3Provider(ethereum as any);
         const signer = provider.getSigner();
+        setSignerAddress(await signer.getAddress());
         const creatorsNft = mintContract
           ? mintContract
           : new ethers.Contract(CONTRACT_ADDRESS, contractABI, signer);
 
-        const creator = await creatorsNft.balanceOf(CONTRACT_ADDRESS, 0);
-        const supporter = await creatorsNft.balanceOf(CONTRACT_ADDRESS, 1);
+        const creator = await creatorsNft.balanceOf(signer.getAddress(), 0);
+        console.log(creator.toNumber());
+        if (creator.toNumber() !== 0) {
+          setMintedCreator(true);
+        }
+        const supporter = await creatorsNft.balanceOf(signer.getAddress(), 1);
+        console.log(supporter.toNumber());
+        if (supporter.toNumber() !== 0) {
+          setMintedSupporter(true);
+        }
 
-        setSupporterNftNum(supporter.toNumber());
-        setCreatorNftNum(creator.toNumber());
+        const mintedSupporter = supporter == 0;
       } else {
         throw new Error("wallet is not connected");
       }
@@ -134,14 +150,17 @@ const Mint: NextPage = () => {
     } catch (e) {
       console.error("Something went wrong while minting");
     }
-  }, [mintContract]);
+  }, []);
 
   const onCreatorClick = useCallback(() => {
+    console.log("onCreatorClick");
     setTokenId(0);
-  }, []);
+  }, [tokenId]);
 
   const onSupporterClick = useCallback(() => {
     setTokenId(1);
+    console.log("onSupportClick");
+    console.log(tokenId);
   }, []);
 
   const handleOnClickNotification = useCallback(() => {
@@ -190,7 +209,7 @@ const Mint: NextPage = () => {
                   alt=""
                   className={`m-1 cursor-pointer drop-shadow-collection md:h-72 md:w-72 ${
                     tokenId === 0 && "border-4 border-mint-subtitle"
-                  }`}
+                  } ${mintedCreator && "opacity-40"}`}
                 />
               </label>
               <input
@@ -199,9 +218,10 @@ const Mint: NextPage = () => {
                 value=""
                 name="default-radio"
                 className="hidden"
+                disabled={mintedCreator}
                 onClick={onCreatorClick}
               />
-              <p>{creatorNftNum} available </p>
+              <p>{mintedCreator ? "non available" : "available"}</p>
             </div>
 
             <div className="mx-4 flex flex-col items-center">
@@ -212,7 +232,7 @@ const Mint: NextPage = () => {
                   alt=""
                   className={`m-1 cursor-pointer drop-shadow-collection md:h-72 md:w-72 ${
                     tokenId === 1 && "border-4 border-mint-subtitle"
-                  }`}
+                  } ${mintedSupporter && "opacity-40"}`}
                 />
               </label>
               <input
@@ -221,10 +241,11 @@ const Mint: NextPage = () => {
                 value=""
                 name="default-radio"
                 className="hidden"
+                disabled={mintedSupporter}
                 min={0}
                 onClick={onSupporterClick}
               />
-              <p>{supporterNftNum} available </p>
+              <p>{mintedSupporter ? "non available" : "available"}</p>
             </div>
           </div>
 
@@ -233,10 +254,13 @@ const Mint: NextPage = () => {
             <button
               className="mt-20 h-16 w-32 cursor-pointer rounded-full bg-mint-button font-bold text-white disabled:cursor-not-allowed disabled:bg-gray-400"
               onClick={() => onMint()}
-              disabled={error !== ""}
+              disabled={error !== "" || (mintedCreator && mintedSupporter)}
             >
               Mint
             </button>
+            <a href={`https://opensea.io/${signerAddress}`} target="_blank">
+              🟣Check your symbols🟪
+            </a>
           </div>
           {process.show && (
             <Notification

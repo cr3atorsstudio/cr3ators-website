@@ -74,36 +74,38 @@ export default function Index() {
       <Navbar />
       <main className="mx-auto">
         <section className="p-6 md:p-20">
-          <div className="flex flex-col content-center justify-between md:flex-row">
-            <div className="flex flex-col justify-center">
-              <h1 className="font-sans-serif">
-                <span className="block text-4xl font-semibold leading-tight sm:tracking-normal md:text-8xl md:tracking-normal">
-                  {text.HERO_TITLE}
-                </span>
-              </h1>
-              <section className="w-30 my-6 block sm:text-xl md:text-2xl">
-                <p>{text.HERO_DESCRIPTION}</p>
-              </section>
-              <div className="flex justify-center">
-                <a
-                  className="mt-4
+          <div className="flex flex-col content-center justify-between">
+            <div className="flex flex-col  justify-center md:flex-row">
+              <div>
+                <h1 className="font-sans-serif">
+                  <span className="block text-4xl font-semibold leading-tight sm:tracking-normal md:text-8xl md:tracking-normal">
+                    {text.HERO_TITLE}
+                  </span>
+                </h1>
+                <section className="w-30 my-6 block sm:text-xl md:text-2xl">
+                  <p>{text.HERO_DESCRIPTION}</p>
+                </section>
+                <div className="flex justify-center">
+                  <a
+                    className="mt-4
                 flex w-2/3 items-center rounded-full border border-black bg-gradient-to-r from-[#FFADDD]
                 to-[#B6E6FF] px-[28px] py-[18px]
                 font-sans-serif font-bold text-gray-900 md:w-80 md:text-2xl"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform"
-                  target="_blank"
-                >
-                  Join Community
-                  <div className="ml-2 flex items-center md:ml-4">
-                    <Image
-                      className="md:ml-8"
-                      src="/arrow-right.svg"
-                      alt="right arrow"
-                      width={24}
-                      height={24}
-                    />
-                  </div>
-                </a>
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform"
+                    target="_blank"
+                  >
+                    Join Community
+                    <div className="ml-2 flex items-center md:ml-4">
+                      <Image
+                        className="md:ml-8"
+                        src="/arrow-right.svg"
+                        alt="right arrow"
+                        width={24}
+                        height={24}
+                      />
+                    </div>
+                  </a>
+                </div>
               </div>
               <div className="">
                 <img src="teammtg.png" width={580} height={580} />
