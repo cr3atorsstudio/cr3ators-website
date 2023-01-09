@@ -6,6 +6,7 @@ import { ethers } from "ethers";
 import abi from "../lib/CreatorsNFT.json";
 import Navbar from "../components/Navbar";
 import { useAccount } from "wagmi";
+import { Notification } from "../components/Notification";
 
 const contractABI = abi.abi;
 
@@ -15,6 +16,8 @@ const Mint: NextPage = () => {
   const [error, setError] = useState("");
   const [supporterNftNum, setSupporterNftNum] = useState(0);
   const [creatorNftNum, setCreatorNftNum] = useState(0);
+  const [isLoading, setLoading] = useState(false);
+  const [process, setProcess] = useState({ show: true, message: "" });
   const { address } = useAccount();
 
   useEffect(() => {
@@ -34,9 +37,27 @@ const Mint: NextPage = () => {
     }
   }, []);
 
+  const onMintComplete = () => {
+    setProcess({
+      show: true,
+      message: "Mint has finished!",
+    });
+
+    setTimeout(() => {
+      setProcess({ show: false, message: "" });
+    }, 5000);
+  };
+
   useEffect(() => {
     if (mintContract) {
       getNftNum();
+
+      // TODO: Need to add event in the contract
+      mintContract.on("NFTMinted", onMintComplete);
+
+      return () => {
+        mintContract.off("NFTMinted", onMintComplete);
+      };
     }
   }, [mintContract]);
 
@@ -91,16 +112,28 @@ const Mint: NextPage = () => {
   }, [mintContract]);
 
   const onMint = useCallback(async () => {
-    setError("");
-    const hasMinted = await checkMint();
+    try {
+      setError("");
+      setProcess({
+        show: true,
+        message: "Please approve in your wallet to proceed minting!",
+      });
+      const hasMinted = await checkMint();
 
-    if (hasMinted) {
-      setError("You have minted this NFT before");
-      return;
-    }
+      if (hasMinted) {
+        setError("You have minted this NFT before");
+        setProcess({ show: true, message: "You have minted this NFT before" });
+        setLoading(false);
 
-    if (!hasMinted && mintContract) {
-      await mintNFT(mintContract, tokenId);
+        return;
+      }
+
+      if (!hasMinted && mintContract) {
+        await mintNFT(mintContract, tokenId);
+        setProcess({ show: true, message: "Minting..." });
+      }
+    } catch (e) {
+      console.error("Something went wrong while minting");
     }
   }, [mintContract]);
 
@@ -110,6 +143,10 @@ const Mint: NextPage = () => {
 
   const onSupporterClick = useCallback(() => {
     setTokenId(1);
+  }, []);
+
+  const handleOnClickNotification = useCallback(() => {
+    setProcess({ show: false, message: "" });
   }, []);
 
   return (
@@ -202,6 +239,12 @@ const Mint: NextPage = () => {
               Mint
             </button>
           </div>
+          {process.show && (
+            <Notification
+              process={process}
+              onClickAction={handleOnClickNotification}
+            />
+          )}
         </section>
       </main>
     </>
