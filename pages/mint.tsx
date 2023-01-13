@@ -52,7 +52,6 @@ const Mint: NextPage = () => {
     if (mintContract) {
       getNftNum();
 
-      // TODO: Need to add event in the contract
       mintContract.on("NFTMinted", onMintComplete);
 
       return () => {
