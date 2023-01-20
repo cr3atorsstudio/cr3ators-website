@@ -20,6 +20,14 @@ export default {
   SECTION_ACTIVITIES_FOURTH_TITLE: "yancan.fm",
   SECTION_ACTIVITIES_FOURTH_DESCRIPTION:
     "yancan.fm は、ニューヨークの美大大学院に通うりほやんと、東京フルリモート多めのりさきゃん。エンジニア2人が今気になるテックや日米それぞれの日常について話してます",
+  SECTION_ACTIVITIES_FIFTH_TITLE: "GalTuber Amira",
+  SECTION_ACTIVITIES_FIFTH_DESCRIPTION: "",
+  SECTION_ACTIVITIES_SIXTH_TITLE: "Cider x WonderPals Collaboration",
+  SECTION_ACTIVITIES_SIXTH_DESCRIPTION:
+    "ファッションブランドのCiderとWonderpalのコラボレーションNFTプロジェクトです。CiderPalはCiderのコレクションからインスピレーションを受け、コレクションの実際の作品を使って描かれています。\nこのプロジェクトでは主にSmartContractの開発を担当しました",
+  SECTION_ACTIVITIES_SEVENTH_TITLE: "Naminori",
+  SECTION_ACTIVITIES_SEVENTH_DESCRIPTION:
+    "Naminoriは、信頼できるインフルエンサーが支援するWeb3のクラウドファンディングのプロジェクトを見つけることができるサービスです。このサービスでWeb3の次のホットなプロジェクトを見つけましょう！\n DappsとSmart Contractの開発を行いました。",
   SECTION_JOIN_COMMUNITY_TITLE: "Stay tuned!",
   SECTION_JOIN_COMMUNITY_TEXT1:
     "私たちは試すこと、行動すること、クリエイトすることが大好きです！\n ぜひ私たちと一緒にクリエイトしましょう！\n「興味があるけどやったことがなくて不安」\n大歓迎です。誰もが最初は初心者です。しかもweb3はまだまだ経験がある人の方が少ないです。今が一番大チャンスです！\nDiscordコミュニティでは記事のシェアや雑談したりしています！",
