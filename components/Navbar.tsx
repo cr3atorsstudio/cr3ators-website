@@ -7,7 +7,7 @@ const Navbar = () => {
   const locale = useLocale().locale;
   return (
     <>
-      <header className="sticky top-0 z-40 flex w-full flex-none items-center bg-white p-4 px-8 shadow">
+      <header className="sticky top-0 z-40 flex w-full flex-none items-center bg-white p-4 shadow md:px-8">
         <Link href="/" className="flex-none">
           <span className="text-l cursor-pointer font-sans-serif font-bold text-gray-900 md:text-2xl">
             CREATORS STUDIO
@@ -15,7 +15,11 @@ const Navbar = () => {
         </Link>
 
         <nav className="ml-auto flex columns-3 place-content-around items-center gap-4">
-          <a href="https://twitter.com/cr3atorsstudio" target="_blank">
+          <a
+            className="hidden md:block"
+            href="https://twitter.com/cr3atorsstudio"
+            target="_blank"
+          >
             <Image
               src="/twitter.svg"
               alt="Twitter Logo"
@@ -23,7 +27,23 @@ const Navbar = () => {
               height={24.14}
             />
           </a>
-          <a href="https://www.instagram.com/cr3atorsstudio" target="_blank">
+          <a
+            className="hidden md:block"
+            href="https://creatorsstudio.substack.com/"
+            target="_blank"
+          >
+            <Image
+              src="/substack.svg"
+              alt="Substack Logo"
+              width={28.55}
+              height={28.55}
+            />
+          </a>
+          <a
+            className="hidden md:block"
+            href="https://www.instagram.com/cr3atorsstudio"
+            target="_blank"
+          >
             <Image
               src="/instagram.svg"
               alt="Instagram Logo"
@@ -125,9 +145,9 @@ const Navbar = () => {
           </ConnectButton.Custom>
 
           <a
-            className="
-            rounded-full border border-black bg-gradient-to-r from-[#FFADDD] to-[#B6E6FF] px-[20px] py-[14px] font-sans-serif
-            text-base font-bold text-gray-900"
+            className="hidden rounded-2xl
+            border border-black bg-gradient-to-r from-[#FFADDD] to-[#B6E6FF] px-2 py-2 font-sans-serif text-sm text-base
+            font-bold text-gray-900 md:block"
             href="https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform"
             target="_blank"
           >

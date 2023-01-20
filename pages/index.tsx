@@ -74,36 +74,40 @@ export default function Index() {
       <Navbar />
       <main className="mx-auto">
         <section className="p-6 md:p-20">
-          <div className="flex flex-col content-center justify-between md:flex-row">
-            <div className="flex flex-col justify-center">
-              <h1 className="font-sans-serif">
-                <span className="block text-4xl font-semibold leading-tight sm:tracking-normal md:text-8xl md:tracking-normal">
-                  {text.HERO_TITLE}
-                </span>
-              </h1>
-              <section className="w-30 my-6 block sm:text-xl md:text-2xl">
-                <p>{text.HERO_DESCRIPTION}</p>
-              </section>
-              <div className="flex justify-center">
-                <a
-                  className="mt-4
-                flex w-2/3 items-center rounded-full border border-black bg-gradient-to-r from-[#FFADDD]
+          <div className="flex flex-col content-center justify-between">
+            <div className="flex flex-col  justify-center md:flex-row">
+              <div>
+                <h1 className="font-sans-serif">
+                  <span className="block text-4xl font-semibold leading-tight sm:tracking-normal md:text-8xl md:tracking-normal">
+                    {text.HERO_TITLE}
+                  </span>
+                </h1>
+                <section className="w-30 my-6 block sm:text-xl md:text-2xl">
+                  <p>{text.HERO_DESCRIPTION}</p>
+                </section>
+                {/*
+                <div className="flex justify-center">
+                  <a
+                    className="mt-4
+                flex w-1/2 items-center rounded-full border border-black bg-gradient-to-r from-[#FFADDD]
                 to-[#B6E6FF] px-[28px] py-[18px]
-                font-sans-serif font-bold text-gray-900 md:w-80 md:text-2xl"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform"
-                  target="_blank"
-                >
-                  Join Community
-                  <div className="ml-2 flex items-center md:ml-4">
-                    <Image
-                      className="md:ml-8"
-                      src="/arrow-right.svg"
-                      alt="right arrow"
-                      width={24}
-                      height={24}
-                    />
-                  </div>
-                </a>
+                font-sans-serif font-bold text-gray-900 md:w-60 md:text-2xl"
+                    href=""
+                    target="_blank"
+                  >
+                    Follow us!
+                    <div className="ml-2 flex items-center md:ml-4">
+                      <Image
+                        className="md:ml-8"
+                        src="/arrow-right.svg"
+                        alt="right arrow"
+                        width={24}
+                        height={24}
+                      />
+                    </div>
+                  </a>
+                </div>
+  */}
               </div>
               <div className="">
                 <img src="teammtg.png" width={580} height={580} />
@@ -114,7 +118,7 @@ export default function Index() {
 
         <section>
           <div className="flex flex-col items-center justify-around bg-yellow-50 py-14 px-4 text-brown md:flex-row md:py-32 md:px-40">
-            <div className="flex justify-center">
+            <div className="mx-18 flex justify-center">
               <Image src="/20percent.svg" width={290} height={135} />
             </div>
             <div className="sm:w-full md:w-[600px]">
@@ -123,7 +127,7 @@ export default function Index() {
                   <h1 className="text-bold mb-6 text-2xl md:text-4xl">
                     {text.SECTION_20_TITLE}
                   </h1>
-                  <p className="text-xl leading-8">
+                  <p className="text-sm leading-8 md:text-xl">
                     {text.SECTION_20_DESCRIPTION}
                   </p>
                 </div>
@@ -135,10 +139,10 @@ export default function Index() {
           <div className="bg-blue-50 p-4 pb-14 text-regal-blue md:p-14">
             <section>
               <div className="mx-auto w-full pb-12 text-xl md:w-3/6">
-                <h1 className="mt-10 mb-4 text-center font-sans-serif text-2xl font-bold md:mt-0 md:text-4xl">
+                <h1 className="mt-10 mb-4 text-center font-sans-serif text-4xl font-bold md:mt-0">
                   {text.SECTION_WHAT_WE_DO_TITLE}
                 </h1>
-                <p className=" leading-8">
+                <p className=" text-sm tracking-wide md:text-xl md:leading-loose">
                   {text.SECTION_WHAT_WE_DO_DESCRIPTION}
                 </p>
               </div>
@@ -149,16 +153,16 @@ export default function Index() {
                   <h1 className="mb-4 font-sans-serif text-3xl font-bold tracking-wide md:text-6xl md:leading-relaxed">
                     {text.SECTION_ACTIVITIES_FIRST_TITLE}
                   </h1>
-                  <p className="text-sm leading-7 md:text-base">
+                  <p className="text-sm leading-loose md:text-lg md:text-base md:tracking-wide">
                     {text.SECTION_ACTIVITIES_FIRST_DESCRIPTION}
                   </p>
                 </div>
-                <div className="mt-6 basis-1/3 rounded-lg bg-[#FFC2E6] p-[21px]">
+                <div className="mt-6 flex basis-1/3 justify-center rounded-lg bg-[#FFC2E6] p-[21px]">
                   <img
                     src="socialmedia.gif"
                     className=""
-                    width={600}
-                    height={600}
+                    width={300}
+                    height={300}
                   />
                 </div>
               </div>
@@ -173,38 +177,40 @@ export default function Index() {
                     <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
                       {text.SECTION_ACTIVITIES_SECOND_TITLE}
                     </h1>
-                    <p className="md:leading-7">
+                    <p className="text-sm leading-loose md:text-lg md:tracking-wide ">
                       {text.SECTION_ACTIVITIES_SECOND_DESCRIPTION}
                     </p>
                   </div>
                 </div>
               </section>
               <section className="mt-10 basis-1/2 md:mt-0">
-                <div className="h-full rounded-lg border-4 border-white bg-white md:ml-4">
-                  <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                    <img className="h-full" src="documents.png" />
+                <a href="https://shiritori.cr3ators.studio/" target="_blank">
+                  <div className="h-full rounded-lg border-4 border-white bg-white md:ml-4">
+                    <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                      <img className="h-full" src="shiritori.gif" />
+                    </div>
+                    <div className="p-8">
+                      <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
+                        {text.SECTION_ACTIVITIES_THIRD_TITLE}
+                      </h1>
+                      <p className="text-sm leading-loose md:text-lg md:tracking-wide ">
+                        {text.SECTION_ACTIVITIES_THIRD_DESCRIPTION}
+                      </p>
+                    </div>
                   </div>
-                  <div className="p-8">
-                    <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                      {text.SECTION_ACTIVITIES_THIRD_TITLE}
-                    </h1>
-                    <p className="md:leading-7">
-                      {text.SECTION_ACTIVITIES_THIRD_DESCRIPTION}
-                    </p>
-                  </div>
-                </div>
+                </a>
               </section>
             </div>
           </div>
         </section>
         <section>
-          <div className="bg-white py-10 text-gray-900">
-            <div className="mx-4 flex flex-col rounded-3xl bg-gradient-to-r from-[#d6f0ff]/75 via-[#ffe0a4]/75 to-[#f5a5d4]/75 p-6 md:mx-auto md:w-2/3 md:flex-row md:p-10">
+          <div className="flex justify-center bg-white py-10 text-gray-900">
+            <div className="mx-2 flex flex-col rounded-3xl bg-gradient-to-r from-[#d6f0ff]/75 via-[#ffe0a4]/75 to-[#f5a5d4]/75 p-6 md:mx-4 md:mx-auto md:w-2/3 md:flex-row md:p-10">
               <div className="basis-1/2 md:mr-20">
                 <h1 className="mt-4 mb-10 font-sans-serif text-4xl font-bold md:mt-0 md:text-6xl">
                   {text.SECTION_JOIN_COMMUNITY_TITLE}
                 </h1>
-                <ul className="ml-4 list-disc">
+                <ul className="md:text-md ml-4 text-sm leading-loose md:text-lg ">
                   <li>{text.SECTION_JOIN_COMMUNITY_TEXT1}</li>
                   <li>{text.SECTION_JOIN_COMMUNITY_TEXT2}</li>
                   <li>{text.SECTION_JOIN_COMMUNITY_TEXT3}</li>
@@ -235,6 +241,7 @@ export default function Index() {
             </div>
           </div>
         </section>
+        {/*
         <section>
           <div className="bg-purple-50 p-8 font-sans-serif text-black-purple">
             <h1 className="mb-4 border-black-purple text-center text-4xl font-bold md:text-6xl">
@@ -316,6 +323,7 @@ export default function Index() {
             </div>
           </div>
         </section>
+  */}
         <section>
           <div className="bg-white p-8 font-sans-serif text-gray-900">
             <h1 className="mb-4 text-center text-6xl font-bold">Team</h1>
@@ -371,14 +379,16 @@ export default function Index() {
               <span>Want to get updates from Creators Studio?</span>
             </div>
             <div>
-              <button
-                className="
+              <a href="https://creatorsstudio.substack.com/" target="_blank">
+                <button
+                  className="
                 rounded-full border border-black bg-gradient-to-r from-[#FFADDD] to-[#B6E6FF] px-[20px] py-[14px]
                 text-base font-bold text-gray-900
               "
-              >
-                Subscribe to our Newsletter
-              </button>
+                >
+                  Subscribe to our Newsletter
+                </button>
+              </a>
             </div>
           </div>
         </section>
@@ -386,8 +396,8 @@ export default function Index() {
       <footer>
         <div className="flex justify-between bg-white py-28 px-8 font-sans-serif text-gray-900">
           <span className="text-2xl font-bold">Creators Studio</span>
-          <div>
-            <span className="mx-4">
+          <div className="jusify-between flex">
+            <span className="mx-1 md:mx-4">
               <a href="https://twitter.com/cr3atorsstudio" target="_blank">
                 <Image
                   src="/twitter.svg"
@@ -397,7 +407,7 @@ export default function Index() {
                 />
               </a>
             </span>
-            <span className="mx-4">
+            <span className="mx-1 md:mx-4">
               <a
                 href="https://www.instagram.com/cr3atorsstudio"
                 target="_blank"
@@ -405,6 +415,16 @@ export default function Index() {
                 <Image
                   src="/instagram.svg"
                   alt="Instagram Logo"
+                  width={28.55}
+                  height={28.55}
+                />
+              </a>
+            </span>
+            <span className="mx-1 md:mx-4">
+              <a href="https://creatorsstudio.substack.com/" target="_blank">
+                <Image
+                  src="/substack.svg"
+                  alt="Substack Logo"
                   width={28.55}
                   height={28.55}
                 />

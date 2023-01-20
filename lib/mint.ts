@@ -5,6 +5,8 @@ export const mintNFT = async (
   tokenId: number
 ) => {
   try {
+    console.log("mint NFT tokenId");
+    console.log(tokenId);
     const { ethereum } = window;
     if (ethereum) {
       await mintContract.mint(tokenId, 1, {

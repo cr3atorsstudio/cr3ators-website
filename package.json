@@ -14,6 +14,7 @@
     "dotenv": "^16.0.3",
     "ethers": "^5.7.2",
     "gray-matter": "^4.0.3",
+    "html-react-parser": "^3.0.8",
     "intl": "^1.2.5",
     "next": "latest",
     "react": "^18.2.0",
