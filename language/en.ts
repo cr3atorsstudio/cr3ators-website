@@ -18,6 +18,9 @@ export default {
   SECTION_ACTIVITIES_THIRD_TITLE: "Our Vision for the Future",
   SECTION_ACTIVITIES_THIRD_DESCRIPTION:
     "When women creators realize their creative ideas using Web3 technologies, various changes can occur in society. First, diversity will be improved. First, diversity will increase, and women's opinions and perspectives will be reflected in the industry. Second, innovation will be enhanced. Women's opinions and perspectives will be reflected in the industry, making the industry as a whole more inclusive.",
+  SECTION_ACTIVITIES_FOURTH_TITLE: "yancan.fm",
+  SECTION_ACTIVITIES_FOURTH_DESCRIPTION:
+    "yancan.fm is the podcast from Rihoyan, a graduate student at an art college in New York, and Risakyan, a full-time remote engineer in Tokyo. The two engineers talk about what's hot in tech and their daily lives in Japan and the U.S",
   SECTION_JOIN_COMMUNITY_TITLE: "Stay tuned!",
   SECTION_JOIN_COMMUNITY_TEXT1:
     "I don't know Web3, but I want to incorporate NFT into my creative work",

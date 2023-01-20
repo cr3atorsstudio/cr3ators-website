@@ -169,15 +169,15 @@ export default function Index() {
             </section>
             <div className="flex flex-col md:flex-row">
               <section className="w-full basis-1/2">
-                <div className="peer-h-max rounded-lg border-4 border-white bg-white md:mr-4">
+                <div className="h-full rounded-lg border-4 border-white bg-white md:mr-4">
                   <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                    <img className="h-full w-auto" src="boat.png" />
+                    <img className="h-full w-auto" src="maru.png" />
                   </div>
                   <div className="p-8">
                     <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
                       {text.SECTION_ACTIVITIES_SECOND_TITLE}
                     </h1>
-                    <p className="text-sm leading-loose md:text-lg md:tracking-wide ">
+                    <p className="md:text-md text-sm leading-loose md:tracking-wide ">
                       {text.SECTION_ACTIVITIES_SECOND_DESCRIPTION}
                     </p>
                   </div>
@@ -185,7 +185,7 @@ export default function Index() {
               </section>
               <section className="mt-10 basis-1/2 md:mt-0">
                 <a href="https://shiritori.cr3ators.studio/" target="_blank">
-                  <div className="h-full rounded-lg border-4 border-white bg-white md:ml-4">
+                  <div className=" rounded-lg border-4 border-white bg-white md:ml-4">
                     <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
                       <img className="h-full" src="shiritori.gif" />
                     </div>
@@ -193,8 +193,25 @@ export default function Index() {
                       <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
                         {text.SECTION_ACTIVITIES_THIRD_TITLE}
                       </h1>
-                      <p className="text-sm leading-loose md:text-lg md:tracking-wide ">
+                      <p className="md:text-md text-sm leading-loose md:tracking-wide ">
                         {text.SECTION_ACTIVITIES_THIRD_DESCRIPTION}
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </section>
+              <section className="mt-10 basis-1/2 md:mt-0">
+                <a href="https://www.yancan.tech/" target="_blank">
+                  <div className="h-full rounded-lg border-4 border-white bg-white md:ml-4">
+                    <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                      <img className="h-full" src="yancan.png" />
+                    </div>
+                    <div className="p-8">
+                      <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
+                        {text.SECTION_ACTIVITIES_FOURTH_TITLE}
+                      </h1>
+                      <p className="md:text-md text-sm leading-loose md:tracking-wide ">
+                        {text.SECTION_ACTIVITIES_FOURTH_DESCRIPTION}
                       </p>
                     </div>
                   </div>
@@ -203,6 +220,7 @@ export default function Index() {
             </div>
           </div>
         </section>
+
         <section>
           <div className="flex justify-center bg-white py-10 text-gray-900">
             <div className="mx-2 flex flex-col rounded-3xl bg-gradient-to-r from-[#d6f0ff]/75 via-[#ffe0a4]/75 to-[#f5a5d4]/75 p-6 md:mx-4 md:mx-auto md:w-2/3 md:flex-row md:p-10">
