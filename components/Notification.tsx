@@ -1,3 +1,4 @@
+import parse from "html-react-parser";
 export interface Props {
   process: { show: boolean; message: string };
   onClickAction: () => void;
@@ -6,16 +7,16 @@ export interface Props {
 export const Notification = ({ process, onClickAction }: Props) => {
   return (
     <div
-      className={`absolute bottom-0 ${
+      className={`absolute left-[40%] top-1/2 -translate-x-1/2 -translate-y-1/2 transform ${
         process.show && "animate-slideIn"
       } py-4 text-center`}
     >
       <div
-        className="flex items-center bg-indigo-800 p-5 leading-none text-indigo-100 lg:inline-flex"
+        className="flex min-w-[200px] items-center bg-indigo-800 p-5 leading-none text-indigo-100 lg:inline-flex"
         role="alert"
       >
         <span className="mr-2 flex-auto text-left font-semibold">
-          {process.message}
+          {parse(process.message)}
         </span>
         <svg
           xmlns="http://www.w3.org/2000/svg"

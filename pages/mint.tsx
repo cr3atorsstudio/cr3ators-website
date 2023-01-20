@@ -7,17 +7,22 @@ import abi from "../lib/CreatorsNFT.json";
 import Navbar from "../components/Navbar";
 import { useAccount } from "wagmi";
 import { Notification } from "../components/Notification";
+import parse from "html-react-parser";
 
 const contractABI = abi.abi;
+const CREATOR_TOKEN_ID = 0;
+const SUPPORTER_TOKEN_ID = 1;
 
 const Mint: NextPage = () => {
-  const [mintContract, setContract] = useState<ethers.Contract | null>(null);
+  const [mintContract, setMintContract] = useState<ethers.Contract | null>(
+    null
+  );
   const [tokenId, setTokenId] = useState(0);
   const [error, setError] = useState("");
   const [supporterNftNum, setSupporterNftNum] = useState(0);
   const [creatorNftNum, setCreatorNftNum] = useState(0);
   const [isLoading, setLoading] = useState(false);
-  const [process, setProcess] = useState({ show: true, message: "" });
+  const [process, setProcess] = useState({ show: false, message: "" });
   const [signerAddress, setSignerAddress] = useState("");
   const [mintedCreator, setMintedCreator] = useState(false);
   const [mintedSupporter, setMintedSupporter] = useState(false);
@@ -33,22 +38,27 @@ const Mint: NextPage = () => {
       const creatorsNft = mintContract
         ? mintContract
         : new ethers.Contract(CONTRACT_ADDRESS, contractABI, signer);
+      console.log("creatorsNft");
+      console.log(creatorsNft);
 
-      setContract(creatorsNft);
+      setMintContract(creatorsNft);
     } else {
       console.log("wallet is not connected");
     }
   }, []);
+  console.log("mintContract");
+  console.log(mintContract);
 
   const onMintComplete = () => {
     setProcess({
       show: true,
-      message: "Mint has finished!",
+      message: `Mint has finished! <a href="https://opensea.io/account" target="_blank">🟣Check your symbols🟪</a>`,
     });
 
     setTimeout(() => {
       setProcess({ show: false, message: "" });
     }, 5000);
+    getNftNum();
   };
 
   useEffect(() => {
@@ -74,12 +84,18 @@ const Mint: NextPage = () => {
           ? mintContract
           : new ethers.Contract(CONTRACT_ADDRESS, contractABI, signer);
 
-        const creator = await creatorsNft.balanceOf(signer.getAddress(), 0);
+        const creator = await creatorsNft.balanceOf(
+          signer.getAddress(),
+          CREATOR_TOKEN_ID
+        );
         console.log(creator.toNumber());
         if (creator.toNumber() !== 0) {
           setMintedCreator(true);
         }
-        const supporter = await creatorsNft.balanceOf(signer.getAddress(), 1);
+        const supporter = await creatorsNft.balanceOf(
+          signer.getAddress(),
+          SUPPORTER_TOKEN_ID
+        );
         console.log(supporter.toNumber());
         if (supporter.toNumber() !== 0) {
           setMintedSupporter(true);
@@ -98,60 +114,64 @@ const Mint: NextPage = () => {
 
   const checkMint = useCallback(async () => {
     console.log(address);
-    try {
-      const { ethereum } = window;
-      if (ethereum) {
-        const provider = new ethers.providers.Web3Provider(ethereum as any);
-        const signer = provider.getSigner();
-        const creatorsNft = mintContract
-          ? mintContract
-          : new ethers.Contract(CONTRACT_ADDRESS, contractABI, signer);
+    const { ethereum } = window;
+    if (ethereum) {
+      const provider = new ethers.providers.Web3Provider(ethereum as any);
+      const signer = provider.getSigner();
+      const creatorsNft = mintContract
+        ? mintContract
+        : new ethers.Contract(CONTRACT_ADDRESS, contractABI, signer);
 
-        const mintMapping = await creatorsNft.mintedTokens(address);
-        if (mintMapping) {
-          return true;
-        } else {
-          return false;
-        }
+      let mintMapping;
+      console.log("tokenId");
+      console.log(tokenId);
+      if (tokenId === CREATOR_TOKEN_ID) {
+        mintMapping = await creatorsNft.mintedCreatorTokens(address);
       } else {
-        throw new Error("This wallet has already minted the NFT");
+        mintMapping = await creatorsNft.mintedSupporterTokens(address);
       }
-    } catch (error) {
-      console.error("Something went wrong while checking mint history");
+      console.log(mintMapping.toNumber());
+      if (mintMapping.toNumber() > 0) {
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      throw new Error("This wallet has already minted the NFT");
     }
-  }, [mintContract]);
+  }, [mintContract, tokenId]);
 
   const onMint = useCallback(async () => {
-    try {
-      setError("");
-      setProcess({
-        show: true,
-        message: "Please approve in your wallet to proceed minting!",
-      });
-      const hasMinted = await checkMint();
+    setError("");
+    setProcess({
+      show: true,
+      message: "Please approve in your wallet to proceed minting!",
+    });
+    const hasMinted = await checkMint();
 
-      if (hasMinted) {
-        setError("You have minted this NFT before");
-        setProcess({ show: true, message: "You have minted this NFT before" });
-        setLoading(false);
-        return;
-      }
-
-      if (!hasMinted && mintContract) {
-        await mintNFT(mintContract, tokenId);
-        setProcess({ show: true, message: "Minting..." });
-      }
-    } catch (e) {
-      console.error("Something went wrong while minting");
+    if (hasMinted) {
+      setError("You have minted this NFT before");
+      setProcess({ show: true, message: "You have minted this NFT before" });
+      setLoading(false);
+      return;
     }
-  }, []);
+
+    console.log(!hasMinted);
+    console.log(mintContract);
+    if (!hasMinted && mintContract) {
+      await mintNFT(mintContract, tokenId);
+      setProcess({ show: true, message: "Minting..." });
+    }
+  }, [mintContract, tokenId]);
 
   const onCreatorClick = useCallback(() => {
-    setTokenId(0);
+    setTokenId(CREATOR_TOKEN_ID);
+    setError("");
   }, []);
 
   const onSupporterClick = useCallback(() => {
-    setTokenId(1);
+    setTokenId(SUPPORTER_TOKEN_ID);
+    setError("");
   }, []);
 
   const handleOnClickNotification = useCallback(() => {
@@ -187,7 +207,7 @@ const Mint: NextPage = () => {
           </div>
         </section>
 
-        <section className="h-screen bg-mint-purple p-1">
+        <section className="relative h-screen bg-mint-purple p-1">
           <h2 className="mt-10 mb-16 text-center text-5xl font-bold text-mint-subtitle ">
             Collection
           </h2>
@@ -240,7 +260,7 @@ const Mint: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center">
+          <div className="relative flex flex-col items-center justify-center">
             <p className="text-red-500">{error}</p>
             <button
               className="mt-20 h-16 w-32 cursor-pointer rounded-full bg-mint-button font-bold text-white disabled:cursor-not-allowed disabled:bg-gray-400"
@@ -249,7 +269,11 @@ const Mint: NextPage = () => {
             >
               Mint
             </button>
-            <a href={`https://opensea.io/${signerAddress}`} target="_blank">
+            <a
+              className="mt-5"
+              href={`https://opensea.io/${signerAddress}`}
+              target="_blank"
+            >
               🟣Check your symbols🟪
             </a>
           </div>
