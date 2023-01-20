@@ -20,7 +20,7 @@ export default {
   SECTION_ACTIVITIES_FOURTH_TITLE: "yancan.fm",
   SECTION_ACTIVITIES_FOURTH_DESCRIPTION:
     "yancan.fm は、ニューヨークの美大大学院に通うりほやんと、東京フルリモート多めのりさきゃん。エンジニア2人が今気になるテックや日米それぞれの日常について話してます",
-  SECTION_ACTIVITIES_FIFTH_TITLE: "GalTuber Amira",
+  SECTION_ACTIVITIES_FIFTH_TITLE: "GalTuber Amila",
   SECTION_ACTIVITIES_FIFTH_DESCRIPTION: "",
   SECTION_ACTIVITIES_SIXTH_TITLE: "Cider x WonderPals Collaboration",
   SECTION_ACTIVITIES_SIXTH_DESCRIPTION:

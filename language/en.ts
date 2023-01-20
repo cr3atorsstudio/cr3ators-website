@@ -21,9 +21,9 @@ export default {
   SECTION_ACTIVITIES_FOURTH_TITLE: "yancan.fm",
   SECTION_ACTIVITIES_FOURTH_DESCRIPTION:
     "yancan.fm is the podcast from Rihoyan, a graduate student at an art college in New York, and Risakyan, a full-time remote engineer in Tokyo. The two engineers talk about what's hot in tech and their daily lives in Japan and the U.S",
-  SECTION_ACTIVITIES_FIFTH_TITLE: "GalTuber Amira",
+  SECTION_ACTIVITIES_FIFTH_TITLE: "GalTuber Amila",
   SECTION_ACTIVITIES_FIFTH_DESCRIPTION:
-    "She is a Amira who is a GalTuber(Vtuber of Galvarse project) community!! She share her friend's work 💙",
+    "She is a Amila who is a GalTuber(Vtuber of Galvarse project) community!! She share her friend's work 💙",
   SECTION_ACTIVITIES_SIXTH_TITLE: "Cider x WonderPals Collaboration",
   SECTION_ACTIVITIES_SIXTH_DESCRIPTION:
     "The CiderPals are a cast of twelve cute WonderPals that are inspired by the mood-driven design aesthetics of the Cider brand. The CiderPals are inspired by Cider’s collection lines, with each CiderPal drawn with actual pieces from the collection they represent! We developed smart contract about CiderPals.",
