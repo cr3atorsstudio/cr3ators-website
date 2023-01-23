@@ -109,8 +109,8 @@ export default function Index() {
                 </div>
   */}
               </div>
-              <div className="">
-                <img src="teammtg.png" width={580} height={580} />
+              <div className="m-100">
+                <img src="creators_studio.png" width={450} height={450} />
               </div>
             </div>
           </div>
