@@ -298,7 +298,43 @@ export default function Index() {
                   </div>
                 </a>
               </section>
-              <section className="mt-10 basis-1/2 md:mt-0"></section>
+              <section className="mt-10 basis-1/2 md:mt-0">
+                <a href="https://kotoverse-v3-nu.vercel.app/" target="_blank">
+                  <div className="h-full rounded-lg border-4 border-white bg-white md:mr-4">
+                    <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
+                      <img className="h-full w-auto" src="kotoverse.png" />
+                    </div>
+                    <div className="p-8">
+                      <h1 className="md:relaxed font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
+                        {text.SECTION_ACTIVITIES_NINETH_TITLE}
+                      </h1>
+                      <div className="mb-4 flex items-center">
+                        <a
+                          href="https://twitter.com/kotoverse_xyz"
+                          target="_blank"
+                        >
+                          <img
+                            src="twitter.png"
+                            className="mr-2 cursor-pointer"
+                            width={30}
+                          />
+                        </a>
+
+                        <a href="https://discord.gg/8gttGu7de4" target="_blank">
+                          <img
+                            src="discord.png"
+                            className="mr-2 cursor-pointer"
+                            width={30}
+                          />
+                        </a>
+                      </div>
+                      <p className="md:text-md text-sm leading-loose md:tracking-wide ">
+                        {text.SECTION_ACTIVITIES_NINETH_DESCRIPTION}
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </section>
               <section className="mt-10 basis-1/2 md:mt-0"></section>
             </div>
           </div>
