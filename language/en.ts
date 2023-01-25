@@ -31,6 +31,9 @@ export default {
   SECTION_ACTIVITIES_EIGHTH_TITLE: "Blockmill",
   SECTION_ACTIVITIES_EIGHTH_DESCRIPTION:
     "BlockMill is the account book for blockchain!\nYou can easily check the total spend on crypto currencies you have used by entering your wallet address.",
+  SECTION_ACTIVITIES_NINETH_TITLE: "KOTOVERSE",
+  SECTION_ACTIVITIES_NINETH_DESCRIPTION:
+    "One of the team members is helping a web3 project called KOTOVERSE. KOTOVERSE is a place for creating novels, including fan-fictions. You can use NFT characters & illustrations made by artists.",
   SECTION_JOIN_COMMUNITY_TITLE: "Stay tuned!",
   SECTION_JOIN_COMMUNITY_TEXT1:
     "I don't know detail about web3, but I want to try it!",

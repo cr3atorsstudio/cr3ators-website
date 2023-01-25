@@ -31,6 +31,9 @@ export default {
   SECTION_ACTIVITIES_EIGHTH_TITLE: "BlockMill",
   SECTION_ACTIVITIES_EIGHTH_DESCRIPTION:
     "BlockMillはブロックチェーンのための家計簿です!\n wallet addressを入力することで、使用した暗号通貨の合計金額を簡単に確認することができます。",
+  SECTION_ACTIVITIES_NINETH_TITLE: "KOTOVERSE",
+  SECTION_ACTIVITIES_NINETH_DESCRIPTION:
+    "KOTOVERSEは二次創作を含めた小説投稿プラットフォームです。小説を執筆するだけでなくNFTとして販売することもできます。PFPを販売することも可能で、自分が所有しているPFPを小説の登場人物として紐づけることが可能です。開発メンバーとして参加しています。",
   SECTION_JOIN_COMMUNITY_TITLE: "Stay tuned!",
   SECTION_JOIN_COMMUNITY_TEXT1:
     "私たちは試すこと、行動すること、クリエイトすることが大好きです！\n ぜひ私たちと一緒にクリエイトしましょう！\n「興味があるけどやったことがなくて不安」\n大歓迎です。誰もが最初は初心者です。しかもweb3はまだまだ経験がある人の方が少ないです。今が一番大チャンスです！\nDiscordコミュニティでは記事のシェアや雑談したりしています！",
