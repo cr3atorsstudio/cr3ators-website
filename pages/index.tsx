@@ -139,100 +139,98 @@ export default function Index() {
         </section>
 
         {/* section for what we do */}
-        <section>
-          <div className="bg-blue-50 p-4 text-regal-blue md:p-14">
-            <section>
-              <div className="mx-auto w-full pb-12 text-xl md:w-3/6">
-                <h1 className="mt-10 mb-4 text-center font-sans-serif text-4xl font-bold md:mt-0">
-                  {text.SECTION_WHAT_WE_DO_TITLE}
+        <section className="bg-blue-50 p-4 text-regal-blue md:p-14">
+          <section>
+            <div className="mx-auto w-full pb-12 text-xl md:w-3/6">
+              <h1 className="mt-10 mb-4 text-center font-sans-serif text-4xl font-bold md:mt-0">
+                {text.SECTION_WHAT_WE_DO_TITLE}
+              </h1>
+              <p className=" text-sm tracking-wide md:text-xl md:leading-loose">
+                {text.SECTION_WHAT_WE_DO_DESCRIPTION}
+              </p>
+            </div>
+          </section>
+          <section>
+            <div className="text-m mb-10 flex basis-1/2 flex-row flex-col rounded-lg bg-white p-6 md:flex-row md:p-10">
+              <div className="basis-2/3 md:pr-10">
+                <h1 className="mb-4 font-sans-serif text-3xl font-bold tracking-wide md:text-6xl md:leading-relaxed">
+                  {text.SECTION_ACTIVITIES_FIRST_TITLE}
                 </h1>
-                <p className=" text-sm tracking-wide md:text-xl md:leading-loose">
-                  {text.SECTION_WHAT_WE_DO_DESCRIPTION}
+                <p className="text-sm leading-loose md:text-lg md:tracking-wide">
+                  {text.SECTION_ACTIVITIES_FIRST_DESCRIPTION}
                 </p>
               </div>
-            </section>
-            <section>
-              <div className="text-m mb-10 flex basis-1/2 flex-row flex-col rounded-lg bg-white p-6 md:flex-row md:p-10">
-                <div className="basis-2/3 md:pr-10">
-                  <h1 className="mb-4 font-sans-serif text-3xl font-bold tracking-wide md:text-6xl md:leading-relaxed">
-                    {text.SECTION_ACTIVITIES_FIRST_TITLE}
-                  </h1>
-                  <p className="text-sm leading-loose md:text-lg md:tracking-wide">
-                    {text.SECTION_ACTIVITIES_FIRST_DESCRIPTION}
-                  </p>
-                </div>
-                <div className="mt-6 flex basis-1/3 justify-center rounded-lg bg-[#FFC2E6] p-[21px]">
-                  <img
-                    src="socialmedia.gif"
-                    className=""
-                    width={300}
-                    height={300}
-                  />
-                </div>
+              <div className="mt-6 flex basis-1/3 justify-center rounded-lg bg-[#FFC2E6] p-[21px]">
+                <img
+                  src="socialmedia.gif"
+                  className=""
+                  width={300}
+                  height={300}
+                />
               </div>
-            </section>
-
-            {/* section for projects */}
-            <h1 className="mb-4 text-center text-6xl font-bold">Projects</h1>
-            <div className="flex flex-col md:flex-row">
-              <section className="w-full basis-1/2">
-                <div className="h-full rounded-lg border-4 border-white bg-white md:mr-4">
-                  <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                    <img className="h-full w-auto" src="maru.png" />
-                  </div>
-                  <div className="p-8">
-                    <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                      {text.SECTION_ACTIVITIES_SECOND_TITLE}
-                    </h1>
-                    <p className="md:text-md text-sm leading-loose md:tracking-wide ">
-                      {text.SECTION_ACTIVITIES_SECOND_DESCRIPTION}
-                    </p>
-                  </div>
-                </div>
-              </section>
-              <section className="mt-10 basis-1/2 md:mt-0">
-                <a href="https://shiritori.cr3ators.studio/" target="_blank">
-                  <div className=" rounded-lg border-4 border-white bg-white md:ml-4">
-                    <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                      <img className="h-full" src="shiritori.gif" />
-                    </div>
-                    <div className="p-8">
-                      <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                        {text.SECTION_ACTIVITIES_THIRD_TITLE}
-                      </h1>
-                      <p className="md:text-md text-sm leading-loose md:tracking-wide ">
-                        {text.SECTION_ACTIVITIES_THIRD_DESCRIPTION}
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </section>
-              <section className="mt-10 basis-1/2 md:mt-0">
-                <a href="https://www.yancan.tech/" target="_blank">
-                  <div className="h-full rounded-lg border-4 border-white bg-white md:ml-4">
-                    <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                      <img className="h-full" src="yancan.png" />
-                    </div>
-                    <div className="p-8">
-                      <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                        {text.SECTION_ACTIVITIES_FOURTH_TITLE}
-                      </h1>
-                      <p className="md:text-md text-sm leading-loose md:tracking-wide ">
-                        {text.SECTION_ACTIVITIES_FOURTH_DESCRIPTION}
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </section>
             </div>
-          </div>
+          </section>
         </section>
 
+        {/* section for projects */}
+        <h1 className="mb-4 text-center text-6xl font-bold">Projects</h1>
+        <div className="flex flex-col md:flex-row">
+          <section className="w-full basis-1/2">
+            <div className="h-full rounded-lg border-4 border-white bg-white md:mr-4">
+              <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                <img className="h-full w-auto" src="maru.png" />
+              </div>
+              <div className="p-8">
+                <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
+                  {text.SECTION_ACTIVITIES_SECOND_TITLE}
+                </h1>
+                <p className="md:text-md text-sm leading-loose md:tracking-wide ">
+                  {text.SECTION_ACTIVITIES_SECOND_DESCRIPTION}
+                </p>
+              </div>
+            </div>
+          </section>
+          <section className="mt-10 basis-1/2 md:mt-0">
+            <a href="https://shiritori.cr3ators.studio/" target="_blank">
+              <div className=" rounded-lg border-4 border-white bg-white md:ml-4">
+                <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                  <img className="h-full" src="shiritori.gif" />
+                </div>
+                <div className="p-8">
+                  <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
+                    {text.SECTION_ACTIVITIES_THIRD_TITLE}
+                  </h1>
+                  <p className="md:text-md text-sm leading-loose md:tracking-wide ">
+                    {text.SECTION_ACTIVITIES_THIRD_DESCRIPTION}
+                  </p>
+                </div>
+              </div>
+            </a>
+          </section>
+          <section className="mt-10 basis-1/2 md:mt-0">
+            <a href="https://www.yancan.tech/" target="_blank">
+              <div className="h-full rounded-lg border-4 border-white bg-white md:ml-4">
+                <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                  <img className="h-full" src="yancan.png" />
+                </div>
+                <div className="p-8">
+                  <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
+                    {text.SECTION_ACTIVITIES_FOURTH_TITLE}
+                  </h1>
+                  <p className="md:text-md text-sm leading-loose md:tracking-wide ">
+                    {text.SECTION_ACTIVITIES_FOURTH_DESCRIPTION}
+                  </p>
+                </div>
+              </div>
+            </a>
+          </section>
+        </div>
 
-        <section>
+
+        <div>
           <div className="bg-blue-50 p-4 pb-14 text-regal-blue md:px-10">
             <div className="flex flex-col md:flex-row">
-              <section className="w-full basis-1/2">
+              <div className="w-full basis-1/2">
                 <a href="https://www.youtube.com/@amilaGV" target="_blank">
                   <div className="h-full rounded-lg border-4 border-white bg-white md:mr-4">
                     <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
@@ -248,8 +246,8 @@ export default function Index() {
                     </div>
                   </div>
                 </a>
-              </section>
-              <section className="mt-10 basis-1/2 md:mt-0">
+              </div>
+              <div className="mt-10 basis-1/2 md:mt-0">
                 <a href="https://ciderwonderpals.xyz/" target="_blank">
                   <div className=" rounded-lg border-4 border-white bg-white md:ml-4">
                     <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
@@ -265,8 +263,8 @@ export default function Index() {
                     </div>
                   </div>
                 </a>
-              </section>
-              <section className="mt-10 basis-1/2 md:mt-0">
+              </div>
+              <div className="mt-10 basis-1/2 md:mt-0">
                 <a href="https://www.naminori.xyz/" target="_blank">
                   <div className="h-full rounded-lg border-4 border-white bg-white md:ml-4">
                     <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
@@ -282,14 +280,14 @@ export default function Index() {
                     </div>
                   </div>
                 </a>
-              </section>
+              </div>
             </div>
           </div>
-        </section>
-        <section>
+        </div>
+        <div>
           <div className="bg-blue-50 p-4 pb-14 text-regal-blue md:px-10">
             <div className="flex flex-col md:flex-row">
-              <section className="w-full basis-1/2">
+              <div className="w-full basis-1/2">
                 <a href="https://blockmill.vercel.app/" target="_blank">
                   <div className="h-full rounded-lg border-4 border-white bg-white md:mr-4">
                     <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
@@ -305,8 +303,8 @@ export default function Index() {
                     </div>
                   </div>
                 </a>
-              </section>
-              <section className="mt-10 basis-1/2 md:mt-0">
+              </div>
+              <div className="mt-10 basis-1/2 md:mt-0">
                 <a href="https://kotoverse-v3-nu.vercel.app/" target="_blank">
                   <div className="h-full rounded-lg border-4 border-white bg-white md:mr-4">
                     <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
@@ -342,11 +340,11 @@ export default function Index() {
                     </div>
                   </div>
                 </a>
-              </section>
+              </div>
               <section className="mt-10 basis-1/2 md:mt-0"></section>
             </div>
           </div>
-        </section>
+        </div>
 
         {/* section for stay tuned */}
         <section>
