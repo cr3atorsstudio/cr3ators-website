@@ -175,8 +175,9 @@ export default function Index() {
         {/* section for projects */}
         <section className="bg-blue-50 p-4 text-regal-blue md:p-14">
           <h1 className="mb-4 text-center text-6xl font-bold">Projects</h1>
-          <div className="grid md:grid-cols-3 gap-x-8 gap-y-10">
-            <div className="w-full basis-1/2">
+          <div className="grid md:grid-cols-3 gap-x-10 gap-y-14">
+
+            <div className="">
               <div className="h-full rounded-lg border-4 border-white bg-white">
                 <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
                   <img className="h-full w-auto" src="maru.png" />
@@ -192,7 +193,7 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="mt-10 basis-1/2 md:mt-0">
+            <div className="">
               <a href="https://shiritori.cr3ators.studio/" target="_blank">
                 <div className="rounded-lg border-4 border-white bg-white">
                   <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
@@ -210,7 +211,7 @@ export default function Index() {
               </a>
             </div>
 
-            <div className="mt-10 basis-1/2 md:mt-0">
+            <div className="">
               <a href="https://www.yancan.tech/" target="_blank">
                 <div className="h-full rounded-lg border-4 border-white bg-white">
                   <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
@@ -228,7 +229,7 @@ export default function Index() {
               </a>
             </div>
 
-            <div className="w-full basis-1/2">
+            <div className="">
               <a href="https://www.youtube.com/@amilaGV" target="_blank">
                 <div className="h-full rounded-lg border-4 border-white bg-white">
                   <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
@@ -246,7 +247,7 @@ export default function Index() {
               </a>
             </div>
 
-            <div className="mt-10 basis-1/2 md:mt-0">
+            <div className="">
                 <a href="https://ciderwonderpals.xyz/" target="_blank">
                   <div className=" rounded-lg border-4 border-white bg-white">
                     <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
@@ -264,7 +265,7 @@ export default function Index() {
                 </a>
               </div>
 
-              <div className="mt-10 basis-1/2 md:mt-0">
+              <div className="">
                 <a href="https://www.naminori.xyz/" target="_blank">
                   <div className="h-full rounded-lg border-4 border-white bg-white">
                     <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
@@ -282,8 +283,7 @@ export default function Index() {
                 </a>
               </div>
 
-
-              <div className="w-full basis-1/2">
+              <div className="">
                 <a href="https://blockmill.vercel.app/" target="_blank">
                   <div className="h-full rounded-lg border-4 border-white bg-white">
                     <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
@@ -301,7 +301,7 @@ export default function Index() {
                 </a>
               </div>
 
-              <div className="mt-10 basis-1/2 md:mt-0">
+              <div className="">
                 <a href="https://kotoverse-v3-nu.vercel.app/" target="_blank">
                   <div className="h-full rounded-lg border-4 border-white bg-white">
                     <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
@@ -330,7 +330,7 @@ export default function Index() {
                           />
                         </a>
                       </div>
-                      <p className="md:text-md text-sm leading-loose md:tracking-wide ">
+                      <p className="md:text-md text-sm leading-loose md:tracking-wide">
                         {text.SECTION_ACTIVITIES_NINETH_DESCRIPTION}
                       </p>
                     </div>
