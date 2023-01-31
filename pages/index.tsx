@@ -179,7 +179,7 @@ export default function Index() {
 
             <div className="">
               <div className="h-full rounded-lg border-4 border-white bg-white">
-                <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                <div className="flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
                   <img className="h-full w-auto" src="maru.png" />
                 </div>
                 <div className="p-8">
@@ -196,7 +196,7 @@ export default function Index() {
             <div className="">
               <a href="https://shiritori.cr3ators.studio/" target="_blank">
                 <div className="rounded-lg border-4 border-white bg-white">
-                  <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                  <div className="flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
                     <img className="h-full" src="shiritori.gif" />
                   </div>
                   <div className="p-8">
@@ -214,7 +214,7 @@ export default function Index() {
             <div className="">
               <a href="https://www.yancan.tech/" target="_blank">
                 <div className="h-full rounded-lg border-4 border-white bg-white">
-                  <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                  <div className="flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
                     <img className="h-full" src="yancan.png" />
                   </div>
                   <div className="p-8">
@@ -232,7 +232,7 @@ export default function Index() {
             <div className="">
               <a href="https://www.youtube.com/@amilaGV" target="_blank">
                 <div className="h-full rounded-lg border-4 border-white bg-white">
-                  <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
+                  <div className="flex justify-center rounded-t-lg bg-blue-50 p-6">
                     <img className="h-full w-auto" src="amira.jpeg" />
                   </div>
                   <div className="p-8">
@@ -250,7 +250,7 @@ export default function Index() {
             <div className="">
                 <a href="https://ciderwonderpals.xyz/" target="_blank">
                   <div className=" rounded-lg border-4 border-white bg-white">
-                    <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
+                    <div className="flex justify-center rounded-t-lg bg-blue-50 p-6">
                       <img className="h-full" src="ciderpal.png" />
                     </div>
                     <div className="p-8">
@@ -268,7 +268,7 @@ export default function Index() {
               <div className="">
                 <a href="https://www.naminori.xyz/" target="_blank">
                   <div className="h-full rounded-lg border-4 border-white bg-white">
-                    <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
+                    <div className="flex justify-center rounded-t-lg bg-blue-50 p-6">
                       <img className="h-full" src="naminori.png" />
                     </div>
                     <div className="p-8">
@@ -286,7 +286,7 @@ export default function Index() {
               <div className="">
                 <a href="https://blockmill.vercel.app/" target="_blank">
                   <div className="h-full rounded-lg border-4 border-white bg-white">
-                    <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
+                    <div className="flex justify-center rounded-t-lg bg-blue-50 p-6">
                       <img className="h-full w-auto" src="blockmill.png" />
                     </div>
                     <div className="p-8">
@@ -304,7 +304,7 @@ export default function Index() {
               <div className="">
                 <a href="https://kotoverse-v3-nu.vercel.app/" target="_blank">
                   <div className="h-full rounded-lg border-4 border-white bg-white">
-                    <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
+                    <div className="flex justify-center rounded-t-lg bg-blue-50 p-6">
                       <img className="h-full w-auto" src="kotoverse.png" />
                     </div>
                     <div className="p-8">
