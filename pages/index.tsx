@@ -73,6 +73,7 @@ export default function Index() {
       </Head>
       <Navbar />
       <main className="mx-auto">
+        {/* section for hero */}
         <section className="p-6 md:p-20">
           <div className="flex flex-col content-center justify-between">
             <div className="flex flex-col  justify-center md:flex-row">
@@ -107,7 +108,7 @@ export default function Index() {
                     </div>
                   </a>
                 </div>
-  */}
+                 */}
               </div>
               <div className="m-100">
                 <img src="creators_studio.png" width={450} height={450} />
@@ -116,6 +117,7 @@ export default function Index() {
           </div>
         </section>
 
+        {/* section for 20% */}
         <section>
           <div className="flex flex-col items-center justify-around bg-yellow-50 py-14 px-4 text-brown md:flex-row md:py-32 md:px-40">
             <div className="mx-18 flex justify-center">
@@ -135,117 +137,121 @@ export default function Index() {
             </div>
           </div>
         </section>
-        <section>
-          <div className="bg-blue-50 p-4 text-regal-blue md:p-14">
-            <section>
-              <div className="mx-auto w-full pb-12 text-xl md:w-3/6">
-                <h1 className="mt-10 mb-4 text-center font-sans-serif text-4xl font-bold md:mt-0">
-                  {text.SECTION_WHAT_WE_DO_TITLE}
+
+        {/* section for what we do */}
+        <section className="bg-blue-50 p-4 text-regal-blue md:p-14">
+          <section>
+            <div className="mx-auto w-full pb-12 text-xl md:w-3/6">
+              <h1 className="mt-10 mb-4 text-center font-sans-serif text-4xl font-bold md:mt-0">
+                {text.SECTION_WHAT_WE_DO_TITLE}
+              </h1>
+              <p className=" text-sm tracking-wide md:text-xl md:leading-loose">
+                {text.SECTION_WHAT_WE_DO_DESCRIPTION}
+              </p>
+            </div>
+          </section>
+          <section>
+            <div className="text-m mb-10 flex basis-1/2 flex-row flex-col rounded-lg bg-white p-6 md:flex-row md:p-10">
+              <div className="basis-2/3 md:pr-10">
+                <h1 className="mb-4 font-sans-serif text-3xl font-bold tracking-wide md:text-6xl md:leading-relaxed">
+                  {text.SECTION_ACTIVITIES_FIRST_TITLE}
                 </h1>
-                <p className=" text-sm tracking-wide md:text-xl md:leading-loose">
-                  {text.SECTION_WHAT_WE_DO_DESCRIPTION}
+                <p className="text-sm leading-loose md:text-lg md:tracking-wide">
+                  {text.SECTION_ACTIVITIES_FIRST_DESCRIPTION}
                 </p>
               </div>
-            </section>
-            <section>
-              <div className="text-m mb-10 flex basis-1/2 flex-row flex-col rounded-lg bg-white p-6 md:flex-row md:p-10">
-                <div className="basis-2/3 md:pr-10">
-                  <h1 className="mb-4 font-sans-serif text-3xl font-bold tracking-wide md:text-6xl md:leading-relaxed">
-                    {text.SECTION_ACTIVITIES_FIRST_TITLE}
+              <div className="mt-6 flex basis-1/3 justify-center rounded-lg bg-[#FFC2E6] p-[21px]">
+                <img
+                  src="socialmedia.gif"
+                  className=""
+                  width={300}
+                  height={300}
+                />
+              </div>
+            </div>
+          </section>
+        </section>
+
+        {/* section for projects */}
+        <section className="bg-blue-50 p-4 text-regal-blue md:p-14">
+          <h1 className="mb-4 text-center text-6xl font-bold">Projects</h1>
+          <div className="grid md:grid-cols-3 gap-x-10 gap-y-14">
+
+            <div className="">
+              <div className="h-full rounded-lg border-4 border-white bg-white">
+                <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                  <img className="h-auto w-auto object-contain" src="maru.png" />
+                </div>
+                <div className="p-8">
+                  <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
+                    {text.SECTION_ACTIVITIES_SECOND_TITLE}
                   </h1>
-                  <p className="text-sm leading-loose md:text-lg md:tracking-wide">
-                    {text.SECTION_ACTIVITIES_FIRST_DESCRIPTION}
+                  <p className="md:text-md text-sm leading-loose md:tracking-wide ">
+                    {text.SECTION_ACTIVITIES_SECOND_DESCRIPTION}
                   </p>
                 </div>
-                <div className="mt-6 flex basis-1/3 justify-center rounded-lg bg-[#FFC2E6] p-[21px]">
-                  <img
-                    src="socialmedia.gif"
-                    className=""
-                    width={300}
-                    height={300}
-                  />
-                </div>
               </div>
-            </section>
-            <h1 className="mb-4 text-center text-6xl font-bold">Projects</h1>
-            <div className="flex flex-col md:flex-row">
-              <section className="w-full basis-1/2">
-                <div className="h-full rounded-lg border-4 border-white bg-white md:mr-4">
-                  <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                    <img className="h-full w-auto" src="maru.png" />
+            </div>
+
+            <div className="">
+              <a href="https://shiritori.cr3ators.studio/" target="_blank">
+                <div className="rounded-lg border-4 border-white bg-white">
+                  <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                    <img className="h-auto w-auto object-contain" src="shiritori.gif" />
                   </div>
                   <div className="p-8">
                     <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                      {text.SECTION_ACTIVITIES_SECOND_TITLE}
+                      {text.SECTION_ACTIVITIES_THIRD_TITLE}
                     </h1>
                     <p className="md:text-md text-sm leading-loose md:tracking-wide ">
-                      {text.SECTION_ACTIVITIES_SECOND_DESCRIPTION}
+                      {text.SECTION_ACTIVITIES_THIRD_DESCRIPTION}
                     </p>
                   </div>
                 </div>
-              </section>
-              <section className="mt-10 basis-1/2 md:mt-0">
-                <a href="https://shiritori.cr3ators.studio/" target="_blank">
-                  <div className=" rounded-lg border-4 border-white bg-white md:ml-4">
-                    <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                      <img className="h-full" src="shiritori.gif" />
-                    </div>
-                    <div className="p-8">
-                      <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                        {text.SECTION_ACTIVITIES_THIRD_TITLE}
-                      </h1>
-                      <p className="md:text-md text-sm leading-loose md:tracking-wide ">
-                        {text.SECTION_ACTIVITIES_THIRD_DESCRIPTION}
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </section>
-              <section className="mt-10 basis-1/2 md:mt-0">
-                <a href="https://www.yancan.tech/" target="_blank">
-                  <div className="h-full rounded-lg border-4 border-white bg-white md:ml-4">
-                    <div className="peer-w-max flex h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                      <img className="h-full" src="yancan.png" />
-                    </div>
-                    <div className="p-8">
-                      <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                        {text.SECTION_ACTIVITIES_FOURTH_TITLE}
-                      </h1>
-                      <p className="md:text-md text-sm leading-loose md:tracking-wide ">
-                        {text.SECTION_ACTIVITIES_FOURTH_DESCRIPTION}
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </section>
+              </a>
             </div>
-          </div>
-        </section>
-        <section>
-          <div className="bg-blue-50 p-4 pb-14 text-regal-blue md:px-10">
-            <div className="flex flex-col md:flex-row">
-              <section className="w-full basis-1/2">
-                <a href="https://www.youtube.com/@amilaGV" target="_blank">
-                  <div className="h-full rounded-lg border-4 border-white bg-white md:mr-4">
-                    <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
-                      <img className="h-full w-auto" src="amira.jpeg" />
-                    </div>
-                    <div className="p-8">
-                      <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                        {text.SECTION_ACTIVITIES_FIFTH_TITLE}
-                      </h1>
-                      <p className="md:text-md text-sm leading-loose md:tracking-wide ">
-                        {text.SECTION_ACTIVITIES_FIFTH_DESCRIPTION}
-                      </p>
-                    </div>
+
+            <div className="">
+              <a href="https://www.yancan.tech/" target="_blank">
+                <div className="h-full rounded-lg border-4 border-white bg-white">
+                  <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                    <img className="h-auto w-auto object-contain" src="yancan.png" />
                   </div>
-                </a>
-              </section>
-              <section className="mt-10 basis-1/2 md:mt-0">
+                  <div className="p-8">
+                    <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
+                      {text.SECTION_ACTIVITIES_FOURTH_TITLE}
+                    </h1>
+                    <p className="md:text-md text-sm leading-loose md:tracking-wide ">
+                      {text.SECTION_ACTIVITIES_FOURTH_DESCRIPTION}
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div className="">
+              <a href="https://www.youtube.com/@amilaGV" target="_blank">
+                <div className="h-full rounded-lg border-4 border-white bg-white">
+                  <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                    <img className="h-auto w-auto object-contain" src="amira.jpeg" />
+                  </div>
+                  <div className="p-8">
+                    <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
+                      {text.SECTION_ACTIVITIES_FIFTH_TITLE}
+                    </h1>
+                    <p className="md:text-md text-sm leading-loose md:tracking-wide ">
+                      {text.SECTION_ACTIVITIES_FIFTH_DESCRIPTION}
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div className="">
                 <a href="https://ciderwonderpals.xyz/" target="_blank">
-                  <div className=" rounded-lg border-4 border-white bg-white md:ml-4">
-                    <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
-                      <img className="h-full" src="ciderpal.png" />
+                  <div className=" rounded-lg border-4 border-white bg-white">
+                    <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                      <img className="h-auto w-auto object-contain" src="ciderpal.png" />
                     </div>
                     <div className="p-8">
                       <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
@@ -257,12 +263,13 @@ export default function Index() {
                     </div>
                   </div>
                 </a>
-              </section>
-              <section className="mt-10 basis-1/2 md:mt-0">
+              </div>
+
+              <div className="">
                 <a href="https://www.naminori.xyz/" target="_blank">
-                  <div className="h-full rounded-lg border-4 border-white bg-white md:ml-4">
-                    <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
-                      <img className="h-full" src="naminori.png" />
+                  <div className="h-full rounded-lg border-4 border-white bg-white">
+                    <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                      <img className="h-auto w-auto object-contain" src="naminori.png" />
                     </div>
                     <div className="p-8">
                       <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
@@ -274,18 +281,13 @@ export default function Index() {
                     </div>
                   </div>
                 </a>
-              </section>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className="bg-blue-50 p-4 pb-14 text-regal-blue md:px-10">
-            <div className="flex flex-col md:flex-row">
-              <section className="w-full basis-1/2">
+              </div>
+
+              <div className="">
                 <a href="https://blockmill.vercel.app/" target="_blank">
-                  <div className="h-full rounded-lg border-4 border-white bg-white md:mr-4">
-                    <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
-                      <img className="h-full w-auto" src="blockmill.png" />
+                  <div className="h-full rounded-lg border-4 border-white bg-white">
+                    <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                      <img className="h-auto w-auto object-contain" src="blockmill.png" />
                     </div>
                     <div className="p-8">
                       <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
@@ -297,12 +299,13 @@ export default function Index() {
                     </div>
                   </div>
                 </a>
-              </section>
-              <section className="mt-10 basis-1/2 md:mt-0">
+              </div>
+
+              <div className="">
                 <a href="https://kotoverse-v3-nu.vercel.app/" target="_blank">
-                  <div className="h-full rounded-lg border-4 border-white bg-white md:mr-4">
-                    <div className="peer-w-max flex justify-center rounded-t-lg bg-blue-50 p-6">
-                      <img className="h-full w-auto" src="kotoverse.png" />
+                  <div className="h-full rounded-lg border-4 border-white bg-white">
+                    <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                      <img className="h-auto w-auto object-contain" src="kotoverse.png" />
                     </div>
                     <div className="p-8">
                       <h1 className="md:relaxed font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
@@ -319,7 +322,6 @@ export default function Index() {
                             width={30}
                           />
                         </a>
-
                         <a href="https://discord.gg/8gttGu7de4" target="_blank">
                           <img
                             src="discord.png"
@@ -328,18 +330,18 @@ export default function Index() {
                           />
                         </a>
                       </div>
-                      <p className="md:text-md text-sm leading-loose md:tracking-wide ">
+                      <p className="md:text-md text-sm leading-loose md:tracking-wide">
                         {text.SECTION_ACTIVITIES_NINETH_DESCRIPTION}
                       </p>
                     </div>
                   </div>
                 </a>
-              </section>
-              <section className="mt-10 basis-1/2 md:mt-0"></section>
-            </div>
+              </div>
+
           </div>
         </section>
 
+        {/* section for stay tuned */}
         <section>
           <div className="flex justify-center bg-white py-10 text-gray-900">
             <div className="mx-2 flex flex-col rounded-3xl bg-gradient-to-r from-[#d6f0ff]/75 via-[#ffe0a4]/75 to-[#f5a5d4]/75 p-6 md:mx-4 md:mx-auto md:w-2/3 md:flex-row md:p-10">
@@ -461,6 +463,7 @@ export default function Index() {
           </div>
         </section>
   */}
+        {/* section for team */}
         <section>
           <div className="bg-white p-8 font-sans-serif text-gray-900">
             <h1 className="mb-4 text-center text-6xl font-bold">Team</h1>
@@ -530,6 +533,7 @@ export default function Index() {
           </div>
         </section>
       </main>
+
       <footer>
         <div className="flex justify-between bg-white py-28 px-8 font-sans-serif text-gray-900">
           <span className="text-2xl font-bold">Creators Studio</span>
