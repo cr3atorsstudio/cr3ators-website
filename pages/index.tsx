@@ -73,6 +73,7 @@ export default function Index() {
       </Head>
       <Navbar />
       <main className="mx-auto">
+        {/* section for hero */}
         <section className="p-6 md:p-20">
           <div className="flex flex-col content-center justify-between">
             <div className="flex flex-col  justify-center md:flex-row">
@@ -107,7 +108,7 @@ export default function Index() {
                     </div>
                   </a>
                 </div>
-  */}
+                 */}
               </div>
               <div className="m-100">
                 <img src="creators_studio.png" width={450} height={450} />
@@ -116,6 +117,7 @@ export default function Index() {
           </div>
         </section>
 
+        {/* section for 20% */}
         <section>
           <div className="flex flex-col items-center justify-around bg-yellow-50 py-14 px-4 text-brown md:flex-row md:py-32 md:px-40">
             <div className="mx-18 flex justify-center">
@@ -135,6 +137,8 @@ export default function Index() {
             </div>
           </div>
         </section>
+
+        {/* section for what we do */}
         <section>
           <div className="bg-blue-50 p-4 text-regal-blue md:p-14">
             <section>
@@ -167,6 +171,8 @@ export default function Index() {
                 </div>
               </div>
             </section>
+
+            {/* section for projects */}
             <h1 className="mb-4 text-center text-6xl font-bold">Projects</h1>
             <div className="flex flex-col md:flex-row">
               <section className="w-full basis-1/2">
@@ -221,6 +227,8 @@ export default function Index() {
             </div>
           </div>
         </section>
+
+
         <section>
           <div className="bg-blue-50 p-4 pb-14 text-regal-blue md:px-10">
             <div className="flex flex-col md:flex-row">
@@ -340,6 +348,7 @@ export default function Index() {
           </div>
         </section>
 
+        {/* section for stay tuned */}
         <section>
           <div className="flex justify-center bg-white py-10 text-gray-900">
             <div className="mx-2 flex flex-col rounded-3xl bg-gradient-to-r from-[#d6f0ff]/75 via-[#ffe0a4]/75 to-[#f5a5d4]/75 p-6 md:mx-4 md:mx-auto md:w-2/3 md:flex-row md:p-10">
@@ -461,6 +470,7 @@ export default function Index() {
           </div>
         </section>
   */}
+        {/* section for team */}
         <section>
           <div className="bg-white p-8 font-sans-serif text-gray-900">
             <h1 className="mb-4 text-center text-6xl font-bold">Team</h1>
@@ -530,6 +540,7 @@ export default function Index() {
           </div>
         </section>
       </main>
+
       <footer>
         <div className="flex justify-between bg-white py-28 px-8 font-sans-serif text-gray-900">
           <span className="text-2xl font-bold">Creators Studio</span>
