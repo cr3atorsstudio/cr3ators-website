@@ -175,12 +175,14 @@ export default function Index() {
         {/* section for projects */}
         <section className="bg-blue-50 p-4 text-regal-blue md:p-14">
           <h1 className="mb-4 text-center text-6xl font-bold">Projects</h1>
-          <div className="grid md:grid-cols-3 gap-x-10 gap-y-14">
-
+          <div className="grid gap-x-10 gap-y-14 md:grid-cols-3">
             <div className="">
               <div className="h-full rounded-lg border-4 border-white bg-white">
                 <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                  <img className="h-auto w-auto object-contain" src="maru.png" />
+                  <img
+                    className="h-auto w-auto object-contain"
+                    src="maru.png"
+                  />
                 </div>
                 <div className="p-8">
                   <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
@@ -197,7 +199,10 @@ export default function Index() {
               <a href="https://shiritori.cr3ators.studio/" target="_blank">
                 <div className="rounded-lg border-4 border-white bg-white">
                   <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                    <img className="h-auto w-auto object-contain" src="shiritori.gif" />
+                    <img
+                      className="h-auto w-auto object-contain"
+                      src="shiritori.gif"
+                    />
                   </div>
                   <div className="p-8">
                     <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
@@ -215,12 +220,29 @@ export default function Index() {
               <a href="https://www.yancan.tech/" target="_blank">
                 <div className="h-full rounded-lg border-4 border-white bg-white">
                   <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                    <img className="h-auto w-auto object-contain" src="yancan.png" />
+                    <img
+                      className="h-auto w-auto object-contain"
+                      src="yancan.png"
+                    />
                   </div>
-                  <div className="p-8">
+                  <div className="h-full p-8 ">
                     <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
                       {text.SECTION_ACTIVITIES_FOURTH_TITLE}
                     </h1>
+
+                    <div className="mb-4 flex items-center">
+                      <img
+                        src="/riho.png"
+                        className="mr-2 cursor-pointer"
+                        width={30}
+                      />
+                      <img
+                        src="/risa.png"
+                        className="mr-2 cursor-pointer"
+                        width={30}
+                      />
+                    </div>
+
                     <p className="md:text-md text-sm leading-loose md:tracking-wide ">
                       {text.SECTION_ACTIVITIES_FOURTH_DESCRIPTION}
                     </p>
@@ -233,12 +255,23 @@ export default function Index() {
               <a href="https://www.youtube.com/@amilaGV" target="_blank">
                 <div className="h-full rounded-lg border-4 border-white bg-white">
                   <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                    <img className="h-auto w-auto object-contain" src="amira.jpeg" />
+                    <img
+                      className="h-auto w-auto object-contain"
+                      src="amira.jpeg"
+                    />
                   </div>
                   <div className="p-8">
                     <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
                       {text.SECTION_ACTIVITIES_FIFTH_TITLE}
                     </h1>
+
+                    <div className="mb-4 flex items-center">
+                      <img
+                        src="/risa.png"
+                        className="mr-2 cursor-pointer"
+                        width={30}
+                      />
+                    </div>
                     <p className="md:text-md text-sm leading-loose md:tracking-wide ">
                       {text.SECTION_ACTIVITIES_FIFTH_DESCRIPTION}
                     </p>
@@ -248,96 +281,132 @@ export default function Index() {
             </div>
 
             <div className="">
-                <a href="https://ciderwonderpals.xyz/" target="_blank">
-                  <div className=" rounded-lg border-4 border-white bg-white">
-                    <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                      <img className="h-auto w-auto object-contain" src="ciderpal.png" />
-                    </div>
-                    <div className="p-8">
-                      <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                        {text.SECTION_ACTIVITIES_SIXTH_TITLE}
-                      </h1>
-                      <p className="md:text-md text-sm leading-loose md:tracking-wide ">
-                        {text.SECTION_ACTIVITIES_SIXTH_DESCRIPTION}
-                      </p>
-                    </div>
+              <a href="https://ciderwonderpals.xyz/" target="_blank">
+                <div className=" rounded-lg border-4 border-white bg-white">
+                  <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                    <img
+                      className="h-auto w-auto object-contain"
+                      src="ciderpal.png"
+                    />
                   </div>
-                </a>
-              </div>
-
-              <div className="">
-                <a href="https://www.naminori.xyz/" target="_blank">
-                  <div className="h-full rounded-lg border-4 border-white bg-white">
-                    <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                      <img className="h-auto w-auto object-contain" src="naminori.png" />
+                  <div className="p-8">
+                    <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
+                      {text.SECTION_ACTIVITIES_SIXTH_TITLE}
+                    </h1>
+                    <div className="mb-4 flex items-center">
+                      <img
+                        src="/riho.png"
+                        className="mr-2 cursor-pointer"
+                        width={30}
+                      />
                     </div>
-                    <div className="p-8">
-                      <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                        {text.SECTION_ACTIVITIES_SEVENTH_TITLE}
-                      </h1>
-                      <p className="md:text-md text-sm leading-loose md:tracking-wide ">
-                        {text.SECTION_ACTIVITIES_SEVENTH_DESCRIPTION}
-                      </p>
-                    </div>
+                    <p className="md:text-md text-sm leading-loose md:tracking-wide ">
+                      {text.SECTION_ACTIVITIES_SIXTH_DESCRIPTION}
+                    </p>
                   </div>
-                </a>
-              </div>
+                </div>
+              </a>
+            </div>
 
-              <div className="">
-                <a href="https://blockmill.vercel.app/" target="_blank">
-                  <div className="h-full rounded-lg border-4 border-white bg-white">
-                    <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                      <img className="h-auto w-auto object-contain" src="blockmill.png" />
-                    </div>
-                    <div className="p-8">
-                      <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                        {text.SECTION_ACTIVITIES_EIGHTH_TITLE}
-                      </h1>
-                      <p className="md:text-md text-sm leading-loose md:tracking-wide ">
-                        {text.SECTION_ACTIVITIES_EIGHTH_DESCRIPTION}
-                      </p>
-                    </div>
+            <div className="">
+              <a href="https://www.naminori.xyz/" target="_blank">
+                <div className="h-full rounded-lg border-4 border-white bg-white">
+                  <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                    <img
+                      className="h-auto w-auto object-contain"
+                      src="naminori.png"
+                    />
                   </div>
-                </a>
-              </div>
-
-              <div className="">
-                <a href="https://kotoverse-v3-nu.vercel.app/" target="_blank">
-                  <div className="h-full rounded-lg border-4 border-white bg-white">
-                    <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                      <img className="h-auto w-auto object-contain" src="kotoverse.png" />
+                  <div className="p-8">
+                    <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
+                      {text.SECTION_ACTIVITIES_SEVENTH_TITLE}
+                    </h1>
+                    <div className="mb-4 flex items-center">
+                      <img
+                        src="/riho.png"
+                        className="mr-2 cursor-pointer"
+                        width={30}
+                      />
                     </div>
-                    <div className="p-8">
-                      <h1 className="md:relaxed font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                        {text.SECTION_ACTIVITIES_NINETH_TITLE}
-                      </h1>
-                      <div className="mb-4 flex items-center">
-                        <a
-                          href="https://twitter.com/kotoverse_xyz"
-                          target="_blank"
-                        >
-                          <img
-                            src="twitter.png"
-                            className="mr-2 cursor-pointer"
-                            width={30}
-                          />
-                        </a>
-                        <a href="https://discord.gg/8gttGu7de4" target="_blank">
-                          <img
-                            src="discord.png"
-                            className="mr-2 cursor-pointer"
-                            width={30}
-                          />
-                        </a>
-                      </div>
-                      <p className="md:text-md text-sm leading-loose md:tracking-wide">
-                        {text.SECTION_ACTIVITIES_NINETH_DESCRIPTION}
-                      </p>
-                    </div>
+                    <p className="md:text-md text-sm leading-loose md:tracking-wide ">
+                      {text.SECTION_ACTIVITIES_SEVENTH_DESCRIPTION}
+                    </p>
                   </div>
-                </a>
-              </div>
+                </div>
+              </a>
+            </div>
 
+            <div className="">
+              <a href="https://blockmill.vercel.app/" target="_blank">
+                <div className="h-full rounded-lg border-4 border-white bg-white">
+                  <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                    <img
+                      className="h-auto w-auto object-contain"
+                      src="blockmill.png"
+                    />
+                  </div>
+                  <div className="p-8">
+                    <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
+                      {text.SECTION_ACTIVITIES_EIGHTH_TITLE}
+                    </h1>
+                    <div className="mb-4 flex items-center">
+                      <img
+                        src="/miho.png"
+                        className="mr-2 cursor-pointer"
+                        width={30}
+                      />
+                    </div>
+                    <p className="md:text-md text-sm leading-loose md:tracking-wide ">
+                      {text.SECTION_ACTIVITIES_EIGHTH_DESCRIPTION}
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div className="">
+              <div className="h-full rounded-lg border-4 border-white bg-white">
+                <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
+                  <a href="https://kotoverse-v3-nu.vercel.app/" target="_blank">
+                    <img
+                      className="h-auto w-auto object-contain"
+                      src="kotoverse.png"
+                    />
+                  </a>
+                </div>
+                <div className="p-8">
+                  <div className="mb-4 flex items-center">
+                    <h1 className="md:relaxed mr-2 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
+                      {text.SECTION_ACTIVITIES_NINETH_TITLE}
+                    </h1>
+                    <a href="https://twitter.com/kotoverse_xyz" target="_blank">
+                      <img
+                        src="twitter.png"
+                        className="mr-2 cursor-pointer"
+                        width={30}
+                      />
+                    </a>
+                    <a href="https://discord.gg/8gttGu7de4" target="_blank">
+                      <img
+                        src="discord.png"
+                        className="mr-2 cursor-pointer"
+                        width={30}
+                      />
+                    </a>
+                  </div>
+                  <div className="mb-4 flex items-center">
+                    <img
+                      src="/miho.png"
+                      className="mr-2 cursor-pointer"
+                      width={30}
+                    />
+                  </div>
+                  <p className="md:text-md text-sm leading-loose md:tracking-wide">
+                    {text.SECTION_ACTIVITIES_NINETH_DESCRIPTION}
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

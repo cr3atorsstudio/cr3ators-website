@@ -52,7 +52,7 @@ const Mint: NextPage = () => {
   const onMintComplete = () => {
     setProcess({
       show: true,
-      message: `Mint has finished! <a href="https://opensea.io/account" target="_blank">🟣Check your symbols🟪</a>`,
+      message: `Mint has finished!<br> <a href="https://opensea.io/account" target="_blank">🟣Check your symbols🟪</a>`,
     });
 
     setTimeout(() => {
