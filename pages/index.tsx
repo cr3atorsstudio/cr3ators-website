@@ -1,11 +1,12 @@
-import { ConnectButton } from "@rainbow-me/rainbowkit";
-import Link from "next/link";
 import { useLocale } from "../hooks/useLocale";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useWindowSize } from "../hooks/useWindowSite";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Head from "next/head";
+import { ArticleSection } from "../components/ArticleSection";
+import { Button } from "../components/Button";
+import { ProjectSection } from "../components/ProjectSection";
 
 export default function Index() {
   const [isMenuOpen, setOpenMenu] = useState(false);
@@ -175,12 +176,14 @@ export default function Index() {
         {/* section for projects */}
         <section className="bg-blue-50 p-4 text-regal-blue md:p-14">
           <h1 className="mb-4 text-center text-6xl font-bold">Projects</h1>
-          <div className="grid md:grid-cols-3 gap-x-10 gap-y-14">
-
+          <div className="grid gap-x-10 gap-y-14 md:grid-cols-3">
             <div className="">
               <div className="h-full rounded-lg border-4 border-white bg-white">
                 <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                  <img className="h-auto w-auto object-contain" src="maru.png" />
+                  <img
+                    className="h-auto w-auto object-contain"
+                    src="maru.png"
+                  />
                 </div>
                 <div className="p-8">
                   <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
@@ -193,151 +196,107 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="">
-              <a href="https://shiritori.cr3ators.studio/" target="_blank">
-                <div className="rounded-lg border-4 border-white bg-white">
-                  <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                    <img className="h-auto w-auto object-contain" src="shiritori.gif" />
-                  </div>
-                  <div className="p-8">
-                    <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                      {text.SECTION_ACTIVITIES_THIRD_TITLE}
-                    </h1>
-                    <p className="md:text-md text-sm leading-loose md:tracking-wide ">
-                      {text.SECTION_ACTIVITIES_THIRD_DESCRIPTION}
-                    </p>
-                  </div>
+            <ProjectSection
+              img={"shiritori.gif"}
+              title={text.SECTION_ACTIVITIES_THIRD_TITLE}
+              description={text.SECTION_ACTIVITIES_THIRD_DESCRIPTION}
+              link={"https://shiritori.cr3ators.studio/"}
+            />
+
+            <ProjectSection
+              img={"yancan.png"}
+              title={text.SECTION_ACTIVITIES_FOURTH_TITLE}
+              description={text.SECTION_ACTIVITIES_FOURTH_DESCRIPTION}
+              link={"https://www.yancan.tech/"}
+            />
+
+            <ProjectSection
+              img={"amira.jpeg"}
+              title={text.SECTION_ACTIVITIES_FIFTH_TITLE}
+              description={text.SECTION_ACTIVITIES_FIFTH_DESCRIPTION}
+              link={"https://www.youtube.com/@amilaGV"}
+            />
+
+            <ProjectSection
+              img={"ciderpal.png"}
+              title={text.SECTION_ACTIVITIES_SIXTH_TITLE}
+              description={text.SECTION_ACTIVITIES_SIXTH_DESCRIPTION}
+              link={"https://ciderwonderpals.xyz/"}
+            />
+
+            <ProjectSection
+              img={"naminori.png"}
+              title={text.SECTION_ACTIVITIES_SEVENTH_TITLE}
+              description={text.SECTION_ACTIVITIES_SEVENTH_DESCRIPTION}
+              link={"https://www.naminori.xyz/"}
+            />
+
+            <ProjectSection
+              img={"blockmill.png"}
+              title={text.SECTION_ACTIVITIES_EIGHTH_TITLE}
+              description={text.SECTION_ACTIVITIES_EIGHTH_DESCRIPTION}
+              link={"https://blockmill.vercel.app/"}
+            />
+            <ProjectSection
+              img={"kotoverse.png"}
+              title={text.SECTION_ACTIVITIES_NINETH_TITLE}
+              description={text.SECTION_ACTIVITIES_NINETH_DESCRIPTION}
+              link={"https://kotoverse-v3-nu.vercel.app/"}
+              social={
+                <div className="mb-4 flex items-center">
+                  <a href="https://twitter.com/kotoverse_xyz" target="_blank">
+                    <img
+                      src="twitter.png"
+                      className="mr-2 cursor-pointer"
+                      width={30}
+                    />
+                  </a>
+                  <a href="https://discord.gg/8gttGu7de4" target="_blank">
+                    <img
+                      src="discord.png"
+                      className="mr-2 cursor-pointer"
+                      width={30}
+                    />
+                  </a>
                 </div>
-              </a>
+              }
+            />
+          </div>
+        </section>
+
+        {/* section for articles*/}
+        <section className="bg-purple-50 p-4 text-regal-blue md:p-14">
+          <div className="flex flex-col justify-center py-10 text-gray-900">
+            <h1 className="mb-10 text-center text-6xl font-bold">Articles</h1>
+
+            <div className="flex flex-col items-center justify-center lg:flex-row">
+              <ArticleSection
+                img={"riho.png"}
+                title={"限られた人だけがMintできるsmart contractを作成する"}
+                link={"https://zenn.dev/rlho/articles/2193884e3f4b9d"}
+                provider={"zen"}
+              />
+              <ArticleSection
+                img={"risa.png"}
+                title={
+                  "BuildspaceのDapps作成チュートリアルのウォークスルー（途中まで）"
+                }
+                link={
+                  "https://zenn.dev/risacan/articles/try-buildspace-dapps-tutorial"
+                }
+                provider={"zen"}
+              />
+              <ArticleSection
+                img={"miho.png"}
+                title={"ViteでRainbowkit を使ってみた"}
+                link={"https://qiita.com/pluto0004/items/f3ed1a2c30acc7b0b2a8"}
+                provider={"qiita"}
+              />
             </div>
 
-            <div className="">
-              <a href="https://www.yancan.tech/" target="_blank">
-                <div className="h-full rounded-lg border-4 border-white bg-white">
-                  <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                    <img className="h-auto w-auto object-contain" src="yancan.png" />
-                  </div>
-                  <div className="p-8">
-                    <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                      {text.SECTION_ACTIVITIES_FOURTH_TITLE}
-                    </h1>
-                    <p className="md:text-md text-sm leading-loose md:tracking-wide ">
-                      {text.SECTION_ACTIVITIES_FOURTH_DESCRIPTION}
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div className="">
-              <a href="https://www.youtube.com/@amilaGV" target="_blank">
-                <div className="h-full rounded-lg border-4 border-white bg-white">
-                  <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                    <img className="h-auto w-auto object-contain" src="amira.jpeg" />
-                  </div>
-                  <div className="p-8">
-                    <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                      {text.SECTION_ACTIVITIES_FIFTH_TITLE}
-                    </h1>
-                    <p className="md:text-md text-sm leading-loose md:tracking-wide ">
-                      {text.SECTION_ACTIVITIES_FIFTH_DESCRIPTION}
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div className="">
-                <a href="https://ciderwonderpals.xyz/" target="_blank">
-                  <div className=" rounded-lg border-4 border-white bg-white">
-                    <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                      <img className="h-auto w-auto object-contain" src="ciderpal.png" />
-                    </div>
-                    <div className="p-8">
-                      <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                        {text.SECTION_ACTIVITIES_SIXTH_TITLE}
-                      </h1>
-                      <p className="md:text-md text-sm leading-loose md:tracking-wide ">
-                        {text.SECTION_ACTIVITIES_SIXTH_DESCRIPTION}
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div className="">
-                <a href="https://www.naminori.xyz/" target="_blank">
-                  <div className="h-full rounded-lg border-4 border-white bg-white">
-                    <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                      <img className="h-auto w-auto object-contain" src="naminori.png" />
-                    </div>
-                    <div className="p-8">
-                      <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                        {text.SECTION_ACTIVITIES_SEVENTH_TITLE}
-                      </h1>
-                      <p className="md:text-md text-sm leading-loose md:tracking-wide ">
-                        {text.SECTION_ACTIVITIES_SEVENTH_DESCRIPTION}
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div className="">
-                <a href="https://blockmill.vercel.app/" target="_blank">
-                  <div className="h-full rounded-lg border-4 border-white bg-white">
-                    <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                      <img className="h-auto w-auto object-contain" src="blockmill.png" />
-                    </div>
-                    <div className="p-8">
-                      <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                        {text.SECTION_ACTIVITIES_EIGHTH_TITLE}
-                      </h1>
-                      <p className="md:text-md text-sm leading-loose md:tracking-wide ">
-                        {text.SECTION_ACTIVITIES_EIGHTH_DESCRIPTION}
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div className="">
-                <a href="https://kotoverse-v3-nu.vercel.app/" target="_blank">
-                  <div className="h-full rounded-lg border-4 border-white bg-white">
-                    <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                      <img className="h-auto w-auto object-contain" src="kotoverse.png" />
-                    </div>
-                    <div className="p-8">
-                      <h1 className="md:relaxed font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                        {text.SECTION_ACTIVITIES_NINETH_TITLE}
-                      </h1>
-                      <div className="mb-4 flex items-center">
-                        <a
-                          href="https://twitter.com/kotoverse_xyz"
-                          target="_blank"
-                        >
-                          <img
-                            src="twitter.png"
-                            className="mr-2 cursor-pointer"
-                            width={30}
-                          />
-                        </a>
-                        <a href="https://discord.gg/8gttGu7de4" target="_blank">
-                          <img
-                            src="discord.png"
-                            className="mr-2 cursor-pointer"
-                            width={30}
-                          />
-                        </a>
-                      </div>
-                      <p className="md:text-md text-sm leading-loose md:tracking-wide">
-                        {text.SECTION_ACTIVITIES_NINETH_DESCRIPTION}
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
+            {/* <div className="mt-10 flex justify-center">
+              <Button text={"View More"} link={"/article"} />
+            </div> */}
           </div>
         </section>
 
@@ -518,18 +477,10 @@ export default function Index() {
               <h1 className="text-6xl font-bold">Creators’ Studio News</h1>
               <span>Want to get updates from Creators Studio?</span>
             </div>
-            <div>
-              <a href="https://creatorsstudio.substack.com/" target="_blank">
-                <button
-                  className="
-                rounded-full border border-black bg-gradient-to-r from-[#FFADDD] to-[#B6E6FF] px-[20px] py-[14px]
-                text-base font-bold text-gray-900
-              "
-                >
-                  Subscribe to our Newsletter
-                </button>
-              </a>
-            </div>
+            <Button
+              text={"Subscribe to our Newsletter"}
+              link={"https://creatorsstudio.substack.com/"}
+            />
           </div>
         </section>
       </main>
