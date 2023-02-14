@@ -177,30 +177,11 @@ export default function Index() {
         <section className="bg-blue-50 p-4 text-regal-blue md:p-14">
           <h1 className="mb-4 text-center text-6xl font-bold">Projects</h1>
           <div className="grid gap-x-10 gap-y-14 md:grid-cols-3">
-            <div className="">
-              <div className="h-full rounded-lg border-4 border-white bg-white">
-                <div className="flex max-h-96 justify-center rounded-t-lg bg-blue-50 p-6">
-                  <img
-                    className="h-auto w-auto object-contain"
-                    src="maru.png"
-                  />
-                </div>
-                <div className="p-8">
-                  <h1 className="md:relaxed mb-4 font-sans-serif text-2xl font-bold leading-10 md:text-3xl">
-                    {text.SECTION_ACTIVITIES_SECOND_TITLE}
-                  </h1>
-                  <p className="md:text-md text-sm leading-loose md:tracking-wide ">
-                    {text.SECTION_ACTIVITIES_SECOND_DESCRIPTION}
-                  </p>
-                </div>
-              </div>
-            </div>
-
             <ProjectSection
-              img={"shiritori.gif"}
-              title={text.SECTION_ACTIVITIES_THIRD_TITLE}
-              description={text.SECTION_ACTIVITIES_THIRD_DESCRIPTION}
-              link={"https://shiritori.cr3ators.studio/"}
+              img={"maru.png"}
+              title={text.SECTION_ACTIVITIES_SECOND_TITLE}
+              description={text.SECTION_ACTIVITIES_SECOND_DESCRIPTION}
+              link={"#"}
             />
 
             <ProjectSection
@@ -237,6 +218,7 @@ export default function Index() {
               description={text.SECTION_ACTIVITIES_EIGHTH_DESCRIPTION}
               link={"https://blockmill.vercel.app/"}
             />
+
             <ProjectSection
               img={"kotoverse.png"}
               title={text.SECTION_ACTIVITIES_NINETH_TITLE}
