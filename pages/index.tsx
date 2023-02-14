@@ -189,6 +189,7 @@ export default function Index() {
               title={text.SECTION_ACTIVITIES_FOURTH_TITLE}
               description={text.SECTION_ACTIVITIES_FOURTH_DESCRIPTION}
               link={"https://www.yancan.tech/"}
+              owners={["riho", "risa"]}
             />
 
             <ProjectSection
@@ -196,6 +197,7 @@ export default function Index() {
               title={text.SECTION_ACTIVITIES_FIFTH_TITLE}
               description={text.SECTION_ACTIVITIES_FIFTH_DESCRIPTION}
               link={"https://www.youtube.com/@amilaGV"}
+              owners={["risa"]}
             />
 
             <ProjectSection
@@ -203,6 +205,7 @@ export default function Index() {
               title={text.SECTION_ACTIVITIES_SIXTH_TITLE}
               description={text.SECTION_ACTIVITIES_SIXTH_DESCRIPTION}
               link={"https://ciderwonderpals.xyz/"}
+              owners={["riho"]}
             />
 
             <ProjectSection
@@ -210,6 +213,7 @@ export default function Index() {
               title={text.SECTION_ACTIVITIES_SEVENTH_TITLE}
               description={text.SECTION_ACTIVITIES_SEVENTH_DESCRIPTION}
               link={"https://www.naminori.xyz/"}
+              owners={["riho"]}
             />
 
             <ProjectSection
@@ -217,6 +221,7 @@ export default function Index() {
               title={text.SECTION_ACTIVITIES_EIGHTH_TITLE}
               description={text.SECTION_ACTIVITIES_EIGHTH_DESCRIPTION}
               link={"https://blockmill.vercel.app/"}
+              owners={["miho"]}
             />
 
             <ProjectSection
@@ -224,6 +229,7 @@ export default function Index() {
               title={text.SECTION_ACTIVITIES_NINETH_TITLE}
               description={text.SECTION_ACTIVITIES_NINETH_DESCRIPTION}
               link={"https://kotoverse-v3-nu.vercel.app/"}
+              owners={["miho"]}
               social={
                 <div className="mb-4 flex items-center">
                   <a href="https://twitter.com/kotoverse_xyz" target="_blank">

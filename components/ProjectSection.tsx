@@ -1,11 +1,10 @@
-import { JsxElement } from "typescript";
-
 export interface Props {
   img: string;
   title: string;
   description: string;
   link: string;
   social?: JSX.Element;
+  owners?: string[];
 }
 
 export const ProjectSection = ({
@@ -14,6 +13,7 @@ export const ProjectSection = ({
   description,
   link,
   social,
+  owners,
 }: Props) => {
   return (
     <div className="">
@@ -30,6 +30,16 @@ export const ProjectSection = ({
               {title}
             </h1>
           </a>
+
+          <div className="mb-4 flex items-center">
+            {owners?.map((owner) => (
+              <img
+                src={`/${owner}.png`}
+                className="mr-2 cursor-pointer"
+                width={30}
+              />
+            ))}
+          </div>
 
           {social}
           <p className="md:text-md text-sm leading-loose md:tracking-wide ">
