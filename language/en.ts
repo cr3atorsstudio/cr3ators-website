@@ -40,4 +40,6 @@ export default {
   SECTION_JOIN_COMMUNITY_TEXT2: "I wanna be creative in Web3",
   SECTION_JOIN_COMMUNITY_TEXT3: "I want to get knowledges about Web3",
   SECTION_JOIN_COMMUNITY_TEXT4: "Let's talk and create together now!",
+  SECTION_TEAM_RECRUIT:
+    "We are looking for designer and marketing lead to create products with us!",
 };

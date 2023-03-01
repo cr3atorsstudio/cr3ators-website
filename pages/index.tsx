@@ -414,6 +414,7 @@ export default function Index() {
         <section>
           <div className="bg-white p-8 font-sans-serif text-gray-900">
             <h1 className="mb-4 text-center text-6xl font-bold">Team</h1>
+            <div className="text-center">{text.SECTION_TEAM_RECRUIT}</div>
             <div className="flex flex-col items-center justify-center text-center md:flex-row">
               <div className="flex flex-col items-center">
                 <Image src="/riho.png" width={480} height={480} />

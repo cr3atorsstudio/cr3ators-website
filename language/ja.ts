@@ -40,4 +40,6 @@ export default {
   SECTION_JOIN_COMMUNITY_TEXT2: "",
   SECTION_JOIN_COMMUNITY_TEXT3: "",
   SECTION_JOIN_COMMUNITY_TEXT4: "",
+  SECTION_TEAM_RECRUIT:
+    "一緒にweb3でプロダクトを作成する仲間を募集しています！（特にデザイナーとマーケター、PRを募集してます！）",
 };
