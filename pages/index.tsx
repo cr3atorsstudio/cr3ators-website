@@ -178,10 +178,18 @@ export default function Index() {
           <h1 className="mb-4 text-center text-6xl font-bold">Projects</h1>
           <div className="grid gap-x-10 gap-y-14 md:grid-cols-3">
             <ProjectSection
-              img={"maru.png"}
+              img={"subscript.png"}
               title={text.SECTION_ACTIVITIES_SECOND_TITLE}
               description={text.SECTION_ACTIVITIES_SECOND_DESCRIPTION}
-              link={"#"}
+              link={"https://ethglobal.com/showcase/subscrypt-v10cv"}
+              owners={["riho", "miho"]}
+            />
+            <ProjectSection
+              img={"shiritori.gif"}
+              title={text.SECTION_ACTIVITIES_THIRD_TITLE}
+              description={text.SECTION_ACTIVITIES_THIRD_DESCRIPTION}
+              link={"https://shiritori.cr3ators.studio/"}
+              owners={["riho", "risa", "miho"]}
             />
 
             <ProjectSection

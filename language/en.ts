@@ -10,9 +10,9 @@ export default {
   SECTION_ACTIVITIES_FIRST_TITLE: "Actions speak louder than words.",
   SECTION_ACTIVITIES_FIRST_DESCRIPTION:
     "We wanna be role models for women and gender minority creators in the web3. \n At first, we were trying to support women and gender minority creators and create a more diverse place where collaboration happens. \nBut we realized that we need to increase the number of people interested in web3. We believe that people will be more interested when they see people enjoying the creation! So we'll increase the number of people interested in web3 as much as possible by sharing our ideas, enjoying developing products, and sharing our knowledge.",
-  SECTION_ACTIVITIES_SECOND_TITLE: "Creators Studio NFT",
+  SECTION_ACTIVITIES_SECOND_TITLE: "subscrypt",
   SECTION_ACTIVITIES_SECOND_DESCRIPTION:
-    "This is a NFT project for you support us. we'll become a role model in web3 creators and closing the gender gap. \n We hope you will support us through this NFT!",
+    "How many subscriptions are you currently signed up for? SubsCrypt allows you to pay for all your subscriptions with ETH💰 The future of subscriptions is right here 🌍",
   SECTION_ACTIVITIES_THIRD_TITLE: "Shiritori NFT",
   SECTION_ACTIVITIES_THIRD_DESCRIPTION:
     '"SHIRITORI" is a word chain game in Japan.  SHIRITORI NFT chain "your word" and world using blockchain.\n This is a project that connects you to the world through the blockchain!.\nThese NFTs are generated from the previous word and the word you connected.\nThe left-hand accessory is generated from the previous Shiritori word.\n The right-hand accessory is generated from your word.',
