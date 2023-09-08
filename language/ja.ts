@@ -11,9 +11,9 @@ export default {
   SECTION_ACTIVITIES_FIRST_TITLE: "Be a Role Model",
   SECTION_ACTIVITIES_FIRST_DESCRIPTION:
     "私たちはweb3業界の女性とジェンダーマイノリティのクリエイターのロールモデルになります。\n\n もともと私たちは、女性とジェンダーマイノリティのクリエイターをサポートし、Web3の世界がより多様性に溢れ、様々なコラボレーションが起こる場所を作ろうとしていました。\n しかし、その前に「Web3は面白い」「私でもできるかもしれない」という気持ちを持つ人が少ないことに気づきました。その理由のひとつは、業界での女性のロールモデルの不足だと考えています。\n\n 私たち自身がweb3のアイディアを出し合い、プロダクトを楽しんで開発し、知見を共有することで、少しでもweb3に興味を持つ人を増やしたいと思っています。",
-  SECTION_ACTIVITIES_SECOND_TITLE: "Creators Studio NFT",
+  SECTION_ACTIVITIES_SECOND_TITLE: "subscrypt",
   SECTION_ACTIVITIES_SECOND_DESCRIPTION:
-    "Web3のジェンダーギャップを解消する私たちCreators Studioを応援してくれる方向けのNFTプロジェクトです。CreatorとSupporter向けそれぞれ1つづつmintすることができます。\nNFTで私たちを応援してくれると嬉しいです！",
+    "Netflix, Amazon PrimeなどのWeb2サブスクリプションを、Etheriumを使って支払うことができます。",
   SECTION_ACTIVITIES_THIRD_TITLE: "Shiritori NFT",
   SECTION_ACTIVITIES_THIRD_DESCRIPTION:
     "ブロックチェーンの『繋がる』としりとりの『繋がる』\n 繋がることをテーマにしたNFTプロジェクトです。しりとりに繋がる言葉を入力すると、その言葉がブロックチェーン上に保存され繋げた言葉からジェネラティブNFTが生成されます。\n生成されるNFTは前の言葉とあなたが繋げた言葉が指で繋がったイラストになっています",
