@@ -2,6 +2,7 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Link from "next/link";
 import Image from "next/image";
 import { useLocale } from "../hooks/useLocale";
+import { Button } from "./Button";
 
 const Navbar = () => {
   const locale = useLocale().locale;
@@ -144,15 +145,10 @@ const Navbar = () => {
             }}
           </ConnectButton.Custom>
 
-          <a
-            className="hidden rounded-2xl
-            border border-black bg-gradient-to-r from-[#FFADDD] to-[#B6E6FF] px-2 py-2 font-sans-serif text-sm text-base
-            font-bold text-gray-900 md:block"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform"
-            target="_blank"
-          >
-            Join Community
-          </a>
+          <Button
+            text={"Subscribe to our Newsletter"}
+            link={"https://creatorsstudio.substack.com/"}
+          />
 
           <div className="gap-0">
             <Link href="/" locale={locale === "ja" ? "en" : "ja"} passHref>

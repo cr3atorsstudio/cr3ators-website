@@ -303,22 +303,10 @@ export default function Index() {
                 </ul>
                 <p className="mt-4">{text.SECTION_JOIN_COMMUNITY_TEXT4}</p>
                 <div className="flex justify-center">
-                  <a
-                    className="
-                  mt-10 flex w-52 items-center justify-between rounded-full border border-black bg-white
-                  px-[20px] py-[14px] font-sans-serif text-base font-bold text-gray-900"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfxfARwmnEqTP_LXfeNBXHgz_X9taZqn4kRRlRnVFVnDMgqdg/viewform"
-                    target="_blank"
-                  >
-                    Join Community
-                    <Image
-                      className="ml-8"
-                      src="/arrow-right.svg"
-                      alt="right arrow"
-                      width={20}
-                      height={20}
-                    />
-                  </a>
+                  <Button
+                    text={"Subscribe to our Newsletter"}
+                    link={"https://creatorsstudio.substack.com/"}
+                  />
                 </div>
               </div>
               <div className="flex w-full basis-1/2 justify-center">
